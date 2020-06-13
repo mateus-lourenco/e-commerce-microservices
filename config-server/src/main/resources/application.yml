@@ -7,5 +7,4 @@ spring:
   config:
    server:
     git:
-     uri: /home/mateuslourenco/eclipse-workspace/e-commerce-microservices
-    # uri: https://github.com/mateus-lourenco/e-commerce-microservices
+     uri: https://github.com/mateus-lourenco/e-commerce-microservices
