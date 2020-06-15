@@ -17,16 +17,16 @@ zuul:
  prefix: /api
  ignored-services: *
 
- zuul:
-  routes:
-   orders:
-    path: /orders/**
-    serviceId: orders
-    strip-prefix: false
+zuul:
+ routes:
+  orders:
+   path: /orders/**
+   serviceId: order
+   strip-prefix: false
 
- zuul:
-  routes:
-   orders:
-    path: /accounts/**
-    serviceId: accounts
-    strip-prefix: false
+zuul:
+ routes:
+  orders:
+   path: /accounts/**
+   serviceId: account
+   strip-prefix: false
