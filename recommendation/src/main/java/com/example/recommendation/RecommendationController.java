@@ -1,17 +1,17 @@
 package com.example.recommendation;
 
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RequestMapping("/recommendations")
 public class RecommendationController 
 {
-	@GetMapping("/recommendations/{id}/")
-	public Recommendation getRecommendation(@PathVariable int id) 
+	@GetMapping
+	public Recommendation getRecommendation() 
 	{
 		Recommendation recommendation = new Recommendation();
-		recommendation.setId(134);
 		
 		return recommendation;
 	}

@@ -1,17 +1,17 @@
 package com.example.Shipping;
 
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RequestMapping("/shipments")
 public class ShippingController 
 {
-	@GetMapping("/shipments/{id}/")
-	public Shipping getShipping(@PathVariable int id) 
+	@GetMapping
+	public Shipping getShipping() 
 	{
 		Shipping shippingFake = new Shipping();
-		shippingFake.setId(132);
 		
 		return shippingFake;
 	}

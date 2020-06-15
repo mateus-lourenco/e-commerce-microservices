@@ -1,17 +1,17 @@
 package com.example.Inventory;
 
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RequestMapping("/inventories")
 public class InventoryController 
 {
-	@GetMapping("/inventories/{id}/")
-	public Inventory getInventory(@PathVariable int id) 
+	@GetMapping
+	public Inventory getInventory() 
 	{
 		Inventory inventoryFake = new Inventory();
-		inventoryFake.setId(321);
 		
 		return inventoryFake;
 	}
