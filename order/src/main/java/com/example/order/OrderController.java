@@ -2,17 +2,17 @@ package com.example.order;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
+@RequestMapping("/orders")
 public class OrderController 
 {
-	@GetMapping("/orders/{id}/")
-	public Order getOrder(@PathVariable int id)
+	@GetMapping
+	public Order getOrder()
 	{
 		Order order = new Order();
-		order.setId(123);
-		
 		return order;
 	}
 }

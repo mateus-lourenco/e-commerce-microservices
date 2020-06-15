@@ -11,3 +11,22 @@ eureka:
       defaultZone: http://localhost:${server.port}/eureka/
   server:
     wait-time-in-ms-when-sync-empty: 3000
+
+
+zuul:
+ prefix: /api
+ ignored-services: *
+
+ zuul:
+  routes:
+   orders:
+    path: /orders/**
+    serviceId: orders
+    strip-prefix: false
+
+ zuul:
+  routes:
+   orders:
+    path: /accounts/**
+    serviceId: accounts
+    strip-prefix: false
