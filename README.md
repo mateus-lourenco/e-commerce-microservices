@@ -11,7 +11,7 @@ Exemplo de Micro-serviços com SpringCloud para a disciplina de Arquitetura de s
 #### Exemplo
 
 <p align="center">
-<img src="">
+<img src="https://github.com/mateus-lourenco/e-commerce-microservices/blob/developer/images/Eureka.png">
 </p>
 
 ### Config Server
@@ -21,7 +21,7 @@ Exemplo de Micro-serviços com SpringCloud para a disciplina de Arquitetura de s
 #### Exemplo
 
 <p align="center">
-<img src="">
+<img src="https://github.com/mateus-lourenco/e-commerce-microservices/blob/developer/images/Config%20Server.png">
 </p>
 
 * Lê as configurações do github dos projetos abaixo:
