@@ -49,3 +49,10 @@ Exemplo de Micro-serviços com SpringCloud para a disciplina de Arquitetura de s
 <p align="center">
 <img src="https://github.com/mateus-lourenco/e-commerce-microservices/blob/developer/images/ComZuul.png">
 </p>
+
+## Referências
+
+- [lelodois/spring-cloud](https://github.com/lelodois/spring-cloud)  
+- [Spring Cloud Config](https://medium.com/dev-cave/spring-cloud-config-48e423446ed8#:~:text=Como%20funciona,as%20propriedades%20da%20pr%C3%B3pria%20aplica%C3%A7%C3%A3o.&text=L%C3%B3gico%20que%20n%C3%A3o%20seria%20muito,sem%20depend%C3%AAncias%20da%20m%C3%A1quina%20f%C3%ADsica.)  
+- [Arquitetura de MicroServices com Spring Cloud e Spring Boot — Parte 3](https://coderef.com.br/arquitetura-de-microservices-com-spring-cloud-e-spring-boot-parte-3-b84b3dce13a0#:~:text=O%20Eureka%20%C3%A9%20um%20servi%C3%A7o,carga%20e%20failover%20de%20servidores.)  
+- [Netflix/zuul](https://github.com/Netflix/zuul)  
