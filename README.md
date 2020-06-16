@@ -38,8 +38,14 @@ Exemplo de Micro-serviços com SpringCloud para a disciplina de Arquitetura de s
 
 #### É uma Gateway que fornece recursos para roteamento dinâmico, monitoramento, resiliência, segurança e muito mais.
 
-#### Exemplo
+#### Exemplo sem Zuul
 
 <p align="center">
-<img src="">
+<img src="https://github.com/mateus-lourenco/e-commerce-microservices/blob/developer/images/SemZuul.png">
+</p>
+
+#### Exemplo com Zuul
+
+<p align="center">
+<img src="https://github.com/mateus-lourenco/e-commerce-microservices/blob/developer/images/ComZuul.png">
 </p>
