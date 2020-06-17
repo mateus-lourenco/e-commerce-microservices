@@ -117,3 +117,4 @@ Continuous Integrations é uma metodologia moderna de desenvolvimento, em que os
 - [Arquitetura de MicroServices com Spring Cloud e Spring Boot — Parte 3](https://coderef.com.br/arquitetura-de-microservices-com-spring-cloud-e-spring-boot-parte-3-b84b3dce13a0#:~:text=O%20Eureka%20%C3%A9%20um%20servi%C3%A7o,carga%20e%20failover%20de%20servidores.)  
 - [Netflix/zuul](https://github.com/Netflix/zuul)  
 - [O que é um micro servico ou microservice?](https://www.luiztools.com.br/post/o-que-e-um-micro-servico-ou-microservice/)  
+- [Microservice Architectures With Spring Cloud and Docker](https://dzone.com/articles/microservice-architecture-with-spring-cloud-and-do)  
