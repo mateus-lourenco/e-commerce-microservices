@@ -67,6 +67,14 @@ Exemplo de Micro-serviços com SpringCloud para a disciplina de Arquitetura de s
 <img src="https://github.com/mateus-lourenco/e-commerce-microservices/blob/developer/images/ComZuul.png">
 </p>
 
+## Deployment local
+
+```
+cd [microservice-path]
+mvn clean
+mvn spring-boot:run
+```
+
 ## Referências
 
 - [lelodois/spring-cloud](https://github.com/lelodois/spring-cloud)  
