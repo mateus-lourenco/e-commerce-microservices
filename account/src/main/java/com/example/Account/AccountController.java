@@ -9,11 +9,11 @@ import org.springframework.web.bind.annotation.RestController;
 public class AccountController 
 {
 	@GetMapping
-	public Account getAccount()
+	public String getAccount()
 	{
 		Account account = new Account();
 		account.setUser("bitao");
 		
-		return account;
+		return account.toString();
 	}
 }

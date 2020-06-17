@@ -3,40 +3,40 @@ server:
 
 spring:
  application:
-  name: 'api-gateway'
+  name: api-gateway
   
 eureka:
  instance:
-  hostname: 'localhost'
+  hostname: localhost
  client:
   registerWithEureka: true
   fetchRegistry: false
   serviceUrl:
-   defaultZone: 'http://localhost:9090/eureka/'
+   defaultZone: http://localhost:9090/eureka/
   server: 
    wait-time-in-ms-when-sync-empty: 3000
  
 zuul:
- prefix: '/api'
+ prefix: /api
  ignoredServices: '*'
  routes:
   orders:
-   path: '/orders/**'
-   serviceId: 'ORDER'
+   path: /orders/**
+   serviceId: order
    stripPrefix: false
   accounts:
-   path: '/accounts/**'
-   serviceId: 'ACCOUNT'
+   path: /accounts/**
+   serviceId: account
    stripPrefix: false
   inventories:
-   path: '/inventories/**'
-   serviceId: 'INVENTORY'
+   path: /inventories/**
+   serviceId: inventory
    stripPrefix: false
   recommendations:
-   path: '/recommendations/**'
-   serviceId: 'RECOMMENDATION'
+   path: /recommendations/**
+   serviceId: recommendation
    stripPrefix: false
   shipping:
-   path: '/shipping/**'
-   serviceId: 'SHIPPING'
+   path: /shipping/**
+   serviceId: shipping
    stripPrefix: false      
