@@ -31,4 +31,12 @@ zuul:
   inventories:
    path: '/inventories/**'
    serviceId: 'INVENTORY'
-   stripPrefix: false  
+   stripPrefix: false
+  recommendations:
+   path: '/recommendations/**'
+   serviceId: 'RECOMMENDATION'
+   stripPrefix: false
+  shipping:
+   path: '/shipping/**'
+   serviceId: 'SHIPPING'
+   stripPrefix: false      
