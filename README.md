@@ -14,7 +14,7 @@ Exemplo de Micro-serviços com SpringCloud para a disciplina de Arquitetura de s
 
 ### API: 
 
-#### refere-se ao termo em inglês "Application Programming Interface" que significa em tradução para o português "Interface de Programação de Aplicativos";
+#### Refere-se ao termo em inglês "Application Programming Interface" que significa em tradução para o português "Interface de Programação de Aplicativos";
 
 ### Microservice: 
 
