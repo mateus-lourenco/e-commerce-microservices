@@ -1,6 +1,6 @@
 spring:
  application:
-  name: my-eureka
+  name: my-zuul
   cloud:
    config:
     uri: http://localhost:8888
