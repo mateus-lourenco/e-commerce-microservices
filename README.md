@@ -74,6 +74,22 @@ cd [microservice-path]
 mvn clean
 mvn spring-boot:run
 ```
+## Continuous Integration
+
+<p align=”justify”>
+  Continuous Integrations é uma metodologia moderna de desenvolvimento, em que os desenvolvedores envolvidos em um projeto integram seus trabalhos continuamente. Cada integração é consolidada por uma ferramenta chamada de automatização de tarefas, que inclusive pode executar diversos testes para identificar erros de digitação de códigos, incompatibilidades entre comandos dados por desenvolvedores diferentes etc.
+</p>  
+<p align="center">
+<img src="https://github.com/mateus-lourenco/e-commerce-microservices/blob/developer/images/Integration.png">
+</p>
+
+## Continuous Delivery
+<p align=”justify”>
+  É garantir que novas modificações estejam disponíveis – validação em ambiente de Homologação ou QA – para serem implementadas no ambiente de produção. O deploy para produção não é automático, porém pode ser realizado a qualquer momento, dependendo do aceite da alteração.
+</p>
+<p align="center">
+<img src="https://github.com/mateus-lourenco/e-commerce-microservices/blob/developer/images/Delivery.png">
+</p>
 
 ## Referências
 
