@@ -27,4 +27,8 @@ zuul:
   accounts:
    path: '/accounts/**'
    serviceId: 'ACCOUNT'
-   stripPrefix: false 
+   stripPrefix: false
+  inventories:
+   path: '/inventories/**'
+   serviceId: 'INVENTORY'
+   stripPrefix: false  

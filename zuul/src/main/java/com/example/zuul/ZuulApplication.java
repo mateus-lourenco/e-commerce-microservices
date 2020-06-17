@@ -9,10 +9,10 @@ import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 @SpringBootApplication(exclude = { SecurityAutoConfiguration.class })
 @EnableDiscoveryClient
 @EnableZuulProxy
-public class ZuulApplication {
-
-	public static void main(String[] args) {
+public class ZuulApplication 
+{
+	public static void main(String[] args) 
+	{
 		SpringApplication.run(ZuulApplication.class, args);
 	}
-
 }

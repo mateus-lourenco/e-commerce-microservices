@@ -19,7 +19,8 @@ public class Account
 	
 	private String user;
 	
-	public String toString() {
+	public String toString() 
+	{
 		return "[user: "+ getUser() +", id: "+ getId() +" ]";
 	}
 }
