@@ -4,6 +4,23 @@ Exemplo de Micro-serviços com SpringCloud para a disciplina de Arquitetura de s
 
 ## Definições, Acrônimos e Abreviações
 
+### Arquitetura de Microservices:
+
+####  Desenvolver aplicações de software em um conjuntos de serviços: Independente, Implementável e Escalável;
+
+### Spring Cloud Config: 
+
+#### É um micro-serviço onde os outros micro-serviços da arquitetura consultam as propriedades da própria aplicação.
+
+### API: 
+
+#### refere-se ao termo em inglês "Application Programming Interface" que significa em tradução para o português "Interface de Programação de Aplicativos";
+
+### Microservice: 
+
+#### É uma pequena porção de software que roda de maneira independente, focada em um único e pequeno conjunto de atividades dentro de um conjunto de serviços muito maior, formando uma arquitetura de micro serviços.
+
+
 ### Eureka Server
 
 #### É um serviço REST (Representational State Transfer) que é utilizado para localizar serviços com o objetivo de balanceamento de carga e failover de servidores.
