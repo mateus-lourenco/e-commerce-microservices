@@ -1,6 +1,10 @@
 server:
   port: 9095
 
+spring: 
+ application: 
+  name: account
+
 eureka:
   instance:
     hostname: localhost
