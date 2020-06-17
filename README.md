@@ -8,6 +8,14 @@
 <img src="https://github.com/mateus-lourenco/e-commerce-microservices/blob/developer/images/Architecture%20Project.png">
 </p>
 
+## Deployment local
+
+```
+cd [microservice-path]
+mvn clean
+mvn spring-boot:run
+```
+
 ## Definições, Acrônimos e Abreviações
 
 ### Arquitetura de Microservices:
@@ -16,43 +24,31 @@
 Desenvolver aplicações de software em um conjuntos de serviços: Independente, Implementável e Escalável.
 </p>
 
-### Spring Cloud Config: 
-
-<p align=”justify”>
-É um micro-serviço onde os outros micro-serviços da arquitetura consultam as propriedades da própria aplicação.
-</p>
-
-### API: 
-
-<p align=”justify”>
-Refere-se ao termo em inglês "Application Programming Interface" que significa em tradução para o português "Interface de Programação de Aplicativos".
-</p>
-
 ### Microservice: 
 
 <p align=”justify”>
 É uma pequena porção de software que roda de maneira independente, focada em um único e pequeno conjunto de atividades dentro de um conjunto de serviços muito maior, formando uma arquitetura de micro serviços.
 </p>
 
-### Eureka Server
-
-<p align=”justify”>
-É um serviço REST (Representational State Transfer) que é utilizado para localizar serviços com o objetivo de balanceamento de carga e failover de servidores.
-</p>
-
-#### Exemplo
-
-<p align="center">
-<img src="https://github.com/mateus-lourenco/e-commerce-microservices/blob/developer/images/Eureka.png">
-</p>
-
-### Config Server
+### Config Server: 
 
 <p align=”justify”>
 É um micro-serviço onde os outros micro-serviços da arquitetura consultam as propriedades da própria aplicação.
 </p>
 
-#### Exemplo
+### Service Discovery (Eureka Server):
+
+<p align=”justify”>
+É um serviço REST (Representational State Transfer) que é utilizado para localizar serviços com o objetivo de balanceamento de carga e failover de servidores.
+</p>
+
+#### Exemplo:
+
+<p align="center">
+<img src="https://github.com/mateus-lourenco/e-commerce-microservices/blob/developer/images/Eureka.png">
+</p>
+
+#### Exemplo:
 
 <p align="center">
 <img src="https://github.com/mateus-lourenco/e-commerce-microservices/blob/developer/images/Config%20Server.png">
@@ -68,31 +64,32 @@ Refere-se ao termo em inglês "Application Programming Interface" que significa 
   - http://localhost:8888/shipping/
   - http://localhost:8888/my-zuul/
 
-### Zuul
+### Zuul:
 
 <p align=”justify”>
 É uma Gateway que fornece recursos para roteamento dinâmico, monitoramento, resiliência, segurança e muito mais.
 </p>
 
-#### Exemplo sem Zuul
+#### Exemplo sem Zuul:
 
 <p align="center">
 <img src="https://github.com/mateus-lourenco/e-commerce-microservices/blob/developer/images/SemZuul.png">
 </p>
 
-#### Exemplo com Zuul
+#### Exemplo com Zuul:
 
 <p align="center">
 <img src="https://github.com/mateus-lourenco/e-commerce-microservices/blob/developer/images/ComZuul.png">
 </p>
 
-## Deployment local
+#### * Rotas mapeadas na aplicação com o Zuul:
 
-```
-cd [microservice-path]
-mvn clean
-mvn spring-boot:run
-```
+ - http://localhost:8000/accounts/  
+ - http://localhost:8000/inventories/  
+ - http://localhost:8000/orders/  
+ - http://localhost:8000/recommendations/  
+ - http://localhost:8000/shipments/  
+
 ## Continuous Integration
 
 <p align=”justify”>
