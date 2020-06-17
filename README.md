@@ -84,11 +84,11 @@ Desenvolver aplicações de software em um conjuntos de serviços: Independente,
 
 #### * Rotas mapeadas na aplicação com o Zuul:
 
- - http://localhost:8000/accounts/  
- - http://localhost:8000/inventories/  
- - http://localhost:8000/orders/  
- - http://localhost:8000/recommendations/  
- - http://localhost:8000/shipments/  
+ - http://localhost:8000/api/accounts/  
+ - http://localhost:8000/api/inventories/  
+ - http://localhost:8000/api/orders/  
+ - http://localhost:8000/api/recommendations/  
+ - http://localhost:8000/api/shipments/  
 
 ## Continuous Integration
 
