@@ -36,6 +36,12 @@ Desenvolver aplicações de software em um conjuntos de serviços: Independente,
 É um micro-serviço onde os outros micro-serviços da arquitetura consultam as propriedades da própria aplicação.
 </p>
 
+#### Exemplo:
+
+<p align="center">
+<img src="https://github.com/mateus-lourenco/e-commerce-microservices/blob/developer/images/Config%20Server.png">
+</p>
+
 ### Service Discovery (Eureka Server):
 
 <p align=”justify”>
@@ -46,12 +52,6 @@ Desenvolver aplicações de software em um conjuntos de serviços: Independente,
 
 <p align="center">
 <img src="https://github.com/mateus-lourenco/e-commerce-microservices/blob/developer/images/Eureka.png">
-</p>
-
-#### Exemplo:
-
-<p align="center">
-<img src="https://github.com/mateus-lourenco/e-commerce-microservices/blob/developer/images/Config%20Server.png">
 </p>
 
 #### * Lê as configurações do github dos projetos abaixo:
