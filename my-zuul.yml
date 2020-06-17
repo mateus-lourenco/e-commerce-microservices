@@ -1,9 +1,5 @@
 server:
- port: 1111
-
-spring:
- application:
-  name: api-gateway
+ port: 8000
   
 eureka:
  instance:
