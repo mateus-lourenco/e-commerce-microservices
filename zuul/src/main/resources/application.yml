@@ -37,6 +37,6 @@ zuul:
    serviceId: recommendation
    stripPrefix: false
   shipping:
-   path: /shipping/**
+   path: /shipments/**
    serviceId: shipping
    stripPrefix: false      
