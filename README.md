@@ -27,7 +27,7 @@ Desenvolver aplicações de software em um conjuntos de serviços: Independente,
 ### Microservice: 
 
 <p align=”justify”>
-É uma pequena porção de software que roda de maneira independente, focada em um único e pequeno conjunto de atividades dentro de um conjunto de serviços muito maior, formando uma arquitetura de micro serviços.
+É uma pequena porção de software que roda de maneira independente, focada em um único e pequeno conjunto de atividades dentro de um conjunto de serviços muito maior, formando uma arquitetura de micro-serviços.
 </p>
 
 ### Config Server: 
@@ -42,6 +42,16 @@ Desenvolver aplicações de software em um conjuntos de serviços: Independente,
 <img src="https://github.com/mateus-lourenco/e-commerce-microservices/blob/developer/images/Config%20Server.png">
 </p>
 
+#### * Lê as configurações do github dos projetos abaixo:
+
+  - http://localhost:8888/my-eureka/default  
+  - http://localhost:8888/account/default  
+  - http://localhost:8888/inventory/default  
+  - http://localhost:8888/order/default  
+  - http://localhost:8888/recommendation/default  
+  - http://localhost:8888/shipping/default  
+  - http://localhost:8888/my-zuul/default  
+
 ### Service Discovery (Eureka Server):
 
 <p align=”justify”>
@@ -53,16 +63,6 @@ Desenvolver aplicações de software em um conjuntos de serviços: Independente,
 <p align="center">
 <img src="https://github.com/mateus-lourenco/e-commerce-microservices/blob/developer/images/Eureka.png">
 </p>
-
-#### * Lê as configurações do github dos projetos abaixo:
-
-  - http://localhost:8888/my-eureka/
-  - http://localhost:8888/account/
-  - http://localhost:8888/inventory/
-  - http://localhost:8888/order/
-  - http://localhost:8888/recommendation/
-  - http://localhost:8888/shipping/
-  - http://localhost:8888/my-zuul/
 
 ### Zuul:
 
