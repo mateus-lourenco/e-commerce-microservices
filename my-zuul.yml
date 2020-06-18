@@ -17,20 +17,26 @@ zuul:
   orders:
    path: /orders/**
    serviceId: order
+   url: http://localhost:9098/orders
    stripPrefix: false
   accounts:
    path: /accounts/**
    serviceId: account
+   url: http://localhost:9095/accounts
    stripPrefix: false
   inventories:
    path: /inventories/**
    serviceId: inventory
+   url: http://localhost:9096/inventories
    stripPrefix: false
   recommendations:
    path: /recommendations/**
    serviceId: recommendation
+   url: http://localhost:9099/recommendations
    stripPrefix: false
   shipping:
    path: /shipments/**
    serviceId: shipping
+   url: http://localhost:9097/shipments
    stripPrefix: false      
+
