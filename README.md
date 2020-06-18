@@ -124,7 +124,7 @@ Continuous Integrations é uma metodologia moderna de desenvolvimento, em que os
 </p>  
 
 <p align="justify">  
-3 - De cada uma das contas criadas, extraimos a API KEY e criamos 2 segredos no repositório da aplicação para que a pipeline criada conseguisse se comunicar com as contas no Heroku. (OBS: A aba 'Settings' do repositório da aplicação só está disponível para o criador do mesmo, então o criado deste repositório criou os segredos necessários para este exemplo).  
+3 - De cada uma das contas criadas, extraimos a API KEY e criamos 2 segredos no repositório da aplicação para que a pipeline criada conseguisse se comunicar com as contas no Heroku. (OBS: A aba 'Settings' do repositório da aplicação só está disponível para o criador do mesmo, então o criador deste repositório criou os segredos necessários para este exemplo).  
 </p>  
 
 <p align="center">  
