@@ -1,0 +1,99 @@
+# This is a basic workflow to help you get started with Actions
+
+name: HEROKU DEPLOYMENT
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the master branch
+on:
+  push:
+    branches: [master]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set up JDK 11
+        uses: actions/setup-java@v1
+        with:
+          java-version: 11
+      - name: Cache Maven packages
+        uses: actions/cache@v1
+        with:
+          path: ~/.m2
+          key: ${{ runner.os }}-m2-${{ hashFiles('**/pom.xml') }}
+          restore-keys: ${{ runner.os }}-m2
+      - name: Criando build do Config Server (Cloud Config)
+        run: mvn -B package --file config-server/pom.xml -DskipTests && mkdir builds && cp config-server/target/*.jar builds
+      - name: Criando build do Eureka Server (Service Discovery)
+        run: mvn -B package --file eureka-server/pom.xml -DskipTests && cp eureka-server/target/*.jar builds
+      - name: Criando build do Zuul (API Gateway)
+        run: mvn -B package --file zuul/pom.xml -DskipTests && cp zuul/target/*.jar builds
+      - name: Criando build do Account Service
+        run: mvn -B package --file account/pom.xml -DskipTests && cp account/target/*.jar builds
+      - name: Criando build do Inventory Service
+        run: mvn -B package --file inventory/pom.xml -DskipTests && cp inventory/target/*.jar builds
+      - name: Criando build do Order Service
+        run: mvn -B package --file order/pom.xml -DskipTests && cp order/target/*.jar builds
+      - name: Criando build do Recommendation Service
+        run: mvn -B package --file recommendation/pom.xml -DskipTests && cp recommendation/target/*.jar builds
+      - name: Criando build do Shipping Service
+        run: mvn -B package --file shipping/pom.xml -DskipTests && cp shipping/target/*.jar builds
+      - name: Upload math result for job
+        uses: actions/upload-artifact@v1
+        with:
+          name: Fazendo upload dos arquivos de build
+          path: builds
+      - name: Login to Heroku Container registry
+        env:
+          HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+        run: heroku container:login
+      - name: Deploy do Config Server (Cloud Config)
+        env:
+          HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+          HEROKU_APP_NAME: e-commerce-microservices-config-server
+        run: heroku plugins:install java && heroku deploy:jar builds/config-server-0.0.1-SNAPSHOT.jar --app e-commerce-microservices-config-server
+      - name: Deploy do Eureka Server (Service Discovery)
+        env:
+          HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+          HEROKU_APP_NAME: e-commerce-microservices-eureka-server
+        run: heroku deploy:jar builds/eureka-server-0.0.1-SNAPSHOT.jar --app e-commerce-microservices-eureka-server
+      - name: Deploy do Zuul (API Gateway)
+        env:
+          HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+          HEROKU_APP_NAME: e-commerce-microservices-zuul
+        run: heroku deploy:jar builds/zuul-0.0.1-SNAPSHOT.jar --app e-commerce-microservices-zuul
+      - name: Deploy do Account Service
+        env:
+          HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
+          HEROKU_APP_NAME: e-commerce-microservices-account
+        run: heroku deploy:jar builds/account-0.0.1-SNAPSHOT.jar --app e-commerce-microservices-account
+      - name: Login to Heroku Container registry 2
+        env:
+          HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY_2 }}
+        run: heroku container:login
+      - name: Deploy do Recommendation Service
+        env:
+          HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY_2 }}
+          HEROKU_APP_NAME: e-commerce-microservices-recommendation
+        run: heroku deploy:jar builds/recommendation-0.0.1-SNAPSHOT.jar --app e-commerce-microservices-recommendation
+      - name: Deploy do Order Service
+        env:
+          HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY_2 }}
+          HEROKU_APP_NAME: e-commerce-microservices-order
+        run: heroku deploy:jar builds/order-0.0.1-SNAPSHOT.jar --app e-commerce-microservices-order
+      - name: Deploy do Inventory Service
+        env:
+          HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY_2 }}
+          HEROKU_APP_NAME: e-commerce-microservices-inventory
+        run: heroku deploy:jar builds/inventory-0.0.1-SNAPSHOT.jar --app e-commerce-microservices-inventory
+      - name: Deploy do Shipping Service
+        env:
+          HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY_2 }}
+          HEROKU_APP_NAME: e-commerce-microservices-shipping
+        run: heroku deploy:jar builds/shipping-0.0.1-SNAPSHOT.jar --app e-commerce-microservices-shipping
