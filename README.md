@@ -90,7 +90,7 @@ Desenvolver aplicações de software em um conjuntos de serviços: Independente,
  - http://localhost:8000/recommendations/  
  - http://localhost:8000/shipments/  
 
-## Continuous Integration ![Java CI with Maven](https://github.com/mateus-lourenco/e-commerce-microservices/workflows/Java%20CI%20with%20Maven/badge.svg)  
+## Continuous Integration ![HEROKU DEPLOYMENT](https://github.com/mateus-lourenco/e-commerce-microservices/workflows/HEROKU%20DEPLOYMENT/badge.svg)  
 
 <p align=”justify”>
 Continuous Integrations é uma metodologia moderna de desenvolvimento, em que os desenvolvedores envolvidos em um projeto integram seus trabalhos continuamente. Cada integração é consolidada por uma ferramenta chamada de automatização de tarefas, que inclusive pode executar diversos testes para identificar erros de digitação de códigos, incompatibilidades entre comandos dados por desenvolvedores diferentes etc.
@@ -99,7 +99,7 @@ Continuous Integrations é uma metodologia moderna de desenvolvimento, em que os
 <img src="https://github.com/mateus-lourenco/e-commerce-microservices/blob/developer/images/Integration.png">
 </p>
 
-## Continuous Delivery
+## Continuous Delivery ![HEROKU DEPLOYMENT](https://github.com/mateus-lourenco/e-commerce-microservices/workflows/HEROKU%20DEPLOYMENT/badge.svg)  
 <p align=”justify”>
 É garantir que novas modificações estejam disponíveis – validação em ambiente de Homologação ou QA – para serem implementadas no ambiente de produção. O deploy para produção não é automático, porém pode ser realizado a qualquer momento, dependendo do aceite da alteração.
 </p>
