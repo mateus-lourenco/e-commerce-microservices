@@ -90,7 +90,7 @@ Desenvolver aplicações de software em um conjuntos de serviços: Independente,
  - http://localhost:8000/recommendations/  
  - http://localhost:8000/shipments/  
 
-## Continuous Integration
+## Continuous Integration ![Java CI with Maven](https://github.com/mateus-lourenco/e-commerce-microservices/workflows/Java%20CI%20with%20Maven/badge.svg)  
 
 <p align=”justify”>
 Continuous Integrations é uma metodologia moderna de desenvolvimento, em que os desenvolvedores envolvidos em um projeto integram seus trabalhos continuamente. Cada integração é consolidada por uma ferramenta chamada de automatização de tarefas, que inclusive pode executar diversos testes para identificar erros de digitação de códigos, incompatibilidades entre comandos dados por desenvolvedores diferentes etc.
