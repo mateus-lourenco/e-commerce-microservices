@@ -90,7 +90,7 @@ Desenvolver aplicações de software em um conjuntos de serviços: Independente,
  - http://localhost:9070/recommendations/  
  - http://localhost:9070/shipments/  
 
-#### Exemplo de todos os serviços no Eureka Server:
+#### Exemplo de todos os serviços registrados Eureka Server:
 
 <p align="center">
 <img src="">
@@ -116,32 +116,36 @@ Continuous Integrations é uma metodologia moderna de desenvolvimento, em que os
 ## Como foi feito o Pipeline CI / CD:
 
 <p align="center">
-1 - Utilizamos o [GitHub Actions](https://github.com/mateus-lourenco/e-commerce-microservices/actions) para implementar um pipeline de Integração Contínua e Entrega Contínua.
+1 - Utilizamos o [GitHub Actions](https://help.github.com/pt/actions) para implementar um pipeline de Integração Contínua e Entrega Contínua.
 
 2 - Utilizamos o [Heroku](https://www.heroku.com/) para fazer o deploy de todos os serviços da aplicação. (OBS: Neste exemplo, utilizamos 2 contas do Heroku para separar os serviços da aplicação).
 
-3 - De cada uma das contas criadas, extraimos a API KEY e criamos 2 segredos no repositório da aplicação para que a pipeline criada conseguisse se comunicar com as contas no Heroku. (OBS: Talvez a aba 'Settings' do repositório da aplicação só esteja disponível para o seu criador, então caso não seja você, peça para o mesmo criar esses segredos).
+3 - De cada uma das contas criadas, extraimos a API KEY e criamos 2 segredos no repositório da aplicação para que a pipeline criada conseguisse se comunicar com as contas no Heroku. (OBS: A aba 'Settings' do repositório da aplicação só está disponível para o criador do mesmo, então o criado deste repositório criou os segredos necessários para este exemplo).
 </p>
 
 <p align="center">
 <img src="https://github.com/mateus-lourenco/e-commerce-microservices/blob/master/images/HEROKU%20API%20KEY.png">
-</p>
+</p>  
 
 <p align="center">
-4 - Em cada conta, você terá que criar os serviços da aplicação de acordo com os exemplos abaixo:
-</p>
+4 - Em cada conta do Heroku, foi criado os serviços da aplicação de acordo com os exemplos abaixo:
+</p>  
 
 <p align="center">
 <img src="https://github.com/mateus-lourenco/e-commerce-microservices/blob/master/images/Apps_Contas.jpg">
-</p>
+</p>  
 
 <p align="center">
-5 - E com essas informações, poderá configurar o arquivo de [Workflow](https://github.com/mateus-lourenco/e-commerce-microservices/blob/master/.github/workflows/CI-CD-Heroku.yml), para depois executar o pipeline.
-</p>
+5 - E com essas informações, conseguimos configurar o arquivo de [Workflow](https://github.com/mateus-lourenco/e-commerce-microservices/blob/master/.github/workflows/CI-CD-Heroku.yml) , para depois executar o pipeline.
+</p>  
 
 <p align="center">
 <img src="https://github.com/mateus-lourenco/e-commerce-microservices/blob/master/images/Build%20App.png">
-</p>
+</p>  
+
+<p align="center">
+Os logs do deploy da aplicação se encontram na pasta [logs-deploy-app]()  
+</p> 
 
 ## Referências
 

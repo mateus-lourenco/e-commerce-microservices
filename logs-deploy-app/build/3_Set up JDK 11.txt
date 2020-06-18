@@ -1,0 +1,9 @@
+2020-06-18T21:42:07.6305610Z ##[group]Run actions/setup-java@v1
+2020-06-18T21:42:07.6305787Z with:
+2020-06-18T21:42:07.6305923Z   java-version: 11
+2020-06-18T21:42:07.6306061Z   java-package: jdk
+2020-06-18T21:42:07.6306196Z   architecture: x64
+2020-06-18T21:42:07.6306347Z ##[endgroup]
+2020-06-18T21:42:09.6907170Z [command]/bin/tar xzC /home/runner/work/_temp/temp_898669738 -f /home/runner/work/_temp/70b1042e-d65e-48fb-997b-66f08db48be8
+2020-06-18T21:42:13.3679448Z creating settings.xml with server-id: github; environment variables: username=$GITHUB_ACTOR and password=$GITHUB_TOKEN
+2020-06-18T21:42:13.3683726Z writing /home/runner/.m2/settings.xml

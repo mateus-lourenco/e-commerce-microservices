@@ -1,0 +1,17 @@
+2020-06-18T21:42:00.1251121Z Current runner version: '2.169.1'
+2020-06-18T21:42:00.1277320Z ##[group]Operating System
+2020-06-18T21:42:00.1277963Z Ubuntu
+2020-06-18T21:42:00.1278200Z 18.04.4
+2020-06-18T21:42:00.1278427Z LTS
+2020-06-18T21:42:00.1278695Z ##[endgroup]
+2020-06-18T21:42:00.1278955Z ##[group]Virtual Environment
+2020-06-18T21:42:00.1279213Z Environment: ubuntu-18.04
+2020-06-18T21:42:00.1279449Z Version: 20200525.2
+2020-06-18T21:42:00.1279764Z Included Software: https://github.com/actions/virtual-environments/blob/ubuntu18/20200525.2/images/linux/Ubuntu1804-README.md
+2020-06-18T21:42:00.1280051Z ##[endgroup]
+2020-06-18T21:42:00.1281031Z Prepare workflow directory
+2020-06-18T21:42:00.1472692Z Prepare all required actions
+2020-06-18T21:42:00.1482599Z Download action repository 'actions/checkout@v2'
+2020-06-18T21:42:01.3108385Z Download action repository 'actions/setup-java@v1'
+2020-06-18T21:42:01.7426647Z Download action repository 'actions/cache@v1'
+2020-06-18T21:42:03.1100398Z Download action repository 'actions/upload-artifact@v1'

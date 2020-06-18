@@ -1,0 +1,33 @@
+2020-06-18T21:45:47.2696755Z ##[group]Run heroku deploy:jar builds/eureka-server-0.0.1-SNAPSHOT.jar --app e-commerce-eureka-server
+2020-06-18T21:45:47.2697271Z [36;1mheroku deploy:jar builds/eureka-server-0.0.1-SNAPSHOT.jar --app e-commerce-eureka-server[0m
+2020-06-18T21:45:47.2729939Z shell: /bin/bash -e {0}
+2020-06-18T21:45:47.2730087Z env:
+2020-06-18T21:45:47.2730228Z   JAVA_HOME: /opt/hostedtoolcache/jdk/11.0.7/x64
+2020-06-18T21:45:47.2730385Z   JAVA_HOME_11.0.7_x64: /opt/hostedtoolcache/jdk/11.0.7/x64
+2020-06-18T21:45:47.2730825Z   HEROKU_API_KEY: ***
+2020-06-18T21:45:47.2730950Z   HEROKU_APP_NAME: e-commerce-eureka-server
+2020-06-18T21:45:47.2731083Z ##[endgroup]
+2020-06-18T21:45:47.4451708Z  ›   Warning: heroku update available from 7.41.1 to 7.42.1.
+2020-06-18T21:45:47.9533791Z Uploading eureka-server-0.0.1-SNAPSHOT.jar
+2020-06-18T21:45:48.0796806Z -----> Packaging application...
+2020-06-18T21:45:48.0797641Z        - app: e-commerce-eureka-server
+2020-06-18T21:45:48.0798715Z        - including: builds/eureka-server-0.0.1-SNAPSHOT.jar
+2020-06-18T21:45:49.1646653Z -----> Creating build...
+2020-06-18T21:45:51.5774583Z        - file: slug.tgz
+2020-06-18T21:45:51.5776109Z        - size: 40MB
+2020-06-18T21:45:52.0643122Z -----> Uploading build...
+2020-06-18T21:45:53.1884559Z        - success
+2020-06-18T21:45:53.1886061Z -----> Deploying...
+2020-06-18T21:45:55.5601709Z remote: 
+2020-06-18T21:45:56.1394410Z remote: -----> heroku-deploy app detected
+2020-06-18T21:45:58.2792798Z remote: -----> Installing JDK 1.8... done
+2020-06-18T21:45:58.2987444Z remote: -----> Discovering process types
+2020-06-18T21:45:58.2988262Z remote:        Procfile declares types -> web
+2020-06-18T21:45:58.2988645Z remote: 
+2020-06-18T21:45:58.3187058Z remote: -----> Compressing...
+2020-06-18T21:46:04.2584776Z remote:        Done: 91.8M
+2020-06-18T21:46:06.6789138Z remote: -----> Launching...
+2020-06-18T21:46:08.1941705Z remote:        Released v3
+2020-06-18T21:46:08.1943554Z remote:        https://e-commerce-eureka-server.herokuapp.com/ deployed to Heroku
+2020-06-18T21:46:08.1943974Z remote: 
+2020-06-18T21:46:09.9579383Z -----> Done

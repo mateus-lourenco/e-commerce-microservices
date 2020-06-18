@@ -1,0 +1,314 @@
+2020-06-18T21:43:48.9274558Z ##[group]Run mvn -B package --file order/pom.xml -DskipTests && cp order/target/*.jar builds
+2020-06-18T21:43:48.9275011Z [36;1mmvn -B package --file order/pom.xml -DskipTests && cp order/target/*.jar builds[0m
+2020-06-18T21:43:48.9320740Z shell: /bin/bash -e {0}
+2020-06-18T21:43:48.9320890Z env:
+2020-06-18T21:43:48.9321045Z   JAVA_HOME: /opt/hostedtoolcache/jdk/11.0.7/x64
+2020-06-18T21:43:48.9321212Z   JAVA_HOME_11.0.7_x64: /opt/hostedtoolcache/jdk/11.0.7/x64
+2020-06-18T21:43:48.9321360Z ##[endgroup]
+2020-06-18T21:43:50.2511115Z [INFO] Scanning for projects...
+2020-06-18T21:43:50.5368019Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-parent/2.3.1.RELEASE/spring-boot-starter-parent-2.3.1.RELEASE.pom
+2020-06-18T21:43:50.8266644Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-parent/2.3.1.RELEASE/spring-boot-starter-parent-2.3.1.RELEASE.pom (0 B at 0 B/s)
+2020-06-18T21:43:50.9231911Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-dependencies/Hoxton.SR5/spring-cloud-dependencies-Hoxton.SR5.pom
+2020-06-18T21:43:50.9627718Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-dependencies/Hoxton.SR5/spring-cloud-dependencies-Hoxton.SR5.pom (12 kB at 294 kB/s)
+2020-06-18T21:43:50.9706288Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-dependencies-parent/2.3.0.RELEASE/spring-cloud-dependencies-parent-2.3.0.RELEASE.pom
+2020-06-18T21:43:50.9826588Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-dependencies-parent/2.3.0.RELEASE/spring-cloud-dependencies-parent-2.3.0.RELEASE.pom (0 B at 0 B/s)
+2020-06-18T21:43:50.9902045Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-commons-dependencies/2.2.3.RELEASE/spring-cloud-commons-dependencies-2.2.3.RELEASE.pom
+2020-06-18T21:43:51.0173229Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-commons-dependencies/2.2.3.RELEASE/spring-cloud-commons-dependencies-2.2.3.RELEASE.pom (7.0 kB at 225 kB/s)
+2020-06-18T21:43:51.0214369Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-netflix-dependencies/2.2.3.RELEASE/spring-cloud-netflix-dependencies-2.2.3.RELEASE.pom
+2020-06-18T21:43:51.0577432Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-netflix-dependencies/2.2.3.RELEASE/spring-cloud-netflix-dependencies-2.2.3.RELEASE.pom (18 kB at 680 kB/s)
+2020-06-18T21:43:51.0649567Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-stream-dependencies/Horsham.SR5/spring-cloud-stream-dependencies-Horsham.SR5.pom
+2020-06-18T21:43:51.0756979Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-stream-dependencies/Horsham.SR5/spring-cloud-stream-dependencies-Horsham.SR5.pom (0 B at 0 B/s)
+2020-06-18T21:43:51.0930784Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-circuitbreaker-dependencies/1.0.3.RELEASE/spring-cloud-circuitbreaker-dependencies-1.0.3.RELEASE.pom
+2020-06-18T21:43:51.1163561Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-circuitbreaker-dependencies/1.0.3.RELEASE/spring-cloud-circuitbreaker-dependencies-1.0.3.RELEASE.pom (7.1 kB at 310 kB/s)
+2020-06-18T21:43:51.1197069Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-config-dependencies/2.2.3.RELEASE/spring-cloud-config-dependencies-2.2.3.RELEASE.pom
+2020-06-18T21:43:51.1427878Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-config-dependencies/2.2.3.RELEASE/spring-cloud-config-dependencies-2.2.3.RELEASE.pom (7.6 kB at 329 kB/s)
+2020-06-18T21:43:51.1479202Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-function-dependencies/3.0.7.RELEASE/spring-cloud-function-dependencies-3.0.7.RELEASE.pom
+2020-06-18T21:43:51.1608334Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-function-dependencies/3.0.7.RELEASE/spring-cloud-function-dependencies-3.0.7.RELEASE.pom (0 B at 0 B/s)
+2020-06-18T21:43:51.1637723Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-gateway-dependencies/2.2.3.RELEASE/spring-cloud-gateway-dependencies-2.2.3.RELEASE.pom
+2020-06-18T21:43:51.1869867Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-gateway-dependencies/2.2.3.RELEASE/spring-cloud-gateway-dependencies-2.2.3.RELEASE.pom (6.1 kB at 266 kB/s)
+2020-06-18T21:43:51.1904327Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-consul-dependencies/2.2.3.RELEASE/spring-cloud-consul-dependencies-2.2.3.RELEASE.pom
+2020-06-18T21:43:51.2137432Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-consul-dependencies/2.2.3.RELEASE/spring-cloud-consul-dependencies-2.2.3.RELEASE.pom (7.6 kB at 315 kB/s)
+2020-06-18T21:43:51.2170457Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-sleuth-dependencies/2.2.3.RELEASE/spring-cloud-sleuth-dependencies-2.2.3.RELEASE.pom
+2020-06-18T21:43:51.2393561Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-sleuth-dependencies/2.2.3.RELEASE/spring-cloud-sleuth-dependencies-2.2.3.RELEASE.pom (7.7 kB at 351 kB/s)
+2020-06-18T21:43:51.2454179Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-vault-dependencies/2.2.3.RELEASE/spring-cloud-vault-dependencies-2.2.3.RELEASE.pom
+2020-06-18T21:43:51.2712545Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-vault-dependencies/2.2.3.RELEASE/spring-cloud-vault-dependencies-2.2.3.RELEASE.pom (6.3 kB at 244 kB/s)
+2020-06-18T21:43:51.2759462Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-zookeeper-dependencies/2.2.2.RELEASE/spring-cloud-zookeeper-dependencies-2.2.2.RELEASE.pom
+2020-06-18T21:43:51.2984359Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-zookeeper-dependencies/2.2.2.RELEASE/spring-cloud-zookeeper-dependencies-2.2.2.RELEASE.pom (9.1 kB at 412 kB/s)
+2020-06-18T21:43:51.3019327Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-security-dependencies/2.2.2.RELEASE/spring-cloud-security-dependencies-2.2.2.RELEASE.pom
+2020-06-18T21:43:51.3270465Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-security-dependencies/2.2.2.RELEASE/spring-cloud-security-dependencies-2.2.2.RELEASE.pom (6.3 kB at 252 kB/s)
+2020-06-18T21:43:51.3384919Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-cloudfoundry-dependencies/2.2.2.RELEASE/spring-cloud-cloudfoundry-dependencies-2.2.2.RELEASE.pom
+2020-06-18T21:43:51.3619576Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-cloudfoundry-dependencies/2.2.2.RELEASE/spring-cloud-cloudfoundry-dependencies-2.2.2.RELEASE.pom (6.4 kB at 266 kB/s)
+2020-06-18T21:43:51.3657260Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-bus-dependencies/2.2.2.RELEASE/spring-cloud-bus-dependencies-2.2.2.RELEASE.pom
+2020-06-18T21:43:51.3887569Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-bus-dependencies/2.2.2.RELEASE/spring-cloud-bus-dependencies-2.2.2.RELEASE.pom (5.9 kB at 255 kB/s)
+2020-06-18T21:43:51.3920571Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-contract-dependencies/2.2.3.RELEASE/spring-cloud-contract-dependencies-2.2.3.RELEASE.pom
+2020-06-18T21:43:51.4148573Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-contract-dependencies/2.2.3.RELEASE/spring-cloud-contract-dependencies-2.2.3.RELEASE.pom (9.1 kB at 396 kB/s)
+2020-06-18T21:43:51.4178670Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-aws-dependencies/2.2.2.RELEASE/spring-cloud-aws-dependencies-2.2.2.RELEASE.pom
+2020-06-18T21:43:51.4403845Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-aws-dependencies/2.2.2.RELEASE/spring-cloud-aws-dependencies-2.2.2.RELEASE.pom (10 kB at 464 kB/s)
+2020-06-18T21:43:51.4583917Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-openfeign-dependencies/2.2.3.RELEASE/spring-cloud-openfeign-dependencies-2.2.3.RELEASE.pom
+2020-06-18T21:43:51.4817558Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-openfeign-dependencies/2.2.3.RELEASE/spring-cloud-openfeign-dependencies-2.2.3.RELEASE.pom (8.3 kB at 287 kB/s)
+2020-06-18T21:43:51.4941669Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-kubernetes-dependencies/1.1.3.RELEASE/spring-cloud-kubernetes-dependencies-1.1.3.RELEASE.pom
+2020-06-18T21:43:51.5186820Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-kubernetes-dependencies/1.1.3.RELEASE/spring-cloud-kubernetes-dependencies-1.1.3.RELEASE.pom (11 kB at 332 kB/s)
+2020-06-18T21:43:51.5308163Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-gcp-dependencies/1.2.3.RELEASE/spring-cloud-gcp-dependencies-1.2.3.RELEASE.pom
+2020-06-18T21:43:51.5548543Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-gcp-dependencies/1.2.3.RELEASE/spring-cloud-gcp-dependencies-1.2.3.RELEASE.pom (13 kB at 433 kB/s)
+2020-06-18T21:43:51.8314249Z [INFO] 
+2020-06-18T21:43:51.8315632Z [INFO] -------------------------< com.example:order >--------------------------
+2020-06-18T21:43:51.8316199Z [INFO] Building order 0.0.1-SNAPSHOT
+2020-06-18T21:43:51.8316750Z [INFO] --------------------------------[ jar ]---------------------------------
+2020-06-18T21:43:51.9687559Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-rest-core/3.3.1.RELEASE/spring-data-rest-core-3.3.1.RELEASE.pom
+2020-06-18T21:43:51.9955628Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-rest-core/3.3.1.RELEASE/spring-data-rest-core-3.3.1.RELEASE.pom (2.7 kB at 94 kB/s)
+2020-06-18T21:43:52.0006718Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-rest-parent/3.3.1.RELEASE/spring-data-rest-parent-3.3.1.RELEASE.pom
+2020-06-18T21:43:52.0295313Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-rest-parent/3.3.1.RELEASE/spring-data-rest-parent-3.3.1.RELEASE.pom (4.4 kB at 153 kB/s)
+2020-06-18T21:43:52.0342804Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/data/build/spring-data-parent/2.3.1.RELEASE/spring-data-parent-2.3.1.RELEASE.pom
+2020-06-18T21:43:52.0687222Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/data/build/spring-data-parent/2.3.1.RELEASE/spring-data-parent-2.3.1.RELEASE.pom (39 kB at 1.1 MB/s)
+2020-06-18T21:43:52.0931108Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-tx/5.2.7.RELEASE/spring-tx-5.2.7.RELEASE.pom
+2020-06-18T21:43:52.1160587Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-tx/5.2.7.RELEASE/spring-tx-5.2.7.RELEASE.pom (1.9 kB at 82 kB/s)
+2020-06-18T21:43:52.1256118Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-beans/5.2.7.RELEASE/spring-beans-5.2.7.RELEASE.pom
+2020-06-18T21:43:52.1361858Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-beans/5.2.7.RELEASE/spring-beans-5.2.7.RELEASE.pom (0 B at 0 B/s)
+2020-06-18T21:43:52.1427054Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-core/5.2.7.RELEASE/spring-core-5.2.7.RELEASE.pom
+2020-06-18T21:43:52.1550264Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-core/5.2.7.RELEASE/spring-core-5.2.7.RELEASE.pom (0 B at 0 B/s)
+2020-06-18T21:43:52.1599574Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-jcl/5.2.7.RELEASE/spring-jcl-5.2.7.RELEASE.pom
+2020-06-18T21:43:52.1720057Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-jcl/5.2.7.RELEASE/spring-jcl-5.2.7.RELEASE.pom (0 B at 0 B/s)
+2020-06-18T21:43:52.1764671Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/hateoas/spring-hateoas/1.1.0.RELEASE/spring-hateoas-1.1.0.RELEASE.pom
+2020-06-18T21:43:52.2054076Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/hateoas/spring-hateoas/1.1.0.RELEASE/spring-hateoas-1.1.0.RELEASE.pom (33 kB at 1.1 MB/s)
+2020-06-18T21:43:52.2124065Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-bom/1.3.71/kotlin-bom-1.3.71.pom
+2020-06-18T21:43:52.2386050Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-bom/1.3.71/kotlin-bom-1.3.71.pom (8.8 kB at 338 kB/s)
+2020-06-18T21:43:52.2474531Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-aop/5.2.7.RELEASE/spring-aop-5.2.7.RELEASE.pom
+2020-06-18T21:43:52.2603664Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-aop/5.2.7.RELEASE/spring-aop-5.2.7.RELEASE.pom (0 B at 0 B/s)
+2020-06-18T21:43:52.2665544Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-context/5.2.7.RELEASE/spring-context-5.2.7.RELEASE.pom
+2020-06-18T21:43:52.2780190Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-context/5.2.7.RELEASE/spring-context-5.2.7.RELEASE.pom (0 B at 0 B/s)
+2020-06-18T21:43:52.2837523Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-expression/5.2.7.RELEASE/spring-expression-5.2.7.RELEASE.pom
+2020-06-18T21:43:52.2946162Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-expression/5.2.7.RELEASE/spring-expression-5.2.7.RELEASE.pom (0 B at 0 B/s)
+2020-06-18T21:43:52.2972745Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-web/5.2.7.RELEASE/spring-web-5.2.7.RELEASE.pom
+2020-06-18T21:43:52.3082274Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-web/5.2.7.RELEASE/spring-web-5.2.7.RELEASE.pom (0 B at 0 B/s)
+2020-06-18T21:43:52.3225811Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-webmvc/5.2.7.RELEASE/spring-webmvc-5.2.7.RELEASE.pom
+2020-06-18T21:43:52.3332113Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-webmvc/5.2.7.RELEASE/spring-webmvc-5.2.7.RELEASE.pom (0 B at 0 B/s)
+2020-06-18T21:43:52.3380951Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-commons/2.3.1.RELEASE/spring-data-commons-2.3.1.RELEASE.pom
+2020-06-18T21:43:52.3634383Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-commons/2.3.1.RELEASE/spring-data-commons-2.3.1.RELEASE.pom (9.7 kB at 359 kB/s)
+2020-06-18T21:43:52.3963484Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-actuator/2.3.1.RELEASE/spring-boot-starter-actuator-2.3.1.RELEASE.pom
+2020-06-18T21:43:52.4093091Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-actuator/2.3.1.RELEASE/spring-boot-starter-actuator-2.3.1.RELEASE.pom (0 B at 0 B/s)
+2020-06-18T21:43:52.4224453Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter/2.3.1.RELEASE/spring-boot-starter-2.3.1.RELEASE.pom
+2020-06-18T21:43:52.4371032Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter/2.3.1.RELEASE/spring-boot-starter-2.3.1.RELEASE.pom (0 B at 0 B/s)
+2020-06-18T21:43:52.4446389Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot/2.3.1.RELEASE/spring-boot-2.3.1.RELEASE.pom
+2020-06-18T21:43:52.4557787Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot/2.3.1.RELEASE/spring-boot-2.3.1.RELEASE.pom (0 B at 0 B/s)
+2020-06-18T21:43:52.4619560Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-autoconfigure/2.3.1.RELEASE/spring-boot-autoconfigure-2.3.1.RELEASE.pom
+2020-06-18T21:43:52.4731987Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-autoconfigure/2.3.1.RELEASE/spring-boot-autoconfigure-2.3.1.RELEASE.pom (0 B at 0 B/s)
+2020-06-18T21:43:52.4794239Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-logging/2.3.1.RELEASE/spring-boot-starter-logging-2.3.1.RELEASE.pom
+2020-06-18T21:43:52.4901751Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-logging/2.3.1.RELEASE/spring-boot-starter-logging-2.3.1.RELEASE.pom (0 B at 0 B/s)
+2020-06-18T21:43:52.5322639Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-actuator-autoconfigure/2.3.1.RELEASE/spring-boot-actuator-autoconfigure-2.3.1.RELEASE.pom
+2020-06-18T21:43:52.5430796Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-actuator-autoconfigure/2.3.1.RELEASE/spring-boot-actuator-autoconfigure-2.3.1.RELEASE.pom (0 B at 0 B/s)
+2020-06-18T21:43:52.5496056Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-actuator/2.3.1.RELEASE/spring-boot-actuator-2.3.1.RELEASE.pom
+2020-06-18T21:43:52.5621040Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-actuator/2.3.1.RELEASE/spring-boot-actuator-2.3.1.RELEASE.pom (0 B at 0 B/s)
+2020-06-18T21:43:52.5835480Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-data-jpa/2.3.1.RELEASE/spring-boot-starter-data-jpa-2.3.1.RELEASE.pom
+2020-06-18T21:43:52.6166602Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-data-jpa/2.3.1.RELEASE/spring-boot-starter-data-jpa-2.3.1.RELEASE.pom (4.3 kB at 186 kB/s)
+2020-06-18T21:43:52.6208519Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-aop/2.3.1.RELEASE/spring-boot-starter-aop-2.3.1.RELEASE.pom
+2020-06-18T21:43:52.6318515Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-aop/2.3.1.RELEASE/spring-boot-starter-aop-2.3.1.RELEASE.pom (0 B at 0 B/s)
+2020-06-18T21:43:52.6381100Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-jdbc/2.3.1.RELEASE/spring-boot-starter-jdbc-2.3.1.RELEASE.pom
+2020-06-18T21:43:52.6607678Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-jdbc/2.3.1.RELEASE/spring-boot-starter-jdbc-2.3.1.RELEASE.pom (2.8 kB at 120 kB/s)
+2020-06-18T21:43:52.6645587Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/zaxxer/HikariCP/3.4.5/HikariCP-3.4.5.pom
+2020-06-18T21:43:52.6864859Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/zaxxer/HikariCP/3.4.5/HikariCP-3.4.5.pom (27 kB at 1.3 MB/s)
+2020-06-18T21:43:52.6908350Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-jdbc/5.2.7.RELEASE/spring-jdbc-5.2.7.RELEASE.pom
+2020-06-18T21:43:52.7132700Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-jdbc/5.2.7.RELEASE/spring-jdbc-5.2.7.RELEASE.pom (2.1 kB at 93 kB/s)
+2020-06-18T21:43:52.7189395Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/hibernate/hibernate-core/5.4.17.Final/hibernate-core-5.4.17.Final.pom
+2020-06-18T21:43:52.7419072Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/hibernate/hibernate-core/5.4.17.Final/hibernate-core-5.4.17.Final.pom (6.1 kB at 292 kB/s)
+2020-06-18T21:43:52.8002076Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-jpa/2.3.1.RELEASE/spring-data-jpa-2.3.1.RELEASE.pom
+2020-06-18T21:43:52.8242236Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-jpa/2.3.1.RELEASE/spring-data-jpa-2.3.1.RELEASE.pom (12 kB at 458 kB/s)
+2020-06-18T21:43:52.8281618Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-orm/5.2.7.RELEASE/spring-orm-5.2.7.RELEASE.pom
+2020-06-18T21:43:52.8527789Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-orm/5.2.7.RELEASE/spring-orm-5.2.7.RELEASE.pom (2.3 kB at 104 kB/s)
+2020-06-18T21:43:52.8575875Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-aspects/5.2.7.RELEASE/spring-aspects-5.2.7.RELEASE.pom
+2020-06-18T21:43:52.8826996Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-aspects/5.2.7.RELEASE/spring-aspects-5.2.7.RELEASE.pom (1.7 kB at 62 kB/s)
+2020-06-18T21:43:52.8880915Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-web/2.3.1.RELEASE/spring-boot-starter-web-2.3.1.RELEASE.pom
+2020-06-18T21:43:52.9031965Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-web/2.3.1.RELEASE/spring-boot-starter-web-2.3.1.RELEASE.pom (0 B at 0 B/s)
+2020-06-18T21:43:52.9112174Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-json/2.3.1.RELEASE/spring-boot-starter-json-2.3.1.RELEASE.pom
+2020-06-18T21:43:52.9230953Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-json/2.3.1.RELEASE/spring-boot-starter-json-2.3.1.RELEASE.pom (0 B at 0 B/s)
+2020-06-18T21:43:52.9334618Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-tomcat/2.3.1.RELEASE/spring-boot-starter-tomcat-2.3.1.RELEASE.pom
+2020-06-18T21:43:52.9439318Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-tomcat/2.3.1.RELEASE/spring-boot-starter-tomcat-2.3.1.RELEASE.pom (0 B at 0 B/s)
+2020-06-18T21:43:52.9578707Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-config/2.2.3.RELEASE/spring-cloud-starter-config-2.2.3.RELEASE.pom
+2020-06-18T21:43:52.9795063Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-config/2.2.3.RELEASE/spring-cloud-starter-config-2.2.3.RELEASE.pom (4.3 kB at 195 kB/s)
+2020-06-18T21:43:52.9864257Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-config/2.2.3.RELEASE/spring-cloud-config-2.2.3.RELEASE.pom
+2020-06-18T21:43:53.0095728Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-config/2.2.3.RELEASE/spring-cloud-config-2.2.3.RELEASE.pom (4.6 kB at 199 kB/s)
+2020-06-18T21:43:53.0122829Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-build/2.3.0.RELEASE/spring-cloud-build-2.3.0.RELEASE.pom
+2020-06-18T21:43:53.0369690Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-build/2.3.0.RELEASE/spring-cloud-build-2.3.0.RELEASE.pom (51 kB at 2.0 MB/s)
+2020-06-18T21:43:53.0418420Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-build-dependencies/2.3.0.RELEASE/spring-cloud-build-dependencies-2.3.0.RELEASE.pom
+2020-06-18T21:43:53.0646718Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-build-dependencies/2.3.0.RELEASE/spring-cloud-build-dependencies-2.3.0.RELEASE.pom (3.8 kB at 188 kB/s)
+2020-06-18T21:43:53.0887040Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter/2.2.3.RELEASE/spring-cloud-starter-2.2.3.RELEASE.pom
+2020-06-18T21:43:53.1203766Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter/2.2.3.RELEASE/spring-cloud-starter-2.2.3.RELEASE.pom (5.0 kB at 173 kB/s)
+2020-06-18T21:43:53.1204779Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-commons-parent/2.2.3.RELEASE/spring-cloud-commons-parent-2.2.3.RELEASE.pom
+2020-06-18T21:43:53.1450975Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-commons-parent/2.2.3.RELEASE/spring-cloud-commons-parent-2.2.3.RELEASE.pom (4.5 kB at 189 kB/s)
+2020-06-18T21:43:53.1510461Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-context/2.2.3.RELEASE/spring-cloud-context-2.2.3.RELEASE.pom
+2020-06-18T21:43:53.1739626Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-context/2.2.3.RELEASE/spring-cloud-context-2.2.3.RELEASE.pom (6.2 kB at 256 kB/s)
+2020-06-18T21:43:53.1808145Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-crypto/5.3.3.RELEASE/spring-security-crypto-5.3.3.RELEASE.pom
+2020-06-18T21:43:53.1942764Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-crypto/5.3.3.RELEASE/spring-security-crypto-5.3.3.RELEASE.pom (0 B at 0 B/s)
+2020-06-18T21:43:53.2000189Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-commons/2.2.3.RELEASE/spring-cloud-commons-2.2.3.RELEASE.pom
+2020-06-18T21:43:53.2233986Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-commons/2.2.3.RELEASE/spring-cloud-commons-2.2.3.RELEASE.pom (7.9 kB at 329 kB/s)
+2020-06-18T21:43:53.2392299Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-config-client/2.2.3.RELEASE/spring-cloud-config-client-2.2.3.RELEASE.pom
+2020-06-18T21:43:53.2611796Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-config-client/2.2.3.RELEASE/spring-cloud-config-client-2.2.3.RELEASE.pom (6.4 kB at 304 kB/s)
+2020-06-18T21:43:53.2692805Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-netflix-eureka-client/2.2.3.RELEASE/spring-cloud-starter-netflix-eureka-client-2.2.3.RELEASE.pom
+2020-06-18T21:43:53.2942883Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-netflix-eureka-client/2.2.3.RELEASE/spring-cloud-starter-netflix-eureka-client-2.2.3.RELEASE.pom (8.1 kB at 323 kB/s)
+2020-06-18T21:43:53.2996352Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-netflix/2.2.3.RELEASE/spring-cloud-starter-netflix-2.2.3.RELEASE.pom
+2020-06-18T21:43:53.3212191Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-netflix/2.2.3.RELEASE/spring-cloud-starter-netflix-2.2.3.RELEASE.pom (3.8 kB at 179 kB/s)
+2020-06-18T21:43:53.3243221Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-netflix/2.2.3.RELEASE/spring-cloud-netflix-2.2.3.RELEASE.pom
+2020-06-18T21:43:53.3496220Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-netflix/2.2.3.RELEASE/spring-cloud-netflix-2.2.3.RELEASE.pom (4.6 kB at 184 kB/s)
+2020-06-18T21:43:53.3599286Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-netflix-hystrix/2.2.3.RELEASE/spring-cloud-netflix-hystrix-2.2.3.RELEASE.pom
+2020-06-18T21:43:53.3822636Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-netflix-hystrix/2.2.3.RELEASE/spring-cloud-netflix-hystrix-2.2.3.RELEASE.pom (11 kB at 500 kB/s)
+2020-06-18T21:43:53.4274115Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-netflix-eureka-client/2.2.3.RELEASE/spring-cloud-netflix-eureka-client-2.2.3.RELEASE.pom
+2020-06-18T21:43:53.4494779Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-netflix-eureka-client/2.2.3.RELEASE/spring-cloud-netflix-eureka-client-2.2.3.RELEASE.pom (12 kB at 437 kB/s)
+2020-06-18T21:43:53.5956155Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-netflix-archaius/2.2.3.RELEASE/spring-cloud-starter-netflix-archaius-2.2.3.RELEASE.pom
+2020-06-18T21:43:53.6218239Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-netflix-archaius/2.2.3.RELEASE/spring-cloud-starter-netflix-archaius-2.2.3.RELEASE.pom (5.3 kB at 191 kB/s)
+2020-06-18T21:43:53.6322700Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-netflix-ribbon/2.2.3.RELEASE/spring-cloud-netflix-ribbon-2.2.3.RELEASE.pom
+2020-06-18T21:43:53.6580073Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-netflix-ribbon/2.2.3.RELEASE/spring-cloud-netflix-ribbon-2.2.3.RELEASE.pom (9.3 kB at 345 kB/s)
+2020-06-18T21:43:53.6650464Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-netflix-archaius/2.2.3.RELEASE/spring-cloud-netflix-archaius-2.2.3.RELEASE.pom
+2020-06-18T21:43:53.6870396Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-netflix-archaius/2.2.3.RELEASE/spring-cloud-netflix-archaius-2.2.3.RELEASE.pom (5.2 kB at 226 kB/s)
+2020-06-18T21:43:53.7038852Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-netflix-ribbon/2.2.3.RELEASE/spring-cloud-starter-netflix-ribbon-2.2.3.RELEASE.pom
+2020-06-18T21:43:53.7261751Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-netflix-ribbon/2.2.3.RELEASE/spring-cloud-starter-netflix-ribbon-2.2.3.RELEASE.pom (6.2 kB at 271 kB/s)
+2020-06-18T21:43:53.7469561Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-loadbalancer/2.2.3.RELEASE/spring-cloud-starter-loadbalancer-2.2.3.RELEASE.pom
+2020-06-18T21:43:53.7687679Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-loadbalancer/2.2.3.RELEASE/spring-cloud-starter-loadbalancer-2.2.3.RELEASE.pom (4.6 kB at 207 kB/s)
+2020-06-18T21:43:53.7735877Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-loadbalancer/2.2.3.RELEASE/spring-cloud-loadbalancer-2.2.3.RELEASE.pom
+2020-06-18T21:43:53.7970470Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-loadbalancer/2.2.3.RELEASE/spring-cloud-loadbalancer-2.2.3.RELEASE.pom (6.6 kB at 287 kB/s)
+2020-06-18T21:43:53.8048180Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-validation/2.3.1.RELEASE/spring-boot-starter-validation-2.3.1.RELEASE.pom
+2020-06-18T21:43:53.8154249Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-validation/2.3.1.RELEASE/spring-boot-starter-validation-2.3.1.RELEASE.pom (0 B at 0 B/s)
+2020-06-18T21:43:53.8339586Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-cache/2.3.1.RELEASE/spring-boot-starter-cache-2.3.1.RELEASE.pom
+2020-06-18T21:43:53.8512734Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-cache/2.3.1.RELEASE/spring-boot-starter-cache-2.3.1.RELEASE.pom (0 B at 0 B/s)
+2020-06-18T21:43:53.8684567Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-context-support/5.2.7.RELEASE/spring-context-support-5.2.7.RELEASE.pom
+2020-06-18T21:43:53.8795303Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-context-support/5.2.7.RELEASE/spring-context-support-5.2.7.RELEASE.pom (0 B at 0 B/s)
+2020-06-18T21:43:53.8933470Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-test/2.3.1.RELEASE/spring-boot-starter-test-2.3.1.RELEASE.pom
+2020-06-18T21:43:53.9036706Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-test/2.3.1.RELEASE/spring-boot-starter-test-2.3.1.RELEASE.pom (0 B at 0 B/s)
+2020-06-18T21:43:53.9199205Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test/2.3.1.RELEASE/spring-boot-test-2.3.1.RELEASE.pom
+2020-06-18T21:43:53.9304292Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test/2.3.1.RELEASE/spring-boot-test-2.3.1.RELEASE.pom (0 B at 0 B/s)
+2020-06-18T21:43:53.9347496Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test-autoconfigure/2.3.1.RELEASE/spring-boot-test-autoconfigure-2.3.1.RELEASE.pom
+2020-06-18T21:43:53.9480374Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test-autoconfigure/2.3.1.RELEASE/spring-boot-test-autoconfigure-2.3.1.RELEASE.pom (0 B at 0 B/s)
+2020-06-18T21:43:53.9776457Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-test/5.2.7.RELEASE/spring-test-5.2.7.RELEASE.pom
+2020-06-18T21:43:53.9882338Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-test/5.2.7.RELEASE/spring-test-5.2.7.RELEASE.pom (0 B at 0 B/s)
+2020-06-18T21:43:54.0641522Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-rest-core/3.3.1.RELEASE/spring-data-rest-core-3.3.1.RELEASE.jar
+2020-06-18T21:43:54.0655606Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/hateoas/spring-hateoas/1.1.0.RELEASE/spring-hateoas-1.1.0.RELEASE.jar
+2020-06-18T21:43:54.0668898Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-commons/2.3.1.RELEASE/spring-data-commons-2.3.1.RELEASE.jar
+2020-06-18T21:43:54.0689849Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-tx/5.2.7.RELEASE/spring-tx-5.2.7.RELEASE.jar
+2020-06-18T21:43:54.0759758Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-webmvc/5.2.7.RELEASE/spring-webmvc-5.2.7.RELEASE.jar
+2020-06-18T21:43:54.1230512Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-rest-core/3.3.1.RELEASE/spring-data-rest-core-3.3.1.RELEASE.jar (151 kB at 2.5 MB/s)
+2020-06-18T21:43:54.1241092Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-aop/5.2.7.RELEASE/spring-aop-5.2.7.RELEASE.jar
+2020-06-18T21:43:54.1358155Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-aop/5.2.7.RELEASE/spring-aop-5.2.7.RELEASE.jar (0 B at 0 B/s)
+2020-06-18T21:43:54.1368169Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-beans/5.2.7.RELEASE/spring-beans-5.2.7.RELEASE.jar
+2020-06-18T21:43:54.1426399Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-webmvc/5.2.7.RELEASE/spring-webmvc-5.2.7.RELEASE.jar (0 B at 0 B/s)
+2020-06-18T21:43:54.1427298Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-context/5.2.7.RELEASE/spring-context-5.2.7.RELEASE.jar
+2020-06-18T21:43:54.1497722Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-beans/5.2.7.RELEASE/spring-beans-5.2.7.RELEASE.jar (0 B at 0 B/s)
+2020-06-18T21:43:54.1498868Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-expression/5.2.7.RELEASE/spring-expression-5.2.7.RELEASE.jar
+2020-06-18T21:43:54.1561670Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-context/5.2.7.RELEASE/spring-context-5.2.7.RELEASE.jar (0 B at 0 B/s)
+2020-06-18T21:43:54.1562803Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-actuator/2.3.1.RELEASE/spring-boot-starter-actuator-2.3.1.RELEASE.jar
+2020-06-18T21:43:54.1594144Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-expression/5.2.7.RELEASE/spring-expression-5.2.7.RELEASE.jar (0 B at 0 B/s)
+2020-06-18T21:43:54.1595072Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter/2.3.1.RELEASE/spring-boot-starter-2.3.1.RELEASE.jar
+2020-06-18T21:43:54.1667106Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-actuator/2.3.1.RELEASE/spring-boot-starter-actuator-2.3.1.RELEASE.jar (0 B at 0 B/s)
+2020-06-18T21:43:54.1667808Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot/2.3.1.RELEASE/spring-boot-2.3.1.RELEASE.jar
+2020-06-18T21:43:54.1694129Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter/2.3.1.RELEASE/spring-boot-starter-2.3.1.RELEASE.jar (0 B at 0 B/s)
+2020-06-18T21:43:54.1694920Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-autoconfigure/2.3.1.RELEASE/spring-boot-autoconfigure-2.3.1.RELEASE.jar
+2020-06-18T21:43:54.1785763Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-autoconfigure/2.3.1.RELEASE/spring-boot-autoconfigure-2.3.1.RELEASE.jar (0 B at 0 B/s)
+2020-06-18T21:43:54.1786764Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-logging/2.3.1.RELEASE/spring-boot-starter-logging-2.3.1.RELEASE.jar
+2020-06-18T21:43:54.1802338Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot/2.3.1.RELEASE/spring-boot-2.3.1.RELEASE.jar (0 B at 0 B/s)
+2020-06-18T21:43:54.1804170Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-actuator-autoconfigure/2.3.1.RELEASE/spring-boot-actuator-autoconfigure-2.3.1.RELEASE.jar
+2020-06-18T21:43:54.1877913Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-logging/2.3.1.RELEASE/spring-boot-starter-logging-2.3.1.RELEASE.jar (0 B at 0 B/s)
+2020-06-18T21:43:54.1879148Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-actuator/2.3.1.RELEASE/spring-boot-actuator-2.3.1.RELEASE.jar
+2020-06-18T21:43:54.1926200Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-actuator-autoconfigure/2.3.1.RELEASE/spring-boot-actuator-autoconfigure-2.3.1.RELEASE.jar (0 B at 0 B/s)
+2020-06-18T21:43:54.1927192Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-data-jpa/2.3.1.RELEASE/spring-boot-starter-data-jpa-2.3.1.RELEASE.jar
+2020-06-18T21:43:54.1970301Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-actuator/2.3.1.RELEASE/spring-boot-actuator-2.3.1.RELEASE.jar (0 B at 0 B/s)
+2020-06-18T21:43:54.1971380Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-aop/2.3.1.RELEASE/spring-boot-starter-aop-2.3.1.RELEASE.jar
+2020-06-18T21:43:54.2026277Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-tx/5.2.7.RELEASE/spring-tx-5.2.7.RELEASE.jar (315 kB at 2.3 MB/s)
+2020-06-18T21:43:54.2027164Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-jdbc/2.3.1.RELEASE/spring-boot-starter-jdbc-2.3.1.RELEASE.jar
+2020-06-18T21:43:54.2066043Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-aop/2.3.1.RELEASE/spring-boot-starter-aop-2.3.1.RELEASE.jar (0 B at 0 B/s)
+2020-06-18T21:43:54.2067196Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/zaxxer/HikariCP/3.4.5/HikariCP-3.4.5.jar
+2020-06-18T21:43:54.2137567Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-data-jpa/2.3.1.RELEASE/spring-boot-starter-data-jpa-2.3.1.RELEASE.jar (4.8 kB at 33 kB/s)
+2020-06-18T21:43:54.2138688Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-jdbc/5.2.7.RELEASE/spring-jdbc-5.2.7.RELEASE.jar
+2020-06-18T21:43:54.2584804Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-jdbc/2.3.1.RELEASE/spring-boot-starter-jdbc-2.3.1.RELEASE.jar (4.8 kB at 25 kB/s)
+2020-06-18T21:43:54.2585983Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/hibernate/hibernate-core/5.4.17.Final/hibernate-core-5.4.17.Final.jar
+2020-06-18T21:43:54.2859991Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/hateoas/spring-hateoas/1.1.0.RELEASE/spring-hateoas-1.1.0.RELEASE.jar (562 kB at 2.5 MB/s)
+2020-06-18T21:43:54.2869600Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-jpa/2.3.1.RELEASE/spring-data-jpa-2.3.1.RELEASE.jar
+2020-06-18T21:43:54.2886042Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/zaxxer/HikariCP/3.4.5/HikariCP-3.4.5.jar (156 kB at 709 kB/s)
+2020-06-18T21:43:54.2894223Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-orm/5.2.7.RELEASE/spring-orm-5.2.7.RELEASE.jar
+2020-06-18T21:43:54.3159129Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-jdbc/5.2.7.RELEASE/spring-jdbc-5.2.7.RELEASE.jar (407 kB at 1.6 MB/s)
+2020-06-18T21:43:54.3160723Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-aspects/5.2.7.RELEASE/spring-aspects-5.2.7.RELEASE.jar
+2020-06-18T21:43:54.3413467Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-aspects/5.2.7.RELEASE/spring-aspects-5.2.7.RELEASE.jar (47 kB at 173 kB/s)
+2020-06-18T21:43:54.3414593Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-web/2.3.1.RELEASE/spring-boot-starter-web-2.3.1.RELEASE.jar
+2020-06-18T21:43:54.3420201Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-orm/5.2.7.RELEASE/spring-orm-5.2.7.RELEASE.jar (201 kB at 733 kB/s)
+2020-06-18T21:43:54.3422547Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-json/2.3.1.RELEASE/spring-boot-starter-json-2.3.1.RELEASE.jar
+2020-06-18T21:43:54.3446349Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-jpa/2.3.1.RELEASE/spring-data-jpa-2.3.1.RELEASE.jar (368 kB at 1.3 MB/s)
+2020-06-18T21:43:54.3451529Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-tomcat/2.3.1.RELEASE/spring-boot-starter-tomcat-2.3.1.RELEASE.jar
+2020-06-18T21:43:54.3554106Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-json/2.3.1.RELEASE/spring-boot-starter-json-2.3.1.RELEASE.jar (0 B at 0 B/s)
+2020-06-18T21:43:54.3555676Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-web/5.2.7.RELEASE/spring-web-5.2.7.RELEASE.jar
+2020-06-18T21:43:54.3556571Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-web/2.3.1.RELEASE/spring-boot-starter-web-2.3.1.RELEASE.jar (0 B at 0 B/s)
+2020-06-18T21:43:54.3557112Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-config/2.2.3.RELEASE/spring-cloud-starter-config-2.2.3.RELEASE.jar
+2020-06-18T21:43:54.3557697Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-tomcat/2.3.1.RELEASE/spring-boot-starter-tomcat-2.3.1.RELEASE.jar (0 B at 0 B/s)
+2020-06-18T21:43:54.3558217Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter/2.2.3.RELEASE/spring-cloud-starter-2.2.3.RELEASE.jar
+2020-06-18T21:43:54.3689324Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-web/5.2.7.RELEASE/spring-web-5.2.7.RELEASE.jar (0 B at 0 B/s)
+2020-06-18T21:43:54.3690562Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-context/2.2.3.RELEASE/spring-cloud-context-2.2.3.RELEASE.jar
+2020-06-18T21:43:54.3803870Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-config/2.2.3.RELEASE/spring-cloud-starter-config-2.2.3.RELEASE.jar (2.7 kB at 8.6 kB/s)
+2020-06-18T21:43:54.3805687Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-crypto/5.3.3.RELEASE/spring-security-crypto-5.3.3.RELEASE.jar
+2020-06-18T21:43:54.3831566Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-commons/2.3.1.RELEASE/spring-data-commons-2.3.1.RELEASE.jar (1.2 MB at 3.9 MB/s)
+2020-06-18T21:43:54.3847945Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-commons/2.2.3.RELEASE/spring-cloud-commons-2.2.3.RELEASE.jar
+2020-06-18T21:43:54.3879500Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter/2.2.3.RELEASE/spring-cloud-starter-2.2.3.RELEASE.jar (2.7 kB at 8.6 kB/s)
+2020-06-18T21:43:54.3880396Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-config-client/2.2.3.RELEASE/spring-cloud-config-client-2.2.3.RELEASE.jar
+2020-06-18T21:43:54.3947635Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-crypto/5.3.3.RELEASE/spring-security-crypto-5.3.3.RELEASE.jar (0 B at 0 B/s)
+2020-06-18T21:43:54.3949552Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-netflix-eureka-client/2.2.3.RELEASE/spring-cloud-starter-netflix-eureka-client-2.2.3.RELEASE.jar
+2020-06-18T21:43:54.4064044Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-context/2.2.3.RELEASE/spring-cloud-context-2.2.3.RELEASE.jar (128 kB at 377 kB/s)
+2020-06-18T21:43:54.4065008Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-netflix-hystrix/2.2.3.RELEASE/spring-cloud-netflix-hystrix-2.2.3.RELEASE.jar
+2020-06-18T21:43:54.4117492Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-config-client/2.2.3.RELEASE/spring-cloud-config-client-2.2.3.RELEASE.jar (43 kB at 125 kB/s)
+2020-06-18T21:43:54.4118404Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-netflix-eureka-client/2.2.3.RELEASE/spring-cloud-netflix-eureka-client-2.2.3.RELEASE.jar
+2020-06-18T21:43:54.4160412Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-netflix-eureka-client/2.2.3.RELEASE/spring-cloud-starter-netflix-eureka-client-2.2.3.RELEASE.jar (3.1 kB at 9.0 kB/s)
+2020-06-18T21:43:54.4171691Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-netflix-archaius/2.2.3.RELEASE/spring-cloud-starter-netflix-archaius-2.2.3.RELEASE.jar
+2020-06-18T21:43:54.4290508Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-netflix-hystrix/2.2.3.RELEASE/spring-cloud-netflix-hystrix-2.2.3.RELEASE.jar (44 kB at 122 kB/s)
+2020-06-18T21:43:54.4291490Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-netflix-ribbon/2.2.3.RELEASE/spring-cloud-netflix-ribbon-2.2.3.RELEASE.jar
+2020-06-18T21:43:54.4378393Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-commons/2.2.3.RELEASE/spring-cloud-commons-2.2.3.RELEASE.jar (216 kB at 585 kB/s)
+2020-06-18T21:43:54.4392200Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-netflix-archaius/2.2.3.RELEASE/spring-cloud-netflix-archaius-2.2.3.RELEASE.jar
+2020-06-18T21:43:54.4399768Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-netflix-archaius/2.2.3.RELEASE/spring-cloud-starter-netflix-archaius-2.2.3.RELEASE.jar (2.9 kB at 7.8 kB/s)
+2020-06-18T21:43:54.4414191Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-netflix-ribbon/2.2.3.RELEASE/spring-cloud-starter-netflix-ribbon-2.2.3.RELEASE.jar
+2020-06-18T21:43:54.4437655Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-netflix-eureka-client/2.2.3.RELEASE/spring-cloud-netflix-eureka-client-2.2.3.RELEASE.jar (126 kB at 336 kB/s)
+2020-06-18T21:43:54.4438931Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-loadbalancer/2.2.3.RELEASE/spring-cloud-starter-loadbalancer-2.2.3.RELEASE.jar
+2020-06-18T21:43:54.4599574Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-netflix-ribbon/2.2.3.RELEASE/spring-cloud-netflix-ribbon-2.2.3.RELEASE.jar (110 kB at 280 kB/s)
+2020-06-18T21:43:54.4603330Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-loadbalancer/2.2.3.RELEASE/spring-cloud-loadbalancer-2.2.3.RELEASE.jar
+2020-06-18T21:43:54.4633524Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-loadbalancer/2.2.3.RELEASE/spring-cloud-starter-loadbalancer-2.2.3.RELEASE.jar (2.8 kB at 7.0 kB/s)
+2020-06-18T21:43:54.4636063Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-netflix-ribbon/2.2.3.RELEASE/spring-cloud-starter-netflix-ribbon-2.2.3.RELEASE.jar (2.9 kB at 7.4 kB/s)
+2020-06-18T21:43:54.4639167Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-cache/2.3.1.RELEASE/spring-boot-starter-cache-2.3.1.RELEASE.jar
+2020-06-18T21:43:54.4646635Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-validation/2.3.1.RELEASE/spring-boot-starter-validation-2.3.1.RELEASE.jar
+2020-06-18T21:43:54.4653951Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-netflix-archaius/2.2.3.RELEASE/spring-cloud-netflix-archaius-2.2.3.RELEASE.jar (15 kB at 38 kB/s)
+2020-06-18T21:43:54.4656760Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-context-support/5.2.7.RELEASE/spring-context-support-5.2.7.RELEASE.jar
+2020-06-18T21:43:54.4739190Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-cache/2.3.1.RELEASE/spring-boot-starter-cache-2.3.1.RELEASE.jar (0 B at 0 B/s)
+2020-06-18T21:43:54.4740081Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-test/2.3.1.RELEASE/spring-boot-starter-test-2.3.1.RELEASE.jar
+2020-06-18T21:43:54.4760110Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-validation/2.3.1.RELEASE/spring-boot-starter-validation-2.3.1.RELEASE.jar (0 B at 0 B/s)
+2020-06-18T21:43:54.4761766Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test/2.3.1.RELEASE/spring-boot-test-2.3.1.RELEASE.jar
+2020-06-18T21:43:54.4762750Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-context-support/5.2.7.RELEASE/spring-context-support-5.2.7.RELEASE.jar (0 B at 0 B/s)
+2020-06-18T21:43:54.4780157Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test-autoconfigure/2.3.1.RELEASE/spring-boot-test-autoconfigure-2.3.1.RELEASE.jar
+2020-06-18T21:43:54.4833804Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-test/2.3.1.RELEASE/spring-boot-starter-test-2.3.1.RELEASE.jar (0 B at 0 B/s)
+2020-06-18T21:43:54.4834614Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-test/5.2.7.RELEASE/spring-test-5.2.7.RELEASE.jar
+2020-06-18T21:43:54.4890167Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-loadbalancer/2.2.3.RELEASE/spring-cloud-loadbalancer-2.2.3.RELEASE.jar (73 kB at 173 kB/s)
+2020-06-18T21:43:54.4897521Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test/2.3.1.RELEASE/spring-boot-test-2.3.1.RELEASE.jar (0 B at 0 B/s)
+2020-06-18T21:43:54.4937566Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-test/5.2.7.RELEASE/spring-test-5.2.7.RELEASE.jar (0 B at 0 B/s)
+2020-06-18T21:43:54.4951715Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-test-autoconfigure/2.3.1.RELEASE/spring-boot-test-autoconfigure-2.3.1.RELEASE.jar (0 B at 0 B/s)
+2020-06-18T21:43:54.6911056Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/hibernate/hibernate-core/5.4.17.Final/hibernate-core-5.4.17.Final.jar (7.3 MB at 12 MB/s)
+2020-06-18T21:43:54.7190556Z [INFO] 
+2020-06-18T21:43:54.7199255Z [INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ order ---
+2020-06-18T21:43:54.9038149Z [INFO] Using 'UTF-8' encoding to copy filtered resources.
+2020-06-18T21:43:54.9081984Z [INFO] Copying 0 resource
+2020-06-18T21:43:54.9095473Z [INFO] Copying 1 resource
+2020-06-18T21:43:54.9161471Z [INFO] 
+2020-06-18T21:43:54.9168032Z [INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ order ---
+2020-06-18T21:43:55.0529693Z [INFO] Changes detected - recompiling the module!
+2020-06-18T21:43:55.0565223Z [INFO] Compiling 3 source files to /home/runner/work/e-commerce-microservices/e-commerce-microservices/order/target/classes
+2020-06-18T21:43:56.6323325Z [INFO] 
+2020-06-18T21:43:56.6331054Z [INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ order ---
+2020-06-18T21:43:56.6384766Z [INFO] Using 'UTF-8' encoding to copy filtered resources.
+2020-06-18T21:43:56.6394241Z [INFO] skip non existing resourceDirectory /home/runner/work/e-commerce-microservices/e-commerce-microservices/order/src/test/resources
+2020-06-18T21:43:56.6396975Z [INFO] 
+2020-06-18T21:43:56.6403203Z [INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ order ---
+2020-06-18T21:43:56.6498189Z [INFO] Changes detected - recompiling the module!
+2020-06-18T21:43:56.6510604Z [INFO] Compiling 1 source file to /home/runner/work/e-commerce-microservices/e-commerce-microservices/order/target/test-classes
+2020-06-18T21:43:57.2846301Z [INFO] 
+2020-06-18T21:43:57.2850984Z [INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ order ---
+2020-06-18T21:43:57.4191858Z [INFO] Tests are skipped.
+2020-06-18T21:43:57.4197389Z [INFO] 
+2020-06-18T21:43:57.4198443Z [INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ order ---
+2020-06-18T21:43:57.6155343Z [INFO] Building jar: /home/runner/work/e-commerce-microservices/e-commerce-microservices/order/target/order-0.0.1-SNAPSHOT.jar
+2020-06-18T21:43:57.6583654Z [INFO] 
+2020-06-18T21:43:57.6587127Z [INFO] --- spring-boot-maven-plugin:2.3.1.RELEASE:repackage (repackage) @ order ---
+2020-06-18T21:43:57.9767826Z [INFO] Replacing main artifact with repackaged archive
+2020-06-18T21:43:57.9776654Z [INFO] ------------------------------------------------------------------------
+2020-06-18T21:43:57.9777079Z [INFO] BUILD SUCCESS
+2020-06-18T21:43:57.9777488Z [INFO] ------------------------------------------------------------------------
+2020-06-18T21:43:57.9793941Z [INFO] Total time:  7.749 s
+2020-06-18T21:43:57.9798046Z [INFO] Finished at: 2020-06-18T21:43:57Z
+2020-06-18T21:43:57.9801013Z [INFO] ------------------------------------------------------------------------

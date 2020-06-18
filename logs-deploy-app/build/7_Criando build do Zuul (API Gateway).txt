@@ -1,0 +1,969 @@
+2020-06-18T21:42:48.7733800Z ##[group]Run mvn -B package --file zuul/pom.xml -DskipTests && cp zuul/target/*.jar builds
+2020-06-18T21:42:48.7734060Z [36;1mmvn -B package --file zuul/pom.xml -DskipTests && cp zuul/target/*.jar builds[0m
+2020-06-18T21:42:48.7767565Z shell: /bin/bash -e {0}
+2020-06-18T21:42:48.7767712Z env:
+2020-06-18T21:42:48.7767871Z   JAVA_HOME: /opt/hostedtoolcache/jdk/11.0.7/x64
+2020-06-18T21:42:48.7768029Z   JAVA_HOME_11.0.7_x64: /opt/hostedtoolcache/jdk/11.0.7/x64
+2020-06-18T21:42:48.7768187Z ##[endgroup]
+2020-06-18T21:42:49.9847988Z [INFO] Scanning for projects...
+2020-06-18T21:42:50.2917840Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/boot/spring-boot-starter-parent/2.3.1.RELEASE/spring-boot-starter-parent-2.3.1.RELEASE.pom
+2020-06-18T21:42:51.1319571Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-parent/2.3.1.RELEASE/spring-boot-starter-parent-2.3.1.RELEASE.pom
+2020-06-18T21:42:51.1328181Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-parent/2.3.1.RELEASE/spring-boot-starter-parent-2.3.1.RELEASE.pom (9.0 kB at 52 kB/s)
+2020-06-18T21:42:51.1329845Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/boot/spring-boot-dependencies/2.3.1.RELEASE/spring-boot-dependencies-2.3.1.RELEASE.pom
+2020-06-18T21:42:51.1331213Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-dependencies/2.3.1.RELEASE/spring-boot-dependencies-2.3.1.RELEASE.pom
+2020-06-18T21:42:51.2296949Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-dependencies/2.3.1.RELEASE/spring-boot-dependencies-2.3.1.RELEASE.pom (126 kB at 683 kB/s)
+2020-06-18T21:42:51.3163597Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-dependencies/Hoxton.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:42:51.3251822Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-dependencies/Hoxton.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:42:51.4902289Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-dependencies/Hoxton.BUILD-SNAPSHOT/maven-metadata.xml (647 B at 3.7 kB/s)
+2020-06-18T21:42:51.5009889Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-dependencies/Hoxton.BUILD-SNAPSHOT/spring-cloud-dependencies-Hoxton.BUILD-20200618.034506-2494.pom
+2020-06-18T21:42:51.5944438Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-dependencies/Hoxton.BUILD-SNAPSHOT/spring-cloud-dependencies-Hoxton.BUILD-20200618.034506-2494.pom (12 kB at 127 kB/s)
+2020-06-18T21:42:51.6010426Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-dependencies-parent/2.3.1.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:42:51.6030877Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-dependencies-parent/2.3.1.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:42:51.7229061Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-dependencies-parent/2.3.1.BUILD-SNAPSHOT/maven-metadata.xml (648 B at 5.4 kB/s)
+2020-06-18T21:42:51.7247265Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-dependencies-parent/2.3.1.BUILD-SNAPSHOT/spring-cloud-dependencies-parent-2.3.1.BUILD-20200618.105220-25.pom
+2020-06-18T21:42:51.8203948Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-dependencies-parent/2.3.1.BUILD-SNAPSHOT/spring-cloud-dependencies-parent-2.3.1.BUILD-20200618.105220-25.pom (7.5 kB at 79 kB/s)
+2020-06-18T21:42:51.8258050Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-commons-dependencies/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:42:51.8285818Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-commons-dependencies/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:42:51.9163008Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-commons-dependencies/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml (649 B at 7.2 kB/s)
+2020-06-18T21:42:51.9189492Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-commons-dependencies/2.2.4.BUILD-SNAPSHOT/spring-cloud-commons-dependencies-2.2.4.BUILD-20200618.093706-24.pom
+2020-06-18T21:42:52.0113395Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-commons-dependencies/2.2.4.BUILD-SNAPSHOT/spring-cloud-commons-dependencies-2.2.4.BUILD-20200618.093706-24.pom (3.7 kB at 41 kB/s)
+2020-06-18T21:42:52.0199067Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-netflix-dependencies/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:42:52.0261757Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-netflix-dependencies/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:42:52.1149179Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-netflix-dependencies/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml (651 B at 6.9 kB/s)
+2020-06-18T21:42:52.1186441Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-netflix-dependencies/2.2.4.BUILD-SNAPSHOT/spring-cloud-netflix-dependencies-2.2.4.BUILD-20200618.212513-174.pom
+2020-06-18T21:42:52.2077894Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-netflix-dependencies/2.2.4.BUILD-SNAPSHOT/spring-cloud-netflix-dependencies-2.2.4.BUILD-20200618.212513-174.pom (14 kB at 151 kB/s)
+2020-06-18T21:42:52.2128634Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-stream-dependencies/Horsham.SR5/spring-cloud-stream-dependencies-Horsham.SR5.pom
+2020-06-18T21:42:52.2578038Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-stream-dependencies/Horsham.SR5/spring-cloud-stream-dependencies-Horsham.SR5.pom
+2020-06-18T21:42:52.3819079Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-stream-dependencies/Horsham.SR5/spring-cloud-stream-dependencies-Horsham.SR5.pom (9.3 kB at 75 kB/s)
+2020-06-18T21:42:52.3868392Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-dependencies-parent/2.3.0.RELEASE/spring-cloud-dependencies-parent-2.3.0.RELEASE.pom
+2020-06-18T21:42:52.4306567Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-dependencies-parent/2.3.0.RELEASE/spring-cloud-dependencies-parent-2.3.0.RELEASE.pom
+2020-06-18T21:42:52.5579113Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-dependencies-parent/2.3.0.RELEASE/spring-cloud-dependencies-parent-2.3.0.RELEASE.pom (8.3 kB at 67 kB/s)
+2020-06-18T21:42:52.5664232Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-circuitbreaker-dependencies/1.0.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:42:52.5728122Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-circuitbreaker-dependencies/1.0.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:42:52.6620252Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-circuitbreaker-dependencies/1.0.4.BUILD-SNAPSHOT/maven-metadata.xml (656 B at 7.0 kB/s)
+2020-06-18T21:42:52.6646637Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-circuitbreaker-dependencies/1.0.4.BUILD-SNAPSHOT/spring-cloud-circuitbreaker-dependencies-1.0.4.BUILD-20200618.095911-23.pom
+2020-06-18T21:42:52.7548997Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-circuitbreaker-dependencies/1.0.4.BUILD-SNAPSHOT/spring-cloud-circuitbreaker-dependencies-1.0.4.BUILD-20200618.095911-23.pom (3.9 kB at 43 kB/s)
+2020-06-18T21:42:52.7612122Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-config-dependencies/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:42:52.7655412Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-config-dependencies/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:42:52.8733420Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-config-dependencies/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml (648 B at 5.7 kB/s)
+2020-06-18T21:42:52.8767341Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-config-dependencies/2.2.4.BUILD-SNAPSHOT/spring-cloud-config-dependencies-2.2.4.BUILD-20200617.222209-21.pom
+2020-06-18T21:42:52.9641970Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-config-dependencies/2.2.4.BUILD-SNAPSHOT/spring-cloud-config-dependencies-2.2.4.BUILD-20200617.222209-21.pom (4.3 kB at 49 kB/s)
+2020-06-18T21:42:52.9705865Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-function-dependencies/3.0.7.RELEASE/spring-cloud-function-dependencies-3.0.7.RELEASE.pom
+2020-06-18T21:42:53.0121237Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-function-dependencies/3.0.7.RELEASE/spring-cloud-function-dependencies-3.0.7.RELEASE.pom
+2020-06-18T21:42:53.1357535Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-function-dependencies/3.0.7.RELEASE/spring-cloud-function-dependencies-3.0.7.RELEASE.pom (6.5 kB at 52 kB/s)
+2020-06-18T21:42:53.1412124Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-gateway-dependencies/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:42:53.1469043Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-gateway-dependencies/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:42:53.2342363Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-gateway-dependencies/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml (649 B at 7.0 kB/s)
+2020-06-18T21:42:53.2371255Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-gateway-dependencies/2.2.4.BUILD-SNAPSHOT/spring-cloud-gateway-dependencies-2.2.4.BUILD-20200617.230605-23.pom
+2020-06-18T21:42:53.3269701Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-gateway-dependencies/2.2.4.BUILD-SNAPSHOT/spring-cloud-gateway-dependencies-2.2.4.BUILD-20200617.230605-23.pom (3.0 kB at 33 kB/s)
+2020-06-18T21:42:53.3394742Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-consul-dependencies/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:42:53.3406597Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-consul-dependencies/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:42:53.4297351Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-consul-dependencies/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml (650 B at 7.1 kB/s)
+2020-06-18T21:42:53.4321886Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-consul-dependencies/2.2.4.BUILD-SNAPSHOT/spring-cloud-consul-dependencies-2.2.4.BUILD-20200618.200314-169.pom
+2020-06-18T21:42:53.5177744Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-consul-dependencies/2.2.4.BUILD-SNAPSHOT/spring-cloud-consul-dependencies-2.2.4.BUILD-20200618.200314-169.pom (4.3 kB at 50 kB/s)
+2020-06-18T21:42:53.5263228Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-sleuth-dependencies/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:42:53.5294140Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-sleuth-dependencies/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:42:53.6624131Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-sleuth-dependencies/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml (648 B at 4.9 kB/s)
+2020-06-18T21:42:53.6660617Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-sleuth-dependencies/2.2.4.BUILD-SNAPSHOT/spring-cloud-sleuth-dependencies-2.2.4.BUILD-20200618.095517-28.pom
+2020-06-18T21:42:53.7602048Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-sleuth-dependencies/2.2.4.BUILD-SNAPSHOT/spring-cloud-sleuth-dependencies-2.2.4.BUILD-20200618.095517-28.pom (4.5 kB at 48 kB/s)
+2020-06-18T21:42:53.7661471Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/io/zipkin/brave/brave-bom/5.12.3/brave-bom-5.12.3.pom
+2020-06-18T21:42:53.8124473Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/io/zipkin/brave/brave-bom/5.12.3/brave-bom-5.12.3.pom
+2020-06-18T21:42:53.8880973Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/io/zipkin/brave/brave-bom/5.12.3/brave-bom-5.12.3.pom
+2020-06-18T21:42:53.9861351Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/io/zipkin/brave/brave-bom/5.12.3/brave-bom-5.12.3.pom (11 kB at 113 kB/s)
+2020-06-18T21:42:53.9905129Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/io/zipkin/reporter2/zipkin-reporter-bom/2.15.0/zipkin-reporter-bom-2.15.0.pom
+2020-06-18T21:42:54.0634330Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/io/zipkin/reporter2/zipkin-reporter-bom/2.15.0/zipkin-reporter-bom-2.15.0.pom
+2020-06-18T21:42:54.1381733Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/io/zipkin/reporter2/zipkin-reporter-bom/2.15.0/zipkin-reporter-bom-2.15.0.pom
+2020-06-18T21:42:54.1672935Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/io/zipkin/reporter2/zipkin-reporter-bom/2.15.0/zipkin-reporter-bom-2.15.0.pom (6.3 kB at 219 kB/s)
+2020-06-18T21:42:54.1735032Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-vault-dependencies/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:42:54.1781857Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-vault-dependencies/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:42:54.3220048Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-vault-dependencies/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml (649 B at 4.4 kB/s)
+2020-06-18T21:42:54.3251699Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-vault-dependencies/2.2.4.BUILD-SNAPSHOT/spring-cloud-vault-dependencies-2.2.4.BUILD-20200618.204508-162.pom
+2020-06-18T21:42:54.4239124Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-vault-dependencies/2.2.4.BUILD-SNAPSHOT/spring-cloud-vault-dependencies-2.2.4.BUILD-20200618.204508-162.pom (3.7 kB at 38 kB/s)
+2020-06-18T21:42:54.4304601Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-zookeeper-dependencies/2.2.3.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:42:54.4314634Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-zookeeper-dependencies/2.2.3.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:42:54.5243369Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-zookeeper-dependencies/2.2.3.BUILD-SNAPSHOT/maven-metadata.xml (651 B at 7.0 kB/s)
+2020-06-18T21:42:54.5282774Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-zookeeper-dependencies/2.2.3.BUILD-SNAPSHOT/spring-cloud-zookeeper-dependencies-2.2.3.BUILD-20200618.113808-24.pom
+2020-06-18T21:42:54.6167590Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-zookeeper-dependencies/2.2.3.BUILD-SNAPSHOT/spring-cloud-zookeeper-dependencies-2.2.3.BUILD-20200618.113808-24.pom (6.0 kB at 68 kB/s)
+2020-06-18T21:42:54.6222321Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-security-dependencies/2.2.3.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:42:54.6239408Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-security-dependencies/2.2.3.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:42:54.7122168Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-security-dependencies/2.2.3.BUILD-SNAPSHOT/maven-metadata.xml (650 B at 7.2 kB/s)
+2020-06-18T21:42:54.7160853Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-security-dependencies/2.2.3.BUILD-SNAPSHOT/spring-cloud-security-dependencies-2.2.3.BUILD-20200618.074007-23.pom
+2020-06-18T21:42:54.8043891Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-security-dependencies/2.2.3.BUILD-SNAPSHOT/spring-cloud-security-dependencies-2.2.3.BUILD-20200618.074007-23.pom (3.2 kB at 35 kB/s)
+2020-06-18T21:42:54.8107602Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-cloudfoundry-dependencies/2.2.3.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:42:54.8138005Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-cloudfoundry-dependencies/2.2.3.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:42:54.9189040Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-cloudfoundry-dependencies/2.2.3.BUILD-SNAPSHOT/maven-metadata.xml (654 B at 6.0 kB/s)
+2020-06-18T21:42:54.9217908Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-cloudfoundry-dependencies/2.2.3.BUILD-SNAPSHOT/spring-cloud-cloudfoundry-dependencies-2.2.3.BUILD-20200617.235310-23.pom
+2020-06-18T21:42:55.0121625Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-cloudfoundry-dependencies/2.2.3.BUILD-SNAPSHOT/spring-cloud-cloudfoundry-dependencies-2.2.3.BUILD-20200617.235310-23.pom (3.2 kB at 35 kB/s)
+2020-06-18T21:42:55.0192798Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-bus-dependencies/2.2.3.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:42:55.0206034Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-bus-dependencies/2.2.3.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:42:55.1284698Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-bus-dependencies/2.2.3.BUILD-SNAPSHOT/maven-metadata.xml (645 B at 5.9 kB/s)
+2020-06-18T21:42:55.1305718Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-bus-dependencies/2.2.3.BUILD-SNAPSHOT/spring-cloud-bus-dependencies-2.2.3.BUILD-20200618.094906-24.pom
+2020-06-18T21:42:55.2193434Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-bus-dependencies/2.2.3.BUILD-SNAPSHOT/spring-cloud-bus-dependencies-2.2.3.BUILD-20200618.094906-24.pom (2.8 kB at 31 kB/s)
+2020-06-18T21:42:55.2243364Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-contract-dependencies/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:42:55.2267172Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-contract-dependencies/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:42:55.3168100Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-contract-dependencies/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml (652 B at 7.1 kB/s)
+2020-06-18T21:42:55.3198863Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-contract-dependencies/2.2.4.BUILD-SNAPSHOT/spring-cloud-contract-dependencies-2.2.4.BUILD-20200618.190103-168.pom
+2020-06-18T21:42:55.4093976Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-contract-dependencies/2.2.4.BUILD-SNAPSHOT/spring-cloud-contract-dependencies-2.2.4.BUILD-20200618.190103-168.pom (5.7 kB at 63 kB/s)
+2020-06-18T21:42:55.4135789Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-aws-dependencies/2.2.3.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:42:55.4150234Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-aws-dependencies/2.2.3.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:42:55.5326354Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-aws-dependencies/2.2.3.BUILD-SNAPSHOT/maven-metadata.xml (645 B at 5.4 kB/s)
+2020-06-18T21:42:55.5373085Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-aws-dependencies/2.2.3.BUILD-SNAPSHOT/spring-cloud-aws-dependencies-2.2.3.BUILD-20200618.184517-45.pom
+2020-06-18T21:42:55.7010890Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-aws-dependencies/2.2.3.BUILD-SNAPSHOT/spring-cloud-aws-dependencies-2.2.3.BUILD-20200618.184517-45.pom (6.7 kB at 42 kB/s)
+2020-06-18T21:42:55.7037148Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/amazonaws/aws-java-sdk-bom/1.11.792/aws-java-sdk-bom-1.11.792.pom
+2020-06-18T21:42:55.7473295Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/amazonaws/aws-java-sdk-bom/1.11.792/aws-java-sdk-bom-1.11.792.pom
+2020-06-18T21:42:55.8164227Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-bom/1.11.792/aws-java-sdk-bom-1.11.792.pom
+2020-06-18T21:42:55.8519715Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-bom/1.11.792/aws-java-sdk-bom-1.11.792.pom (48 kB at 1.3 MB/s)
+2020-06-18T21:42:55.8544732Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/amazonaws/aws-java-sdk-pom/1.11.792/aws-java-sdk-pom-1.11.792.pom
+2020-06-18T21:42:55.9266717Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/amazonaws/aws-java-sdk-pom/1.11.792/aws-java-sdk-pom-1.11.792.pom
+2020-06-18T21:42:55.9979460Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-pom/1.11.792/aws-java-sdk-pom-1.11.792.pom
+2020-06-18T21:42:56.0279066Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/amazonaws/aws-java-sdk-pom/1.11.792/aws-java-sdk-pom-1.11.792.pom (20 kB at 673 kB/s)
+2020-06-18T21:42:56.0476588Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-openfeign-dependencies/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:42:56.0511711Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-openfeign-dependencies/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:42:56.2046448Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-openfeign-dependencies/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml (651 B at 4.2 kB/s)
+2020-06-18T21:42:56.2078314Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-openfeign-dependencies/2.2.4.BUILD-SNAPSHOT/spring-cloud-openfeign-dependencies-2.2.4.BUILD-20200618.112506-27.pom
+2020-06-18T21:42:56.3034215Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-openfeign-dependencies/2.2.4.BUILD-SNAPSHOT/spring-cloud-openfeign-dependencies-2.2.4.BUILD-20200618.112506-27.pom (5.0 kB at 52 kB/s)
+2020-06-18T21:42:56.3070444Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-kubernetes-dependencies/1.1.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:42:56.3085986Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-kubernetes-dependencies/1.1.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:42:56.4228742Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-kubernetes-dependencies/1.1.4.BUILD-SNAPSHOT/maven-metadata.xml (652 B at 5.6 kB/s)
+2020-06-18T21:42:56.4245362Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-kubernetes-dependencies/1.1.4.BUILD-SNAPSHOT/spring-cloud-kubernetes-dependencies-1.1.4.BUILD-20200618.013006-23.pom
+2020-06-18T21:42:57.6721854Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-kubernetes-dependencies/1.1.4.BUILD-SNAPSHOT/spring-cloud-kubernetes-dependencies-1.1.4.BUILD-20200618.013006-23.pom (7.5 kB at 6.0 kB/s)
+2020-06-18T21:42:57.6799684Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-gcp-dependencies/1.2.3.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:42:57.6809259Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-gcp-dependencies/1.2.3.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:42:57.8015260Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-gcp-dependencies/1.2.3.BUILD-SNAPSHOT/maven-metadata.xml (647 B at 5.3 kB/s)
+2020-06-18T21:42:57.8032150Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-gcp-dependencies/1.2.3.BUILD-SNAPSHOT/spring-cloud-gcp-dependencies-1.2.3.BUILD-20200602.174049-129.pom
+2020-06-18T21:42:57.8977866Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-gcp-dependencies/1.2.3.BUILD-SNAPSHOT/spring-cloud-gcp-dependencies-1.2.3.BUILD-20200602.174049-129.pom (10.0 kB at 106 kB/s)
+2020-06-18T21:42:57.9022525Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-dependencies-parent/2.3.0.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:42:57.9039107Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-dependencies-parent/2.3.0.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:42:57.9992705Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-dependencies-parent/2.3.0.BUILD-SNAPSHOT/maven-metadata.xml (648 B at 6.7 kB/s)
+2020-06-18T21:42:58.0021416Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-dependencies-parent/2.3.0.BUILD-SNAPSHOT/spring-cloud-dependencies-parent-2.3.0.BUILD-20200528.084916-84.pom
+2020-06-18T21:42:58.0979029Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-dependencies-parent/2.3.0.BUILD-SNAPSHOT/spring-cloud-dependencies-parent-2.3.0.BUILD-20200528.084916-84.pom (7.5 kB at 79 kB/s)
+2020-06-18T21:42:58.1016710Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/cloud/libraries-bom/5.3.0/libraries-bom-5.3.0.pom
+2020-06-18T21:42:58.1488696Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/cloud/libraries-bom/5.3.0/libraries-bom-5.3.0.pom
+2020-06-18T21:42:58.2193784Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/cloud/libraries-bom/5.3.0/libraries-bom-5.3.0.pom
+2020-06-18T21:42:58.2447583Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/cloud/libraries-bom/5.3.0/libraries-bom-5.3.0.pom (7.2 kB at 278 kB/s)
+2020-06-18T21:42:58.2482907Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/guava/guava-bom/29.0-android/guava-bom-29.0-android.pom
+2020-06-18T21:42:58.4142182Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/guava/guava-bom/29.0-android/guava-bom-29.0-android.pom
+2020-06-18T21:42:58.4830604Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava-bom/29.0-android/guava-bom-29.0-android.pom
+2020-06-18T21:42:58.5050138Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava-bom/29.0-android/guava-bom-29.0-android.pom (1.5 kB at 68 kB/s)
+2020-06-18T21:42:58.5094740Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/cloud/google-cloud-bom/0.125.0/google-cloud-bom-0.125.0.pom
+2020-06-18T21:42:58.5777075Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/cloud/google-cloud-bom/0.125.0/google-cloud-bom-0.125.0.pom
+2020-06-18T21:42:58.6483309Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-bom/0.125.0/google-cloud-bom-0.125.0.pom
+2020-06-18T21:42:58.6747043Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-bom/0.125.0/google-cloud-bom-0.125.0.pom (24 kB at 888 kB/s)
+2020-06-18T21:42:58.6790054Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/api/gax-bom/1.56.0/gax-bom-1.56.0.pom
+2020-06-18T21:42:58.7473457Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/api/gax-bom/1.56.0/gax-bom-1.56.0.pom
+2020-06-18T21:42:58.8182689Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/api/gax-bom/1.56.0/gax-bom-1.56.0.pom
+2020-06-18T21:42:58.8416357Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/api/gax-bom/1.56.0/gax-bom-1.56.0.pom (2.7 kB at 111 kB/s)
+2020-06-18T21:42:58.8480661Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/cloud/google-cloud-core-bom/1.93.4/google-cloud-core-bom-1.93.4.pom
+2020-06-18T21:42:58.9238465Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/cloud/google-cloud-core-bom/1.93.4/google-cloud-core-bom-1.93.4.pom
+2020-06-18T21:42:59.0055395Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-core-bom/1.93.4/google-cloud-core-bom-1.93.4.pom
+2020-06-18T21:42:59.0284491Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-core-bom/1.93.4/google-cloud-core-bom-1.93.4.pom (3.0 kB at 129 kB/s)
+2020-06-18T21:42:59.0351094Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/cloud/google-cloud-accessapproval-bom/0.1.2/google-cloud-accessapproval-bom-0.1.2.pom
+2020-06-18T21:42:59.1081035Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/cloud/google-cloud-accessapproval-bom/0.1.2/google-cloud-accessapproval-bom-0.1.2.pom
+2020-06-18T21:42:59.1833142Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-accessapproval-bom/0.1.2/google-cloud-accessapproval-bom-0.1.2.pom
+2020-06-18T21:42:59.2036206Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-accessapproval-bom/0.1.2/google-cloud-accessapproval-bom-0.1.2.pom (3.1 kB at 137 kB/s)
+2020-06-18T21:42:59.2092240Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/cloud/google-cloud-shared-config/0.5.0/google-cloud-shared-config-0.5.0.pom
+2020-06-18T21:42:59.2784232Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/cloud/google-cloud-shared-config/0.5.0/google-cloud-shared-config-0.5.0.pom
+2020-06-18T21:42:59.3562944Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-shared-config/0.5.0/google-cloud-shared-config-0.5.0.pom
+2020-06-18T21:42:59.3827762Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-shared-config/0.5.0/google-cloud-shared-config-0.5.0.pom (26 kB at 961 kB/s)
+2020-06-18T21:42:59.3867002Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/cloud/google-cloud-asset-bom/1.2.0/google-cloud-asset-bom-1.2.0.pom
+2020-06-18T21:42:59.4546848Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/cloud/google-cloud-asset-bom/1.2.0/google-cloud-asset-bom-1.2.0.pom
+2020-06-18T21:42:59.5221171Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-asset-bom/1.2.0/google-cloud-asset-bom-1.2.0.pom
+2020-06-18T21:42:59.5439221Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-asset-bom/1.2.0/google-cloud-asset-bom-1.2.0.pom (5.1 kB at 230 kB/s)
+2020-06-18T21:42:59.5498342Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/cloud/google-cloud-automl-bom/1.1.2/google-cloud-automl-bom-1.1.2.pom
+2020-06-18T21:42:59.6198420Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/cloud/google-cloud-automl-bom/1.1.2/google-cloud-automl-bom-1.1.2.pom
+2020-06-18T21:42:59.6900535Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-automl-bom/1.1.2/google-cloud-automl-bom-1.1.2.pom
+2020-06-18T21:42:59.7116938Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-automl-bom/1.1.2/google-cloud-automl-bom-1.1.2.pom (3.5 kB at 161 kB/s)
+2020-06-18T21:42:59.7174245Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/cloud/google-cloud-bigquerydatatransfer-bom/0.127.0-beta/google-cloud-bigquerydatatransfer-bom-0.127.0-beta.pom
+2020-06-18T21:42:59.7922830Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/cloud/google-cloud-bigquerydatatransfer-bom/0.127.0-beta/google-cloud-bigquerydatatransfer-bom-0.127.0-beta.pom
+2020-06-18T21:42:59.8637218Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-bigquerydatatransfer-bom/0.127.0-beta/google-cloud-bigquerydatatransfer-bom-0.127.0-beta.pom
+2020-06-18T21:42:59.8865471Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-bigquerydatatransfer-bom/0.127.0-beta/google-cloud-bigquerydatatransfer-bom-0.127.0-beta.pom (3.2 kB at 141 kB/s)
+2020-06-18T21:42:59.8898018Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/cloud/google-cloud-bigquerystorage-bom/0.130.0-beta/google-cloud-bigquerystorage-bom-0.130.0-beta.pom
+2020-06-18T21:42:59.9565844Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/cloud/google-cloud-bigquerystorage-bom/0.130.0-beta/google-cloud-bigquerystorage-bom-0.130.0-beta.pom
+2020-06-18T21:43:00.0253760Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-bigquerystorage-bom/0.130.0-beta/google-cloud-bigquerystorage-bom-0.130.0-beta.pom
+2020-06-18T21:43:00.0480784Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-bigquerystorage-bom/0.130.0-beta/google-cloud-bigquerystorage-bom-0.130.0-beta.pom (4.8 kB at 209 kB/s)
+2020-06-18T21:43:00.0532183Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/cloud/google-cloud-bigtable-bom/1.11.0/google-cloud-bigtable-bom-1.11.0.pom
+2020-06-18T21:43:00.1217357Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/cloud/google-cloud-bigtable-bom/1.11.0/google-cloud-bigtable-bom-1.11.0.pom
+2020-06-18T21:43:00.1909843Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-bigtable-bom/1.11.0/google-cloud-bigtable-bom-1.11.0.pom
+2020-06-18T21:43:00.2137808Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-bigtable-bom/1.11.0/google-cloud-bigtable-bom-1.11.0.pom (5.0 kB at 218 kB/s)
+2020-06-18T21:43:00.2172171Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/cloud/google-cloud-billing-bom/1.0.2/google-cloud-billing-bom-1.0.2.pom
+2020-06-18T21:43:00.2976752Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/cloud/google-cloud-billing-bom/1.0.2/google-cloud-billing-bom-1.0.2.pom
+2020-06-18T21:43:00.3828697Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-billing-bom/1.0.2/google-cloud-billing-bom-1.0.2.pom
+2020-06-18T21:43:00.4064411Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-billing-bom/1.0.2/google-cloud-billing-bom-1.0.2.pom (3.0 kB at 127 kB/s)
+2020-06-18T21:43:00.4104805Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/cloud/google-cloud-billingbudgets-bom/0.2.4/google-cloud-billingbudgets-bom-0.2.4.pom
+2020-06-18T21:43:00.4786669Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/cloud/google-cloud-billingbudgets-bom/0.2.4/google-cloud-billingbudgets-bom-0.2.4.pom
+2020-06-18T21:43:00.5470351Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-billingbudgets-bom/0.2.4/google-cloud-billingbudgets-bom-0.2.4.pom
+2020-06-18T21:43:00.5720248Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-billingbudgets-bom/0.2.4/google-cloud-billingbudgets-bom-0.2.4.pom (3.2 kB at 127 kB/s)
+2020-06-18T21:43:00.5793449Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/cloud/google-cloud-build-bom/1.1.1/google-cloud-build-bom-1.1.1.pom
+2020-06-18T21:43:00.6502273Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/cloud/google-cloud-build-bom/1.1.1/google-cloud-build-bom-1.1.1.pom
+2020-06-18T21:43:00.7215819Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-build-bom/1.1.1/google-cloud-build-bom-1.1.1.pom
+2020-06-18T21:43:00.7426542Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-build-bom/1.1.1/google-cloud-build-bom-1.1.1.pom (3.0 kB at 145 kB/s)
+2020-06-18T21:43:00.7525529Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/cloud/google-cloud-container-bom/1.0.4/google-cloud-container-bom-1.0.4.pom
+2020-06-18T21:43:00.8290964Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/cloud/google-cloud-container-bom/1.0.4/google-cloud-container-bom-1.0.4.pom
+2020-06-18T21:43:00.8993714Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-container-bom/1.0.4/google-cloud-container-bom-1.0.4.pom
+2020-06-18T21:43:00.9236022Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-container-bom/1.0.4/google-cloud-container-bom-1.0.4.pom (3.1 kB at 123 kB/s)
+2020-06-18T21:43:00.9285866Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/cloud/google-cloud-containeranalysis-bom/0.120.0-beta/google-cloud-containeranalysis-bom-0.120.0-beta.pom
+2020-06-18T21:43:00.9963415Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/cloud/google-cloud-containeranalysis-bom/0.120.0-beta/google-cloud-containeranalysis-bom-0.120.0-beta.pom
+2020-06-18T21:43:01.0645550Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-containeranalysis-bom/0.120.0-beta/google-cloud-containeranalysis-bom-0.120.0-beta.pom
+2020-06-18T21:43:01.0889868Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-containeranalysis-bom/0.120.0-beta/google-cloud-containeranalysis-bom-0.120.0-beta.pom (3.8 kB at 171 kB/s)
+2020-06-18T21:43:01.0898516Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/cloud/google-cloud-datacatalog-bom/0.35.0/google-cloud-datacatalog-bom-0.35.0.pom
+2020-06-18T21:43:01.1630075Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/cloud/google-cloud-datacatalog-bom/0.35.0/google-cloud-datacatalog-bom-0.35.0.pom
+2020-06-18T21:43:01.2322909Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-datacatalog-bom/0.35.0/google-cloud-datacatalog-bom-0.35.0.pom
+2020-06-18T21:43:01.2557905Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-datacatalog-bom/0.35.0/google-cloud-datacatalog-bom-0.35.0.pom (3.6 kB at 152 kB/s)
+2020-06-18T21:43:01.2593976Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/cloud/google-cloud-datalabeling-bom/0.118.2/google-cloud-datalabeling-bom-0.118.2.pom
+2020-06-18T21:43:01.3250183Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/cloud/google-cloud-datalabeling-bom/0.118.2/google-cloud-datalabeling-bom-0.118.2.pom
+2020-06-18T21:43:01.4025919Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-datalabeling-bom/0.118.2/google-cloud-datalabeling-bom-0.118.2.pom
+2020-06-18T21:43:01.4246158Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-datalabeling-bom/0.118.2/google-cloud-datalabeling-bom-0.118.2.pom (3.1 kB at 137 kB/s)
+2020-06-18T21:43:01.4275919Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/cloud/google-cloud-dataproc-bom/0.122.1/google-cloud-dataproc-bom-0.122.1.pom
+2020-06-18T21:43:01.4968758Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/cloud/google-cloud-dataproc-bom/0.122.1/google-cloud-dataproc-bom-0.122.1.pom
+2020-06-18T21:43:01.5656756Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-dataproc-bom/0.122.1/google-cloud-dataproc-bom-0.122.1.pom
+2020-06-18T21:43:01.6020803Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-dataproc-bom/0.122.1/google-cloud-dataproc-bom-0.122.1.pom (3.6 kB at 97 kB/s)
+2020-06-18T21:43:01.6049831Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/cloud/google-cloud-datastore-bom/1.102.4/google-cloud-datastore-bom-1.102.4.pom
+2020-06-18T21:43:01.6744312Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/cloud/google-cloud-datastore-bom/1.102.4/google-cloud-datastore-bom-1.102.4.pom
+2020-06-18T21:43:01.7436275Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-datastore-bom/1.102.4/google-cloud-datastore-bom-1.102.4.pom
+2020-06-18T21:43:01.7649155Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-datastore-bom/1.102.4/google-cloud-datastore-bom-1.102.4.pom (2.8 kB at 123 kB/s)
+2020-06-18T21:43:01.7679677Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/cloud/google-cloud-dlp-bom/1.1.3/google-cloud-dlp-bom-1.1.3.pom
+2020-06-18T21:43:01.8356530Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/cloud/google-cloud-dlp-bom/1.1.3/google-cloud-dlp-bom-1.1.3.pom
+2020-06-18T21:43:01.9026060Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-dlp-bom/1.1.3/google-cloud-dlp-bom-1.1.3.pom
+2020-06-18T21:43:01.9319362Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-dlp-bom/1.1.3/google-cloud-dlp-bom-1.1.3.pom (3.0 kB at 120 kB/s)
+2020-06-18T21:43:01.9320420Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/cloud/google-cloud-dialogflow-bom/1.0.0/google-cloud-dialogflow-bom-1.0.0.pom
+2020-06-18T21:43:01.9997037Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/cloud/google-cloud-dialogflow-bom/1.0.0/google-cloud-dialogflow-bom-1.0.0.pom
+2020-06-18T21:43:02.0689568Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-dialogflow-bom/1.0.0/google-cloud-dialogflow-bom-1.0.0.pom
+2020-06-18T21:43:02.0924667Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-dialogflow-bom/1.0.0/google-cloud-dialogflow-bom-1.0.0.pom (3.6 kB at 157 kB/s)
+2020-06-18T21:43:02.0970424Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/cloud/google-cloud-document-ai-bom/0.1.1/google-cloud-document-ai-bom-0.1.1.pom
+2020-06-18T21:43:02.1628636Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/cloud/google-cloud-document-ai-bom/0.1.1/google-cloud-document-ai-bom-0.1.1.pom
+2020-06-18T21:43:02.2291609Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-document-ai-bom/0.1.1/google-cloud-document-ai-bom-0.1.1.pom
+2020-06-18T21:43:02.2530531Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-document-ai-bom/0.1.1/google-cloud-document-ai-bom-0.1.1.pom (4.1 kB at 187 kB/s)
+2020-06-18T21:43:02.2575676Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/cloud/google-cloud-errorreporting-bom/0.119.2-beta/google-cloud-errorreporting-bom-0.119.2-beta.pom
+2020-06-18T21:43:02.3267607Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/cloud/google-cloud-errorreporting-bom/0.119.2-beta/google-cloud-errorreporting-bom-0.119.2-beta.pom
+2020-06-18T21:43:02.3944652Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-errorreporting-bom/0.119.2-beta/google-cloud-errorreporting-bom-0.119.2-beta.pom
+2020-06-18T21:43:02.4178790Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-errorreporting-bom/0.119.2-beta/google-cloud-errorreporting-bom-0.119.2-beta.pom (3.2 kB at 138 kB/s)
+2020-06-18T21:43:02.4198798Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/cloud/google-cloud-firestore-bom/1.33.0/google-cloud-firestore-bom-1.33.0.pom
+2020-06-18T21:43:02.4864459Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/cloud/google-cloud-firestore-bom/1.33.0/google-cloud-firestore-bom-1.33.0.pom
+2020-06-18T21:43:02.5526937Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-firestore-bom/1.33.0/google-cloud-firestore-bom-1.33.0.pom
+2020-06-18T21:43:02.5767913Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-firestore-bom/1.33.0/google-cloud-firestore-bom-1.33.0.pom (4.1 kB at 180 kB/s)
+2020-06-18T21:43:02.5805659Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/cloud/google-cloud-gameservices-bom/0.19.1/google-cloud-gameservices-bom-0.19.1.pom
+2020-06-18T21:43:02.6515322Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/cloud/google-cloud-gameservices-bom/0.19.1/google-cloud-gameservices-bom-0.19.1.pom
+2020-06-18T21:43:02.7239167Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-gameservices-bom/0.19.1/google-cloud-gameservices-bom-0.19.1.pom
+2020-06-18T21:43:02.7474237Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-gameservices-bom/0.19.1/google-cloud-gameservices-bom-0.19.1.pom (3.1 kB at 137 kB/s)
+2020-06-18T21:43:02.7515851Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/cloud/google-cloud-iamcredentials-bom/1.0.2/google-cloud-iamcredentials-bom-1.0.2.pom
+2020-06-18T21:43:02.8193515Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/cloud/google-cloud-iamcredentials-bom/1.0.2/google-cloud-iamcredentials-bom-1.0.2.pom
+2020-06-18T21:43:02.8900338Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-iamcredentials-bom/1.0.2/google-cloud-iamcredentials-bom-1.0.2.pom
+2020-06-18T21:43:02.9167263Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-iamcredentials-bom/1.0.2/google-cloud-iamcredentials-bom-1.0.2.pom (3.2 kB at 137 kB/s)
+2020-06-18T21:43:02.9177419Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/cloud/google-cloud-iot-bom/1.0.2/google-cloud-iot-bom-1.0.2.pom
+2020-06-18T21:43:02.9846091Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/cloud/google-cloud-iot-bom/1.0.2/google-cloud-iot-bom-1.0.2.pom
+2020-06-18T21:43:03.0639719Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-iot-bom/1.0.2/google-cloud-iot-bom-1.0.2.pom
+2020-06-18T21:43:03.0858435Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-iot-bom/1.0.2/google-cloud-iot-bom-1.0.2.pom (3.0 kB at 136 kB/s)
+2020-06-18T21:43:03.0886746Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/cloud/google-cloud-kms-bom/1.38.1/google-cloud-kms-bom-1.38.1.pom
+2020-06-18T21:43:03.1545645Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/cloud/google-cloud-kms-bom/1.38.1/google-cloud-kms-bom-1.38.1.pom
+2020-06-18T21:43:03.2206847Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-kms-bom/1.38.1/google-cloud-kms-bom-1.38.1.pom
+2020-06-18T21:43:03.2447128Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-kms-bom/1.38.1/google-cloud-kms-bom-1.38.1.pom (3.0 kB at 125 kB/s)
+2020-06-18T21:43:03.2473912Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/cloud/google-cloud-language-bom/1.100.0/google-cloud-language-bom-1.100.0.pom
+2020-06-18T21:43:03.3149088Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/cloud/google-cloud-language-bom/1.100.0/google-cloud-language-bom-1.100.0.pom
+2020-06-18T21:43:03.3834609Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-language-bom/1.100.0/google-cloud-language-bom-1.100.0.pom
+2020-06-18T21:43:03.4029044Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-language-bom/1.100.0/google-cloud-language-bom-1.100.0.pom (3.6 kB at 171 kB/s)
+2020-06-18T21:43:03.4057876Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/cloud/google-cloud-logging-bom/1.101.1/google-cloud-logging-bom-1.101.1.pom
+2020-06-18T21:43:03.4829882Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/cloud/google-cloud-logging-bom/1.101.1/google-cloud-logging-bom-1.101.1.pom
+2020-06-18T21:43:03.5514151Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-logging-bom/1.101.1/google-cloud-logging-bom-1.101.1.pom
+2020-06-18T21:43:03.5741501Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-logging-bom/1.101.1/google-cloud-logging-bom-1.101.1.pom (3.1 kB at 139 kB/s)
+2020-06-18T21:43:03.5775653Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/cloud/google-cloud-mediatranslation-bom/0.1.2/google-cloud-mediatranslation-bom-0.1.2.pom
+2020-06-18T21:43:03.6419561Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/cloud/google-cloud-mediatranslation-bom/0.1.2/google-cloud-mediatranslation-bom-0.1.2.pom
+2020-06-18T21:43:03.7110722Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-mediatranslation-bom/0.1.2/google-cloud-mediatranslation-bom-0.1.2.pom
+2020-06-18T21:43:03.7339860Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-mediatranslation-bom/0.1.2/google-cloud-mediatranslation-bom-0.1.2.pom (3.2 kB at 133 kB/s)
+2020-06-18T21:43:03.7392527Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/cloud/google-cloud-memcache-bom/0.1.2/google-cloud-memcache-bom-0.1.2.pom
+2020-06-18T21:43:03.8042690Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/cloud/google-cloud-memcache-bom/0.1.2/google-cloud-memcache-bom-0.1.2.pom
+2020-06-18T21:43:03.8710015Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-memcache-bom/0.1.2/google-cloud-memcache-bom-0.1.2.pom
+2020-06-18T21:43:03.8955516Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-memcache-bom/0.1.2/google-cloud-memcache-bom-0.1.2.pom (3.1 kB at 123 kB/s)
+2020-06-18T21:43:03.8998257Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/cloud/google-cloud-monitoring-bom/1.100.1/google-cloud-monitoring-bom-1.100.1.pom
+2020-06-18T21:43:03.9834410Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/cloud/google-cloud-monitoring-bom/1.100.1/google-cloud-monitoring-bom-1.100.1.pom
+2020-06-18T21:43:04.0527312Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-monitoring-bom/1.100.1/google-cloud-monitoring-bom-1.100.1.pom
+2020-06-18T21:43:04.0809462Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-monitoring-bom/1.100.1/google-cloud-monitoring-bom-1.100.1.pom (3.1 kB at 103 kB/s)
+2020-06-18T21:43:04.0838337Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/cloud/google-cloud-monitoring-dashboard-bom/0.1.4/google-cloud-monitoring-dashboard-bom-0.1.4.pom
+2020-06-18T21:43:04.1508974Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/cloud/google-cloud-monitoring-dashboard-bom/0.1.4/google-cloud-monitoring-dashboard-bom-0.1.4.pom
+2020-06-18T21:43:04.2172321Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-monitoring-dashboard-bom/0.1.4/google-cloud-monitoring-dashboard-bom-0.1.4.pom
+2020-06-18T21:43:04.2387154Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-monitoring-dashboard-bom/0.1.4/google-cloud-monitoring-dashboard-bom-0.1.4.pom (3.2 kB at 147 kB/s)
+2020-06-18T21:43:04.2416602Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/cloud/google-cloud-os-login-bom/1.0.2/google-cloud-os-login-bom-1.0.2.pom
+2020-06-18T21:43:04.3217530Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/cloud/google-cloud-os-login-bom/1.0.2/google-cloud-os-login-bom-1.0.2.pom
+2020-06-18T21:43:04.3894212Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-os-login-bom/1.0.2/google-cloud-os-login-bom-1.0.2.pom
+2020-06-18T21:43:04.4124562Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-os-login-bom/1.0.2/google-cloud-os-login-bom-1.0.2.pom (3.1 kB at 133 kB/s)
+2020-06-18T21:43:04.4157708Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/cloud/google-cloud-phishingprotection-bom/0.28.4/google-cloud-phishingprotection-bom-0.28.4.pom
+2020-06-18T21:43:04.4855689Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/cloud/google-cloud-phishingprotection-bom/0.28.4/google-cloud-phishingprotection-bom-0.28.4.pom
+2020-06-18T21:43:04.5528376Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-phishingprotection-bom/0.28.4/google-cloud-phishingprotection-bom-0.28.4.pom
+2020-06-18T21:43:04.5772837Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-phishingprotection-bom/0.28.4/google-cloud-phishingprotection-bom-0.28.4.pom (3.2 kB at 134 kB/s)
+2020-06-18T21:43:04.5806449Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/cloud/google-cloud-pubsub-bom/1.105.0/google-cloud-pubsub-bom-1.105.0.pom
+2020-06-18T21:43:04.6445751Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/cloud/google-cloud-pubsub-bom/1.105.0/google-cloud-pubsub-bom-1.105.0.pom
+2020-06-18T21:43:04.7122599Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-pubsub-bom/1.105.0/google-cloud-pubsub-bom-1.105.0.pom
+2020-06-18T21:43:04.7340621Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-pubsub-bom/1.105.0/google-cloud-pubsub-bom-1.105.0.pom (3.0 kB at 138 kB/s)
+2020-06-18T21:43:04.7407065Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/cloud/google-cloud-recaptchaenterprise-bom/0.30.1/google-cloud-recaptchaenterprise-bom-0.30.1.pom
+2020-06-18T21:43:04.8061643Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/cloud/google-cloud-recaptchaenterprise-bom/0.30.1/google-cloud-recaptchaenterprise-bom-0.30.1.pom
+2020-06-18T21:43:04.8719908Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-recaptchaenterprise-bom/0.30.1/google-cloud-recaptchaenterprise-bom-0.30.1.pom
+2020-06-18T21:43:04.8939372Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-recaptchaenterprise-bom/0.30.1/google-cloud-recaptchaenterprise-bom-0.30.1.pom (3.8 kB at 171 kB/s)
+2020-06-18T21:43:04.8967340Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/cloud/google-cloud-recommender-bom/0.4.1/google-cloud-recommender-bom-0.4.1.pom
+2020-06-18T21:43:04.9665210Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/cloud/google-cloud-recommender-bom/0.4.1/google-cloud-recommender-bom-0.4.1.pom
+2020-06-18T21:43:05.0355290Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-recommender-bom/0.4.1/google-cloud-recommender-bom-0.4.1.pom
+2020-06-18T21:43:05.0588795Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-recommender-bom/0.4.1/google-cloud-recommender-bom-0.4.1.pom (3.1 kB at 130 kB/s)
+2020-06-18T21:43:05.0618855Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/cloud/google-cloud-redis-bom/1.0.0/google-cloud-redis-bom-1.0.0.pom
+2020-06-18T21:43:05.1294152Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/cloud/google-cloud-redis-bom/1.0.0/google-cloud-redis-bom-1.0.0.pom
+2020-06-18T21:43:05.1971320Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-redis-bom/1.0.0/google-cloud-redis-bom-1.0.0.pom
+2020-06-18T21:43:05.2184361Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-redis-bom/1.0.0/google-cloud-redis-bom-1.0.0.pom (3.5 kB at 168 kB/s)
+2020-06-18T21:43:05.2225423Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/cloud/google-cloud-scheduler-bom/1.22.4/google-cloud-scheduler-bom-1.22.4.pom
+2020-06-18T21:43:05.2877565Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/cloud/google-cloud-scheduler-bom/1.22.4/google-cloud-scheduler-bom-1.22.4.pom
+2020-06-18T21:43:05.3555113Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-scheduler-bom/1.22.4/google-cloud-scheduler-bom-1.22.4.pom
+2020-06-18T21:43:05.3798021Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-scheduler-bom/1.22.4/google-cloud-scheduler-bom-1.22.4.pom (3.6 kB at 144 kB/s)
+2020-06-18T21:43:05.3840004Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/cloud/google-cloud-secretmanager-bom/1.0.1/google-cloud-secretmanager-bom-1.0.1.pom
+2020-06-18T21:43:05.4529945Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/cloud/google-cloud-secretmanager-bom/1.0.1/google-cloud-secretmanager-bom-1.0.1.pom
+2020-06-18T21:43:05.5208212Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-secretmanager-bom/1.0.1/google-cloud-secretmanager-bom-1.0.1.pom
+2020-06-18T21:43:05.5418483Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-secretmanager-bom/1.0.1/google-cloud-secretmanager-bom-1.0.1.pom (3.7 kB at 175 kB/s)
+2020-06-18T21:43:05.5445902Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/cloud/google-cloud-securitycenter-bom/0.121.0/google-cloud-securitycenter-bom-0.121.0.pom
+2020-06-18T21:43:05.6107361Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/cloud/google-cloud-securitycenter-bom/0.121.0/google-cloud-securitycenter-bom-0.121.0.pom
+2020-06-18T21:43:05.6777783Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-securitycenter-bom/0.121.0/google-cloud-securitycenter-bom-0.121.0.pom
+2020-06-18T21:43:05.6982826Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-securitycenter-bom/0.121.0/google-cloud-securitycenter-bom-0.121.0.pom (4.3 kB at 213 kB/s)
+2020-06-18T21:43:05.7010570Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/cloud/google-cloud-servicedirectory-bom/0.1.1/google-cloud-servicedirectory-bom-0.1.1.pom
+2020-06-18T21:43:05.7692659Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/cloud/google-cloud-servicedirectory-bom/0.1.1/google-cloud-servicedirectory-bom-0.1.1.pom
+2020-06-18T21:43:05.8387141Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-servicedirectory-bom/0.1.1/google-cloud-servicedirectory-bom-0.1.1.pom
+2020-06-18T21:43:05.8607607Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-servicedirectory-bom/0.1.1/google-cloud-servicedirectory-bom-0.1.1.pom (3.2 kB at 145 kB/s)
+2020-06-18T21:43:05.8633360Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/cloud/google-cloud-spanner-bom/1.53.0/google-cloud-spanner-bom-1.53.0.pom
+2020-06-18T21:43:05.9339773Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/cloud/google-cloud-spanner-bom/1.53.0/google-cloud-spanner-bom-1.53.0.pom
+2020-06-18T21:43:06.0032574Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-spanner-bom/1.53.0/google-cloud-spanner-bom-1.53.0.pom
+2020-06-18T21:43:06.0266107Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-spanner-bom/1.53.0/google-cloud-spanner-bom-1.53.0.pom (4.2 kB at 189 kB/s)
+2020-06-18T21:43:06.0308126Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/cloud/google-cloud-speech-bom/1.23.0/google-cloud-speech-bom-1.23.0.pom
+2020-06-18T21:43:06.1003901Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/cloud/google-cloud-speech-bom/1.23.0/google-cloud-speech-bom-1.23.0.pom
+2020-06-18T21:43:06.1841122Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-speech-bom/1.23.0/google-cloud-speech-bom-1.23.0.pom
+2020-06-18T21:43:06.2045714Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-speech-bom/1.23.0/google-cloud-speech-bom-1.23.0.pom (4.1 kB at 193 kB/s)
+2020-06-18T21:43:06.2076653Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/cloud/google-cloud-talent-bom/0.36.1/google-cloud-talent-bom-0.36.1.pom
+2020-06-18T21:43:06.2735114Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/cloud/google-cloud-talent-bom/0.36.1/google-cloud-talent-bom-0.36.1.pom
+2020-06-18T21:43:06.3426412Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-talent-bom/0.36.1/google-cloud-talent-bom-0.36.1.pom
+2020-06-18T21:43:06.3663361Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-talent-bom/0.36.1/google-cloud-talent-bom-0.36.1.pom (3.1 kB at 123 kB/s)
+2020-06-18T21:43:06.3713024Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/cloud/google-cloud-tasks-bom/1.29.1/google-cloud-tasks-bom-1.29.1.pom
+2020-06-18T21:43:06.4458636Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/cloud/google-cloud-tasks-bom/1.29.1/google-cloud-tasks-bom-1.29.1.pom
+2020-06-18T21:43:06.5176186Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-tasks-bom/1.29.1/google-cloud-tasks-bom-1.29.1.pom
+2020-06-18T21:43:06.5440324Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-tasks-bom/1.29.1/google-cloud-tasks-bom-1.29.1.pom (4.0 kB at 149 kB/s)
+2020-06-18T21:43:06.5526618Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/cloud/google-cloud-texttospeech-bom/1.0.2/google-cloud-texttospeech-bom-1.0.2.pom
+2020-06-18T21:43:06.6231622Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/cloud/google-cloud-texttospeech-bom/1.0.2/google-cloud-texttospeech-bom-1.0.2.pom
+2020-06-18T21:43:06.6904760Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-texttospeech-bom/1.0.2/google-cloud-texttospeech-bom-1.0.2.pom
+2020-06-18T21:43:06.7136717Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-texttospeech-bom/1.0.2/google-cloud-texttospeech-bom-1.0.2.pom (3.7 kB at 152 kB/s)
+2020-06-18T21:43:06.7159141Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/cloud/google-cloud-trace-bom/1.0.3/google-cloud-trace-bom-1.0.3.pom
+2020-06-18T21:43:06.7840017Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/cloud/google-cloud-trace-bom/1.0.3/google-cloud-trace-bom-1.0.3.pom
+2020-06-18T21:43:06.8512104Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-trace-bom/1.0.3/google-cloud-trace-bom-1.0.3.pom
+2020-06-18T21:43:06.8737193Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-trace-bom/1.0.3/google-cloud-trace-bom-1.0.3.pom (3.7 kB at 163 kB/s)
+2020-06-18T21:43:06.8766090Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/cloud/google-cloud-translate-bom/1.94.5/google-cloud-translate-bom-1.94.5.pom
+2020-06-18T21:43:06.9428615Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/cloud/google-cloud-translate-bom/1.94.5/google-cloud-translate-bom-1.94.5.pom
+2020-06-18T21:43:07.0104976Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-translate-bom/1.94.5/google-cloud-translate-bom-1.94.5.pom
+2020-06-18T21:43:07.0331876Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-translate-bom/1.94.5/google-cloud-translate-bom-1.94.5.pom (3.6 kB at 156 kB/s)
+2020-06-18T21:43:07.0358592Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/cloud/google-cloud-video-intelligence-bom/1.2.1/google-cloud-video-intelligence-bom-1.2.1.pom
+2020-06-18T21:43:07.1126550Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/cloud/google-cloud-video-intelligence-bom/1.2.1/google-cloud-video-intelligence-bom-1.2.1.pom
+2020-06-18T21:43:07.1823210Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-video-intelligence-bom/1.2.1/google-cloud-video-intelligence-bom-1.2.1.pom
+2020-06-18T21:43:07.2045318Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-video-intelligence-bom/1.2.1/google-cloud-video-intelligence-bom-1.2.1.pom (5.5 kB at 237 kB/s)
+2020-06-18T21:43:07.2072920Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/cloud/google-cloud-vision-bom/1.99.3/google-cloud-vision-bom-1.99.3.pom
+2020-06-18T21:43:07.2718443Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/cloud/google-cloud-vision-bom/1.99.3/google-cloud-vision-bom-1.99.3.pom
+2020-06-18T21:43:07.3384587Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-vision-bom/1.99.3/google-cloud-vision-bom-1.99.3.pom
+2020-06-18T21:43:07.3633787Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-vision-bom/1.99.3/google-cloud-vision-bom-1.99.3.pom (5.1 kB at 204 kB/s)
+2020-06-18T21:43:07.3668361Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/cloud/google-cloud-websecurityscanner-bom/0.116.3/google-cloud-websecurityscanner-bom-0.116.3.pom
+2020-06-18T21:43:07.4319509Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/cloud/google-cloud-websecurityscanner-bom/0.116.3/google-cloud-websecurityscanner-bom-0.116.3.pom
+2020-06-18T21:43:07.4994277Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-websecurityscanner-bom/0.116.3/google-cloud-websecurityscanner-bom-0.116.3.pom
+2020-06-18T21:43:07.5218378Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-websecurityscanner-bom/0.116.3/google-cloud-websecurityscanner-bom-0.116.3.pom (3.8 kB at 164 kB/s)
+2020-06-18T21:43:07.5245055Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/cloud/google-cloud-webrisk-bom/0.33.3/google-cloud-webrisk-bom-0.33.3.pom
+2020-06-18T21:43:07.5887144Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/cloud/google-cloud-webrisk-bom/0.33.3/google-cloud-webrisk-bom-0.33.3.pom
+2020-06-18T21:43:07.6578847Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-webrisk-bom/0.33.3/google-cloud-webrisk-bom-0.33.3.pom
+2020-06-18T21:43:07.6808867Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/cloud/google-cloud-webrisk-bom/0.33.3/google-cloud-webrisk-bom-0.33.3.pom (3.6 kB at 155 kB/s)
+2020-06-18T21:43:07.6861983Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/io/dropwizard/metrics/metrics-bom/4.1.9/metrics-bom-4.1.9.pom
+2020-06-18T21:43:07.7565030Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/io/dropwizard/metrics/metrics-bom/4.1.9/metrics-bom-4.1.9.pom
+2020-06-18T21:43:07.8245575Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/io/dropwizard/metrics/metrics-bom/4.1.9/metrics-bom-4.1.9.pom
+2020-06-18T21:43:07.8474911Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/io/dropwizard/metrics/metrics-bom/4.1.9/metrics-bom-4.1.9.pom (5.1 kB at 212 kB/s)
+2020-06-18T21:43:07.8501052Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/io/dropwizard/metrics/metrics-parent/4.1.9/metrics-parent-4.1.9.pom
+2020-06-18T21:43:07.9164638Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/io/dropwizard/metrics/metrics-parent/4.1.9/metrics-parent-4.1.9.pom
+2020-06-18T21:43:07.9837719Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/io/dropwizard/metrics/metrics-parent/4.1.9/metrics-parent-4.1.9.pom
+2020-06-18T21:43:08.0049153Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/io/dropwizard/metrics/metrics-parent/4.1.9/metrics-parent-4.1.9.pom (15 kB at 680 kB/s)
+2020-06-18T21:43:08.0167637Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/eclipse/jetty/jetty-bom/9.4.29.v20200521/jetty-bom-9.4.29.v20200521.pom
+2020-06-18T21:43:08.0822182Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/eclipse/jetty/jetty-bom/9.4.29.v20200521/jetty-bom-9.4.29.v20200521.pom
+2020-06-18T21:43:08.1489124Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-bom/9.4.29.v20200521/jetty-bom-9.4.29.v20200521.pom
+2020-06-18T21:43:08.1726811Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/eclipse/jetty/jetty-bom/9.4.29.v20200521/jetty-bom-9.4.29.v20200521.pom (17 kB at 828 kB/s)
+2020-06-18T21:43:08.1774233Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/jetbrains/kotlinx/kotlinx-coroutines-bom/1.3.7/kotlinx-coroutines-bom-1.3.7.pom
+2020-06-18T21:43:08.2438867Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/jetbrains/kotlinx/kotlinx-coroutines-bom/1.3.7/kotlinx-coroutines-bom-1.3.7.pom
+2020-06-18T21:43:08.3098042Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-bom/1.3.7/kotlinx-coroutines-bom-1.3.7.pom
+2020-06-18T21:43:08.3305561Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-bom/1.3.7/kotlinx-coroutines-bom-1.3.7.pom (5.0 kB at 252 kB/s)
+2020-06-18T21:43:08.3326917Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/apache/logging/log4j/log4j-bom/2.13.3/log4j-bom-2.13.3.pom
+2020-06-18T21:43:08.3996575Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/apache/logging/log4j/log4j-bom/2.13.3/log4j-bom-2.13.3.pom
+2020-06-18T21:43:08.4664099Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-bom/2.13.3/log4j-bom-2.13.3.pom
+2020-06-18T21:43:08.4882340Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-bom/2.13.3/log4j-bom-2.13.3.pom (7.6 kB at 347 kB/s)
+2020-06-18T21:43:08.4928010Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/io/netty/netty-bom/4.1.50.Final/netty-bom-4.1.50.Final.pom
+2020-06-18T21:43:08.5595639Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/io/netty/netty-bom/4.1.50.Final/netty-bom-4.1.50.Final.pom
+2020-06-18T21:43:08.6276682Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/io/netty/netty-bom/4.1.50.Final/netty-bom-4.1.50.Final.pom
+2020-06-18T21:43:08.6489293Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/io/netty/netty-bom/4.1.50.Final/netty-bom-4.1.50.Final.pom (7.9 kB at 360 kB/s)
+2020-06-18T21:43:08.6522623Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/io/r2dbc/r2dbc-bom/Arabba-SR4/r2dbc-bom-Arabba-SR4.pom
+2020-06-18T21:43:08.7217312Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/io/r2dbc/r2dbc-bom/Arabba-SR4/r2dbc-bom-Arabba-SR4.pom
+2020-06-18T21:43:08.7933948Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/io/r2dbc/r2dbc-bom/Arabba-SR4/r2dbc-bom-Arabba-SR4.pom
+2020-06-18T21:43:08.8148698Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/io/r2dbc/r2dbc-bom/Arabba-SR4/r2dbc-bom-Arabba-SR4.pom (3.9 kB at 175 kB/s)
+2020-06-18T21:43:08.8171718Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/io/projectreactor/reactor-bom/Dysprosium-SR8/reactor-bom-Dysprosium-SR8.pom
+2020-06-18T21:43:08.8847391Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/io/projectreactor/reactor-bom/Dysprosium-SR8/reactor-bom-Dysprosium-SR8.pom
+2020-06-18T21:43:08.9562816Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/io/projectreactor/reactor-bom/Dysprosium-SR8/reactor-bom-Dysprosium-SR8.pom
+2020-06-18T21:43:08.9835029Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/io/projectreactor/reactor-bom/Dysprosium-SR8/reactor-bom-Dysprosium-SR8.pom (4.1 kB at 150 kB/s)
+2020-06-18T21:43:08.9855411Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/io/rsocket/rsocket-bom/1.0.1/rsocket-bom-1.0.1.pom
+2020-06-18T21:43:09.0499636Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/io/rsocket/rsocket-bom/1.0.1/rsocket-bom-1.0.1.pom
+2020-06-18T21:43:09.1175924Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/io/rsocket/rsocket-bom/1.0.1/rsocket-bom-1.0.1.pom
+2020-06-18T21:43:09.1419150Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/io/rsocket/rsocket-bom/1.0.1/rsocket-bom-1.0.1.pom (2.8 kB at 111 kB/s)
+2020-06-18T21:43:09.1435642Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/data/spring-data-releasetrain/Neumann-SR1/spring-data-releasetrain-Neumann-SR1.pom
+2020-06-18T21:43:09.2086161Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/data/spring-data-releasetrain/Neumann-SR1/spring-data-releasetrain-Neumann-SR1.pom
+2020-06-18T21:43:09.3229275Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/data/spring-data-releasetrain/Neumann-SR1/spring-data-releasetrain-Neumann-SR1.pom (5.0 kB at 44 kB/s)
+2020-06-18T21:43:09.3257144Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/data/build/spring-data-build/2.3.1.RELEASE/spring-data-build-2.3.1.RELEASE.pom
+2020-06-18T21:43:09.3670377Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/data/build/spring-data-build/2.3.1.RELEASE/spring-data-build-2.3.1.RELEASE.pom
+2020-06-18T21:43:09.4778555Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/data/build/spring-data-build/2.3.1.RELEASE/spring-data-build-2.3.1.RELEASE.pom (7.2 kB at 66 kB/s)
+2020-06-18T21:43:09.4906432Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/spring-framework-bom/5.2.7.RELEASE/spring-framework-bom-5.2.7.RELEASE.pom
+2020-06-18T21:43:09.5320120Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/spring-framework-bom/5.2.7.RELEASE/spring-framework-bom-5.2.7.RELEASE.pom
+2020-06-18T21:43:09.6491916Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/spring-framework-bom/5.2.7.RELEASE/spring-framework-bom-5.2.7.RELEASE.pom (5.3 kB at 46 kB/s)
+2020-06-18T21:43:09.6545228Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/integration/spring-integration-bom/5.3.1.RELEASE/spring-integration-bom-5.3.1.RELEASE.pom
+2020-06-18T21:43:09.6970433Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/integration/spring-integration-bom/5.3.1.RELEASE/spring-integration-bom-5.3.1.RELEASE.pom
+2020-06-18T21:43:09.8127727Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/integration/spring-integration-bom/5.3.1.RELEASE/spring-integration-bom-5.3.1.RELEASE.pom (9.2 kB at 82 kB/s)
+2020-06-18T21:43:09.8129355Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/security/spring-security-bom/5.3.3.RELEASE/spring-security-bom-5.3.3.RELEASE.pom
+2020-06-18T21:43:09.8543896Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/security/spring-security-bom/5.3.3.RELEASE/spring-security-bom-5.3.3.RELEASE.pom
+2020-06-18T21:43:09.9677623Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/security/spring-security-bom/5.3.3.RELEASE/spring-security-bom-5.3.3.RELEASE.pom (5.4 kB at 48 kB/s)
+2020-06-18T21:43:09.9906372Z [INFO] 
+2020-06-18T21:43:09.9910377Z [INFO] --------------------------< com.example:zuul >--------------------------
+2020-06-18T21:43:09.9912441Z [INFO] Building zuul 0.0.1-SNAPSHOT
+2020-06-18T21:43:09.9915760Z [INFO] --------------------------------[ jar ]---------------------------------
+2020-06-18T21:43:09.9969546Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-maven-plugin/2.3.1.RELEASE/spring-boot-maven-plugin-2.3.1.RELEASE.pom
+2020-06-18T21:43:10.0206850Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-maven-plugin/2.3.1.RELEASE/spring-boot-maven-plugin-2.3.1.RELEASE.pom (3.2 kB at 151 kB/s)
+2020-06-18T21:43:10.0282571Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-parent/2.3.1.RELEASE/spring-boot-parent-2.3.1.RELEASE.pom
+2020-06-18T21:43:10.0508846Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-parent/2.3.1.RELEASE/spring-boot-parent-2.3.1.RELEASE.pom (7.0 kB at 268 kB/s)
+2020-06-18T21:43:10.0539769Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-dependencies/2.3.1.RELEASE/spring-boot-dependencies-2.3.1.RELEASE.pom
+2020-06-18T21:43:10.0638169Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-dependencies/2.3.1.RELEASE/spring-boot-dependencies-2.3.1.RELEASE.pom (0 B at 0 B/s)
+2020-06-18T21:43:10.0857615Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-releasetrain/Neumann-SR1/spring-data-releasetrain-Neumann-SR1.pom
+2020-06-18T21:43:10.0961066Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-releasetrain/Neumann-SR1/spring-data-releasetrain-Neumann-SR1.pom (0 B at 0 B/s)
+2020-06-18T21:43:10.0975361Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/data/build/spring-data-build/2.3.1.RELEASE/spring-data-build-2.3.1.RELEASE.pom
+2020-06-18T21:43:10.1083464Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/data/build/spring-data-build/2.3.1.RELEASE/spring-data-build-2.3.1.RELEASE.pom (0 B at 0 B/s)
+2020-06-18T21:43:10.1111205Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-framework-bom/5.2.7.RELEASE/spring-framework-bom-5.2.7.RELEASE.pom
+2020-06-18T21:43:10.1215058Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-framework-bom/5.2.7.RELEASE/spring-framework-bom-5.2.7.RELEASE.pom (0 B at 0 B/s)
+2020-06-18T21:43:10.1232931Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/integration/spring-integration-bom/5.3.1.RELEASE/spring-integration-bom-5.3.1.RELEASE.pom
+2020-06-18T21:43:10.1333701Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/integration/spring-integration-bom/5.3.1.RELEASE/spring-integration-bom-5.3.1.RELEASE.pom (0 B at 0 B/s)
+2020-06-18T21:43:10.1361485Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-bom/5.3.3.RELEASE/spring-security-bom-5.3.3.RELEASE.pom
+2020-06-18T21:43:10.1468545Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/security/spring-security-bom/5.3.3.RELEASE/spring-security-bom-5.3.3.RELEASE.pom (0 B at 0 B/s)
+2020-06-18T21:43:10.1499081Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/testcontainers/testcontainers-bom/1.14.2/testcontainers-bom-1.14.2.pom
+2020-06-18T21:43:10.1725802Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/testcontainers/testcontainers-bom/1.14.2/testcontainers-bom-1.14.2.pom (6.7 kB at 293 kB/s)
+2020-06-18T21:43:10.1823292Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-maven-plugin/2.3.1.RELEASE/spring-boot-maven-plugin-2.3.1.RELEASE.jar
+2020-06-18T21:43:10.2162753Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-maven-plugin/2.3.1.RELEASE/spring-boot-maven-plugin-2.3.1.RELEASE.jar (93 kB at 2.7 MB/s)
+2020-06-18T21:43:10.2961474Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-starter-netflix-eureka-client/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:43:10.2979751Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-starter-netflix-eureka-client/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:43:10.3902094Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-starter-netflix-eureka-client/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml (841 B at 9.2 kB/s)
+2020-06-18T21:43:10.3936872Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-starter-netflix-eureka-client/2.2.4.BUILD-SNAPSHOT/spring-cloud-starter-netflix-eureka-client-2.2.4.BUILD-20200618.212932-173.pom
+2020-06-18T21:43:10.4817804Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-starter-netflix-eureka-client/2.2.4.BUILD-SNAPSHOT/spring-cloud-starter-netflix-eureka-client-2.2.4.BUILD-20200618.212932-173.pom (8.1 kB at 91 kB/s)
+2020-06-18T21:43:10.4831151Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-starter-netflix/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:43:10.4846865Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-starter-netflix/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:43:10.5717407Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-starter-netflix/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml (646 B at 7.4 kB/s)
+2020-06-18T21:43:10.5752687Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-starter-netflix/2.2.4.BUILD-SNAPSHOT/spring-cloud-starter-netflix-2.2.4.BUILD-20200618.212924-173.pom
+2020-06-18T21:43:10.7038108Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-starter-netflix/2.2.4.BUILD-SNAPSHOT/spring-cloud-starter-netflix-2.2.4.BUILD-20200618.212924-173.pom (3.8 kB at 30 kB/s)
+2020-06-18T21:43:10.7083752Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-netflix/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:43:10.7101018Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-netflix/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:43:10.7986880Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-netflix/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml (638 B at 7.0 kB/s)
+2020-06-18T21:43:10.8006328Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-netflix/2.2.4.BUILD-SNAPSHOT/spring-cloud-netflix-2.2.4.BUILD-20200618.212519-174.pom
+2020-06-18T21:43:10.8859402Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-netflix/2.2.4.BUILD-SNAPSHOT/spring-cloud-netflix-2.2.4.BUILD-20200618.212519-174.pom (4.6 kB at 54 kB/s)
+2020-06-18T21:43:10.8897614Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-build/2.3.1.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:43:10.8914143Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-build/2.3.1.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:43:10.9985012Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-build/2.3.1.BUILD-SNAPSHOT/maven-metadata.xml (634 B at 5.9 kB/s)
+2020-06-18T21:43:11.0013351Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-build/2.3.1.BUILD-SNAPSHOT/spring-cloud-build-2.3.1.BUILD-20200618.105106-27.pom
+2020-06-18T21:43:11.0969105Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-build/2.3.1.BUILD-SNAPSHOT/spring-cloud-build-2.3.1.BUILD-20200618.105106-27.pom (52 kB at 538 kB/s)
+2020-06-18T21:43:11.1027373Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-build-dependencies/2.3.1.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:43:11.1046718Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-build-dependencies/2.3.1.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:43:11.2083198Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-build-dependencies/2.3.1.BUILD-SNAPSHOT/maven-metadata.xml (647 B at 6.1 kB/s)
+2020-06-18T21:43:11.2112252Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-build-dependencies/2.3.1.BUILD-SNAPSHOT/spring-cloud-build-dependencies-2.3.1.BUILD-20200618.105214-26.pom
+2020-06-18T21:43:11.2973852Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-build-dependencies/2.3.1.BUILD-SNAPSHOT/spring-cloud-build-dependencies-2.3.1.BUILD-20200618.105214-26.pom (3.8 kB at 44 kB/s)
+2020-06-18T21:43:11.3467825Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-starter/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:43:11.3482334Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-starter/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:43:11.5287164Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-starter/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml (816 B at 4.5 kB/s)
+2020-06-18T21:43:11.5297677Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-starter/2.2.4.BUILD-SNAPSHOT/spring-cloud-starter-2.2.4.BUILD-20200618.094040-23.pom
+2020-06-18T21:43:11.6137650Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-starter/2.2.4.BUILD-SNAPSHOT/spring-cloud-starter-2.2.4.BUILD-20200618.094040-23.pom (5.0 kB at 60 kB/s)
+2020-06-18T21:43:11.6167053Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-commons-parent/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:43:11.6176733Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-commons-parent/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:43:11.7059775Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-commons-parent/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml (643 B at 7.4 kB/s)
+2020-06-18T21:43:11.7067928Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-commons-parent/2.2.4.BUILD-SNAPSHOT/spring-cloud-commons-parent-2.2.4.BUILD-20200618.093710-24.pom
+2020-06-18T21:43:11.7928272Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-commons-parent/2.2.4.BUILD-SNAPSHOT/spring-cloud-commons-parent-2.2.4.BUILD-20200618.093710-24.pom (4.5 kB at 53 kB/s)
+2020-06-18T21:43:11.8010135Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/boot/spring-boot-starter/2.3.1.RELEASE/spring-boot-starter-2.3.1.RELEASE.pom
+2020-06-18T21:43:11.8417552Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter/2.3.1.RELEASE/spring-boot-starter-2.3.1.RELEASE.pom
+2020-06-18T21:43:11.9547131Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter/2.3.1.RELEASE/spring-boot-starter-2.3.1.RELEASE.pom (3.3 kB at 30 kB/s)
+2020-06-18T21:43:11.9627166Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/boot/spring-boot/2.3.1.RELEASE/spring-boot-2.3.1.RELEASE.pom
+2020-06-18T21:43:12.0047182Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot/2.3.1.RELEASE/spring-boot-2.3.1.RELEASE.pom
+2020-06-18T21:43:12.1204863Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot/2.3.1.RELEASE/spring-boot-2.3.1.RELEASE.pom (2.5 kB at 22 kB/s)
+2020-06-18T21:43:12.1246111Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/spring-core/5.2.7.RELEASE/spring-core-5.2.7.RELEASE.pom
+2020-06-18T21:43:12.1666505Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/spring-core/5.2.7.RELEASE/spring-core-5.2.7.RELEASE.pom
+2020-06-18T21:43:12.2847336Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/spring-core/5.2.7.RELEASE/spring-core-5.2.7.RELEASE.pom (1.7 kB at 14 kB/s)
+2020-06-18T21:43:12.2855389Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/spring-jcl/5.2.7.RELEASE/spring-jcl-5.2.7.RELEASE.pom
+2020-06-18T21:43:12.3272797Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/spring-jcl/5.2.7.RELEASE/spring-jcl-5.2.7.RELEASE.pom
+2020-06-18T21:43:12.4411290Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/spring-jcl/5.2.7.RELEASE/spring-jcl-5.2.7.RELEASE.pom (1.5 kB at 13 kB/s)
+2020-06-18T21:43:12.4489198Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/spring-context/5.2.7.RELEASE/spring-context-5.2.7.RELEASE.pom
+2020-06-18T21:43:12.4907870Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/spring-context/5.2.7.RELEASE/spring-context-5.2.7.RELEASE.pom
+2020-06-18T21:43:12.6040963Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/spring-context/5.2.7.RELEASE/spring-context-5.2.7.RELEASE.pom (2.3 kB at 20 kB/s)
+2020-06-18T21:43:12.6101166Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/spring-aop/5.2.7.RELEASE/spring-aop-5.2.7.RELEASE.pom
+2020-06-18T21:43:12.6527054Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/spring-aop/5.2.7.RELEASE/spring-aop-5.2.7.RELEASE.pom
+2020-06-18T21:43:12.7844109Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/spring-aop/5.2.7.RELEASE/spring-aop-5.2.7.RELEASE.pom (1.9 kB at 14 kB/s)
+2020-06-18T21:43:12.7873015Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/spring-beans/5.2.7.RELEASE/spring-beans-5.2.7.RELEASE.pom
+2020-06-18T21:43:12.8331749Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/spring-beans/5.2.7.RELEASE/spring-beans-5.2.7.RELEASE.pom
+2020-06-18T21:43:12.9490001Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/spring-beans/5.2.7.RELEASE/spring-beans-5.2.7.RELEASE.pom (1.7 kB at 15 kB/s)
+2020-06-18T21:43:12.9542096Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/spring-expression/5.2.7.RELEASE/spring-expression-5.2.7.RELEASE.pom
+2020-06-18T21:43:12.9958301Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/spring-expression/5.2.7.RELEASE/spring-expression-5.2.7.RELEASE.pom
+2020-06-18T21:43:13.1096411Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/spring-expression/5.2.7.RELEASE/spring-expression-5.2.7.RELEASE.pom (1.7 kB at 15 kB/s)
+2020-06-18T21:43:13.1124220Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/boot/spring-boot-autoconfigure/2.3.1.RELEASE/spring-boot-autoconfigure-2.3.1.RELEASE.pom
+2020-06-18T21:43:13.1539402Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-autoconfigure/2.3.1.RELEASE/spring-boot-autoconfigure-2.3.1.RELEASE.pom
+2020-06-18T21:43:13.2650680Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-autoconfigure/2.3.1.RELEASE/spring-boot-autoconfigure-2.3.1.RELEASE.pom (2.4 kB at 22 kB/s)
+2020-06-18T21:43:13.2711388Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/boot/spring-boot-starter-logging/2.3.1.RELEASE/spring-boot-starter-logging-2.3.1.RELEASE.pom
+2020-06-18T21:43:13.3126794Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-logging/2.3.1.RELEASE/spring-boot-starter-logging-2.3.1.RELEASE.pom
+2020-06-18T21:43:13.4288662Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-logging/2.3.1.RELEASE/spring-boot-starter-logging-2.3.1.RELEASE.pom (2.7 kB at 24 kB/s)
+2020-06-18T21:43:13.4539888Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/apache/logging/log4j/log4j-to-slf4j/2.13.3/log4j-to-slf4j-2.13.3.pom
+2020-06-18T21:43:13.4957667Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/apache/logging/log4j/log4j-to-slf4j/2.13.3/log4j-to-slf4j-2.13.3.pom
+2020-06-18T21:43:13.5618660Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-to-slf4j/2.13.3/log4j-to-slf4j-2.13.3.pom
+2020-06-18T21:43:13.5839910Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-to-slf4j/2.13.3/log4j-to-slf4j-2.13.3.pom (7.2 kB at 326 kB/s)
+2020-06-18T21:43:13.5861774Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/apache/logging/log4j/log4j/2.13.3/log4j-2.13.3.pom
+2020-06-18T21:43:13.6516725Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/apache/logging/log4j/log4j/2.13.3/log4j-2.13.3.pom
+2020-06-18T21:43:13.7279420Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j/2.13.3/log4j-2.13.3.pom
+2020-06-18T21:43:13.7535679Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j/2.13.3/log4j-2.13.3.pom (64 kB at 2.4 MB/s)
+2020-06-18T21:43:13.7660541Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/apache/logging/log4j/log4j-api/2.13.3/log4j-api-2.13.3.pom
+2020-06-18T21:43:13.8439373Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/apache/logging/log4j/log4j-api/2.13.3/log4j-api-2.13.3.pom
+2020-06-18T21:43:13.9112522Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-api/2.13.3/log4j-api-2.13.3.pom
+2020-06-18T21:43:13.9351646Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-api/2.13.3/log4j-api-2.13.3.pom (13 kB at 626 kB/s)
+2020-06-18T21:43:13.9412688Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-context/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:43:13.9429784Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-context/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:43:14.0570058Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-context/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml (1.3 kB at 11 kB/s)
+2020-06-18T21:43:14.0599656Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-context/2.2.4.BUILD-SNAPSHOT/spring-cloud-context-2.2.4.BUILD-20200618.093844-23.pom
+2020-06-18T21:43:14.1449852Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-context/2.2.4.BUILD-SNAPSHOT/spring-cloud-context-2.2.4.BUILD-20200618.093844-23.pom (6.2 kB at 73 kB/s)
+2020-06-18T21:43:14.1521494Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/security/spring-security-crypto/5.3.3.RELEASE/spring-security-crypto-5.3.3.RELEASE.pom
+2020-06-18T21:43:14.1953123Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/security/spring-security-crypto/5.3.3.RELEASE/spring-security-crypto-5.3.3.RELEASE.pom
+2020-06-18T21:43:14.3064130Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/security/spring-security-crypto/5.3.3.RELEASE/spring-security-crypto-5.3.3.RELEASE.pom (2.6 kB at 23 kB/s)
+2020-06-18T21:43:14.3117592Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-commons/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:43:14.3139891Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-commons/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:43:14.4234241Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-commons/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml (1.5 kB at 13 kB/s)
+2020-06-18T21:43:14.4266474Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-commons/2.2.4.BUILD-SNAPSHOT/spring-cloud-commons-2.2.4.BUILD-20200618.093957-23.pom
+2020-06-18T21:43:14.5122580Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-commons/2.2.4.BUILD-SNAPSHOT/spring-cloud-commons-2.2.4.BUILD-20200618.093957-23.pom (7.9 kB at 93 kB/s)
+2020-06-18T21:43:14.5259440Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-netflix-hystrix/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:43:14.5301127Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-netflix-hystrix/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:43:14.6102036Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-netflix-hystrix/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml (1.3 kB at 14 kB/s)
+2020-06-18T21:43:14.6122684Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-netflix-hystrix/2.2.4.BUILD-SNAPSHOT/spring-cloud-netflix-hystrix-2.2.4.BUILD-20200618.212638-174.pom
+2020-06-18T21:43:14.6987179Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-netflix-hystrix/2.2.4.BUILD-SNAPSHOT/spring-cloud-netflix-hystrix-2.2.4.BUILD-20200618.212638-174.pom (11 kB at 127 kB/s)
+2020-06-18T21:43:14.7052915Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/boot/spring-boot-starter-aop/2.3.1.RELEASE/spring-boot-starter-aop-2.3.1.RELEASE.pom
+2020-06-18T21:43:14.7470703Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-aop/2.3.1.RELEASE/spring-boot-starter-aop-2.3.1.RELEASE.pom
+2020-06-18T21:43:14.8600281Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-aop/2.3.1.RELEASE/spring-boot-starter-aop-2.3.1.RELEASE.pom (2.8 kB at 25 kB/s)
+2020-06-18T21:43:14.8650234Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-netflix-eureka-client/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:43:14.8693842Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-netflix-eureka-client/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:43:14.9856757Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-netflix-eureka-client/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml (1.3 kB at 11 kB/s)
+2020-06-18T21:43:14.9896101Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-netflix-eureka-client/2.2.4.BUILD-SNAPSHOT/spring-cloud-netflix-eureka-client-2.2.4.BUILD-20200618.212918-173.pom
+2020-06-18T21:43:15.1128621Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-netflix-eureka-client/2.2.4.BUILD-SNAPSHOT/spring-cloud-netflix-eureka-client-2.2.4.BUILD-20200618.212918-173.pom (12 kB at 96 kB/s)
+2020-06-18T21:43:15.1177135Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/netflix/eureka/eureka-client/1.9.21/eureka-client-1.9.21.pom
+2020-06-18T21:43:16.1387683Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/netflix/eureka/eureka-client/1.9.21/eureka-client-1.9.21.pom
+2020-06-18T21:43:16.1389058Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/netflix/eureka/eureka-client/1.9.21/eureka-client-1.9.21.pom
+2020-06-18T21:43:16.1390516Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/netflix/eureka/eureka-client/1.9.21/eureka-client-1.9.21.pom (11 kB at 362 kB/s)
+2020-06-18T21:43:16.1392260Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/guava/guava/29.0-android/guava-29.0-android.pom
+2020-06-18T21:43:16.1392758Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/guava/guava/29.0-android/guava-29.0-android.pom
+2020-06-18T21:43:16.1393209Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/29.0-android/guava-29.0-android.pom
+2020-06-18T21:43:16.1393689Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/29.0-android/guava-29.0-android.pom (11 kB at 521 kB/s)
+2020-06-18T21:43:16.1394189Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/guava/guava-parent/29.0-android/guava-parent-29.0-android.pom
+2020-06-18T21:43:16.1394641Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/guava/guava-parent/29.0-android/guava-parent-29.0-android.pom
+2020-06-18T21:43:16.1395104Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/29.0-android/guava-parent-29.0-android.pom
+2020-06-18T21:43:16.1395618Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/29.0-android/guava-parent-29.0-android.pom (13 kB at 645 kB/s)
+2020-06-18T21:43:16.1396144Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/commons-configuration/commons-configuration/1.10/commons-configuration-1.10.pom
+2020-06-18T21:43:16.1396606Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/commons-configuration/commons-configuration/1.10/commons-configuration-1.10.pom
+2020-06-18T21:43:16.1397064Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/commons-configuration/commons-configuration/1.10/commons-configuration-1.10.pom
+2020-06-18T21:43:16.1397566Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/commons-configuration/commons-configuration/1.10/commons-configuration-1.10.pom (21 kB at 942 kB/s)
+2020-06-18T21:43:16.1398020Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/apache/commons/commons-parent/32/commons-parent-32.pom
+2020-06-18T21:43:16.1398454Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/apache/commons/commons-parent/32/commons-parent-32.pom
+2020-06-18T21:43:16.1398883Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/32/commons-parent-32.pom
+2020-06-18T21:43:16.1399347Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/32/commons-parent-32.pom (53 kB at 2.3 MB/s)
+2020-06-18T21:43:16.1399794Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/fasterxml/woodstox/woodstox-core/5.3.0/woodstox-core-5.3.0.pom
+2020-06-18T21:43:16.1400693Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/fasterxml/woodstox/woodstox-core/5.3.0/woodstox-core-5.3.0.pom
+2020-06-18T21:43:16.1470850Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/woodstox/woodstox-core/5.3.0/woodstox-core-5.3.0.pom
+2020-06-18T21:43:16.1697605Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/woodstox/woodstox-core/5.3.0/woodstox-core-5.3.0.pom (9.7 kB at 420 kB/s)
+2020-06-18T21:43:16.1755487Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/fasterxml/oss-parent/37/oss-parent-37.pom
+2020-06-18T21:43:16.2439723Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/fasterxml/oss-parent/37/oss-parent-37.pom
+2020-06-18T21:43:16.3110561Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/oss-parent/37/oss-parent-37.pom
+2020-06-18T21:43:16.3336094Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/oss-parent/37/oss-parent-37.pom (23 kB at 994 kB/s)
+2020-06-18T21:43:16.3364367Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/netflix/eureka/eureka-core/1.9.21/eureka-core-1.9.21.pom
+2020-06-18T21:43:16.4037962Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/netflix/eureka/eureka-core/1.9.21/eureka-core-1.9.21.pom
+2020-06-18T21:43:16.4749770Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/netflix/eureka/eureka-core/1.9.21/eureka-core-1.9.21.pom
+2020-06-18T21:43:16.4980270Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/netflix/eureka/eureka-core/1.9.21/eureka-core-1.9.21.pom (4.9 kB at 204 kB/s)
+2020-06-18T21:43:16.5058512Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-starter-netflix-archaius/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:43:16.5067776Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-starter-netflix-archaius/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:43:16.6202228Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-starter-netflix-archaius/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml (836 B at 7.3 kB/s)
+2020-06-18T21:43:16.6231931Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-starter-netflix-archaius/2.2.4.BUILD-SNAPSHOT/spring-cloud-starter-netflix-archaius-2.2.4.BUILD-20200618.212926-173.pom
+2020-06-18T21:43:16.8089464Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-starter-netflix-archaius/2.2.4.BUILD-SNAPSHOT/spring-cloud-starter-netflix-archaius-2.2.4.BUILD-20200618.212926-173.pom (5.4 kB at 29 kB/s)
+2020-06-18T21:43:16.8149589Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-netflix-ribbon/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:43:16.8183758Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-netflix-ribbon/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:43:16.9047639Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-netflix-ribbon/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml (1.3 kB at 14 kB/s)
+2020-06-18T21:43:16.9055777Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-netflix-ribbon/2.2.4.BUILD-SNAPSHOT/spring-cloud-netflix-ribbon-2.2.4.BUILD-20200618.212552-174.pom
+2020-06-18T21:43:16.9909316Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-netflix-ribbon/2.2.4.BUILD-SNAPSHOT/spring-cloud-netflix-ribbon-2.2.4.BUILD-20200618.212552-174.pom (9.3 kB at 109 kB/s)
+2020-06-18T21:43:16.9988392Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-netflix-archaius/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:43:17.0010077Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-netflix-archaius/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:43:17.1080132Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-netflix-archaius/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml (1.3 kB at 12 kB/s)
+2020-06-18T21:43:17.1099793Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-netflix-archaius/2.2.4.BUILD-SNAPSHOT/spring-cloud-netflix-archaius-2.2.4.BUILD-20200618.212527-174.pom
+2020-06-18T21:43:17.2078503Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-netflix-archaius/2.2.4.BUILD-SNAPSHOT/spring-cloud-netflix-archaius-2.2.4.BUILD-20200618.212527-174.pom (5.2 kB at 54 kB/s)
+2020-06-18T21:43:17.2207258Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-starter-netflix-ribbon/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:43:17.2221805Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-starter-netflix-ribbon/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:43:17.3346874Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-starter-netflix-ribbon/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml (834 B at 7.4 kB/s)
+2020-06-18T21:43:17.3393005Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-starter-netflix-ribbon/2.2.4.BUILD-SNAPSHOT/spring-cloud-starter-netflix-ribbon-2.2.4.BUILD-20200618.212929-173.pom
+2020-06-18T21:43:17.4251560Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-starter-netflix-ribbon/2.2.4.BUILD-SNAPSHOT/spring-cloud-starter-netflix-ribbon-2.2.4.BUILD-20200618.212929-173.pom (6.3 kB at 73 kB/s)
+2020-06-18T21:43:17.4684244Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-starter-loadbalancer/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:43:17.4697983Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-starter-loadbalancer/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:43:17.5588780Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-starter-loadbalancer/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml (829 B at 9.1 kB/s)
+2020-06-18T21:43:17.5620580Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-starter-loadbalancer/2.2.4.BUILD-SNAPSHOT/spring-cloud-starter-loadbalancer-2.2.4.BUILD-20200618.094044-23.pom
+2020-06-18T21:43:17.7073846Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-starter-loadbalancer/2.2.4.BUILD-SNAPSHOT/spring-cloud-starter-loadbalancer-2.2.4.BUILD-20200618.094044-23.pom (4.6 kB at 32 kB/s)
+2020-06-18T21:43:17.7153492Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-loadbalancer/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:43:17.7172855Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-loadbalancer/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:43:17.8790267Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-loadbalancer/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml (1.3 kB at 7.7 kB/s)
+2020-06-18T21:43:17.8809709Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-loadbalancer/2.2.4.BUILD-SNAPSHOT/spring-cloud-loadbalancer-2.2.4.BUILD-20200618.094030-23.pom
+2020-06-18T21:43:17.9751340Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-loadbalancer/2.2.4.BUILD-SNAPSHOT/spring-cloud-loadbalancer-2.2.4.BUILD-20200618.094030-23.pom (6.6 kB at 70 kB/s)
+2020-06-18T21:43:17.9897777Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/boot/spring-boot-starter-validation/2.3.1.RELEASE/spring-boot-starter-validation-2.3.1.RELEASE.pom
+2020-06-18T21:43:18.0460552Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-validation/2.3.1.RELEASE/spring-boot-starter-validation-2.3.1.RELEASE.pom
+2020-06-18T21:43:18.1661584Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-validation/2.3.1.RELEASE/spring-boot-starter-validation-2.3.1.RELEASE.pom (2.8 kB at 23 kB/s)
+2020-06-18T21:43:18.1990046Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/io/projectreactor/reactor-core/3.3.6.RELEASE/reactor-core-3.3.6.RELEASE.pom
+2020-06-18T21:43:18.2422693Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/io/projectreactor/reactor-core/3.3.6.RELEASE/reactor-core-3.3.6.RELEASE.pom
+2020-06-18T21:43:18.3097767Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/io/projectreactor/reactor-core/3.3.6.RELEASE/reactor-core-3.3.6.RELEASE.pom
+2020-06-18T21:43:18.3331470Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/io/projectreactor/reactor-core/3.3.6.RELEASE/reactor-core-3.3.6.RELEASE.pom (2.5 kB at 111 kB/s)
+2020-06-18T21:43:18.3379272Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/boot/spring-boot-starter-cache/2.3.1.RELEASE/spring-boot-starter-cache-2.3.1.RELEASE.pom
+2020-06-18T21:43:18.4064261Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-cache/2.3.1.RELEASE/spring-boot-starter-cache-2.3.1.RELEASE.pom
+2020-06-18T21:43:18.5189099Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-cache/2.3.1.RELEASE/spring-boot-starter-cache-2.3.1.RELEASE.pom (2.6 kB at 23 kB/s)
+2020-06-18T21:43:18.5417030Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/spring-context-support/5.2.7.RELEASE/spring-context-support-5.2.7.RELEASE.pom
+2020-06-18T21:43:18.5847067Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/spring-context-support/5.2.7.RELEASE/spring-context-support-5.2.7.RELEASE.pom
+2020-06-18T21:43:18.6998923Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/spring-context-support/5.2.7.RELEASE/spring-context-support-5.2.7.RELEASE.pom (2.1 kB at 18 kB/s)
+2020-06-18T21:43:18.7130866Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-starter-config/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:43:18.7146031Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-starter-config/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:43:18.8923880Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-starter-config/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml (823 B at 4.6 kB/s)
+2020-06-18T21:43:18.8943882Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-starter-config/2.2.4.BUILD-SNAPSHOT/spring-cloud-starter-config-2.2.4.BUILD-20200617.222520-20.pom
+2020-06-18T21:43:19.0332574Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-starter-config/2.2.4.BUILD-SNAPSHOT/spring-cloud-starter-config-2.2.4.BUILD-20200617.222520-20.pom (4.3 kB at 31 kB/s)
+2020-06-18T21:43:19.0355669Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-config/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:43:19.0364402Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-config/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:43:19.3428006Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-config/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml (635 B at 2.1 kB/s)
+2020-06-18T21:43:19.3505922Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-config/2.2.4.BUILD-SNAPSHOT/spring-cloud-config-2.2.4.BUILD-20200617.222215-21.pom
+2020-06-18T21:43:19.4300415Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-config/2.2.4.BUILD-SNAPSHOT/spring-cloud-config-2.2.4.BUILD-20200617.222215-21.pom (4.6 kB at 54 kB/s)
+2020-06-18T21:43:19.4359399Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-config-client/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:43:19.4372723Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-config-client/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:43:19.5454579Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-config-client/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml (1.3 kB at 12 kB/s)
+2020-06-18T21:43:19.5480103Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-config-client/2.2.4.BUILD-SNAPSHOT/spring-cloud-config-client-2.2.4.BUILD-20200617.222230-21.pom
+2020-06-18T21:43:19.6342232Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-config-client/2.2.4.BUILD-SNAPSHOT/spring-cloud-config-client-2.2.4.BUILD-20200617.222230-21.pom (6.4 kB at 75 kB/s)
+2020-06-18T21:43:19.6406575Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/spring-web/5.2.7.RELEASE/spring-web-5.2.7.RELEASE.pom
+2020-06-18T21:43:19.6821868Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/spring-web/5.2.7.RELEASE/spring-web-5.2.7.RELEASE.pom
+2020-06-18T21:43:20.1346516Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/spring-web/5.2.7.RELEASE/spring-web-5.2.7.RELEASE.pom (1.9 kB at 4.1 kB/s)
+2020-06-18T21:43:20.1390695Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-starter-netflix-zuul/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:43:20.1416993Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-starter-netflix-zuul/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:43:20.3880532Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-starter-netflix-zuul/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml (832 B at 3.4 kB/s)
+2020-06-18T21:43:20.3886814Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-starter-netflix-zuul/2.2.4.BUILD-SNAPSHOT/spring-cloud-starter-netflix-zuul-2.2.4.BUILD-20200618.213333-170.pom
+2020-06-18T21:43:20.6342742Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-starter-netflix-zuul/2.2.4.BUILD-SNAPSHOT/spring-cloud-starter-netflix-zuul-2.2.4.BUILD-20200618.213333-170.pom (5.9 kB at 24 kB/s)
+2020-06-18T21:43:20.6406372Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-netflix-zuul/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:43:20.6423028Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-netflix-zuul/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:43:20.8381386Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-netflix-zuul/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml (1.3 kB at 6.4 kB/s)
+2020-06-18T21:43:20.8399715Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-netflix-zuul/2.2.4.BUILD-SNAPSHOT/spring-cloud-netflix-zuul-2.2.4.BUILD-20200618.213250-170.pom
+2020-06-18T21:43:21.0489053Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-netflix-zuul/2.2.4.BUILD-SNAPSHOT/spring-cloud-netflix-zuul-2.2.4.BUILD-20200618.213250-170.pom (9.1 kB at 43 kB/s)
+2020-06-18T21:43:21.0548599Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/cloud/spring-cloud-starter-netflix-hystrix/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:43:21.0575996Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-starter-netflix-hystrix/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml
+2020-06-18T21:43:21.2487075Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-starter-netflix-hystrix/2.2.4.BUILD-SNAPSHOT/maven-metadata.xml (835 B at 4.3 kB/s)
+2020-06-18T21:43:21.2519238Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-starter-netflix-hystrix/2.2.4.BUILD-SNAPSHOT/spring-cloud-starter-netflix-hystrix-2.2.4.BUILD-20200618.213125-173.pom
+2020-06-18T21:43:21.3941813Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-starter-netflix-hystrix/2.2.4.BUILD-SNAPSHOT/spring-cloud-starter-netflix-hystrix-2.2.4.BUILD-20200618.213125-173.pom (6.7 kB at 47 kB/s)
+2020-06-18T21:43:21.3998959Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/netflix/hystrix/hystrix-serialization/1.5.18/hystrix-serialization-1.5.18.pom
+2020-06-18T21:43:21.4394862Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/netflix/hystrix/hystrix-serialization/1.5.18/hystrix-serialization-1.5.18.pom
+2020-06-18T21:43:21.5054739Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/netflix/hystrix/hystrix-serialization/1.5.18/hystrix-serialization-1.5.18.pom
+2020-06-18T21:43:21.5303255Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/netflix/hystrix/hystrix-serialization/1.5.18/hystrix-serialization-1.5.18.pom (3.5 kB at 141 kB/s)
+2020-06-18T21:43:21.5325900Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/fasterxml/jackson/module/jackson-module-afterburner/2.11.0/jackson-module-afterburner-2.11.0.pom
+2020-06-18T21:43:21.6023453Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/fasterxml/jackson/module/jackson-module-afterburner/2.11.0/jackson-module-afterburner-2.11.0.pom
+2020-06-18T21:43:21.6691468Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/module/jackson-module-afterburner/2.11.0/jackson-module-afterburner-2.11.0.pom
+2020-06-18T21:43:21.7091809Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/module/jackson-module-afterburner/2.11.0/jackson-module-afterburner-2.11.0.pom (3.4 kB at 86 kB/s)
+2020-06-18T21:43:21.7150411Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/netflix/hystrix/hystrix-metrics-event-stream/1.5.18/hystrix-metrics-event-stream-1.5.18.pom
+2020-06-18T21:43:21.7798629Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/netflix/hystrix/hystrix-metrics-event-stream/1.5.18/hystrix-metrics-event-stream-1.5.18.pom
+2020-06-18T21:43:21.8463385Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/netflix/hystrix/hystrix-metrics-event-stream/1.5.18/hystrix-metrics-event-stream-1.5.18.pom
+2020-06-18T21:43:21.8735430Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/netflix/hystrix/hystrix-metrics-event-stream/1.5.18/hystrix-metrics-event-stream-1.5.18.pom (3.2 kB at 122 kB/s)
+2020-06-18T21:43:21.8750323Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/netflix/hystrix/hystrix-javanica/1.5.18/hystrix-javanica-1.5.18.pom
+2020-06-18T21:43:21.9411208Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/netflix/hystrix/hystrix-javanica/1.5.18/hystrix-javanica-1.5.18.pom
+2020-06-18T21:43:22.0085994Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/netflix/hystrix/hystrix-javanica/1.5.18/hystrix-javanica-1.5.18.pom
+2020-06-18T21:43:22.0297415Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/netflix/hystrix/hystrix-javanica/1.5.18/hystrix-javanica-1.5.18.pom (3.8 kB at 172 kB/s)
+2020-06-18T21:43:22.0382985Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/io/reactivex/rxjava-reactive-streams/1.2.1/rxjava-reactive-streams-1.2.1.pom
+2020-06-18T21:43:22.1049375Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/io/reactivex/rxjava-reactive-streams/1.2.1/rxjava-reactive-streams-1.2.1.pom
+2020-06-18T21:43:22.1710288Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/io/reactivex/rxjava-reactive-streams/1.2.1/rxjava-reactive-streams-1.2.1.pom
+2020-06-18T21:43:22.1911272Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/io/reactivex/rxjava-reactive-streams/1.2.1/rxjava-reactive-streams-1.2.1.pom (3.2 kB at 158 kB/s)
+2020-06-18T21:43:22.1932160Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/boot/spring-boot-starter-web/2.3.1.RELEASE/spring-boot-starter-web-2.3.1.RELEASE.pom
+2020-06-18T21:43:22.2707999Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-web/2.3.1.RELEASE/spring-boot-starter-web-2.3.1.RELEASE.pom
+2020-06-18T21:43:22.3840090Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-web/2.3.1.RELEASE/spring-boot-starter-web-2.3.1.RELEASE.pom (3.3 kB at 29 kB/s)
+2020-06-18T21:43:22.3876574Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/boot/spring-boot-starter-json/2.3.1.RELEASE/spring-boot-starter-json-2.3.1.RELEASE.pom
+2020-06-18T21:43:22.4292108Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-json/2.3.1.RELEASE/spring-boot-starter-json-2.3.1.RELEASE.pom
+2020-06-18T21:43:22.5430207Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-json/2.3.1.RELEASE/spring-boot-starter-json-2.3.1.RELEASE.pom (3.3 kB at 29 kB/s)
+2020-06-18T21:43:22.5568131Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/boot/spring-boot-starter-tomcat/2.3.1.RELEASE/spring-boot-starter-tomcat-2.3.1.RELEASE.pom
+2020-06-18T21:43:22.5977678Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-tomcat/2.3.1.RELEASE/spring-boot-starter-tomcat-2.3.1.RELEASE.pom
+2020-06-18T21:43:22.7097262Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-tomcat/2.3.1.RELEASE/spring-boot-starter-tomcat-2.3.1.RELEASE.pom (3.3 kB at 30 kB/s)
+2020-06-18T21:43:22.7131614Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/apache/tomcat/embed/tomcat-embed-core/9.0.36/tomcat-embed-core-9.0.36.pom
+2020-06-18T21:43:22.7548118Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/apache/tomcat/embed/tomcat-embed-core/9.0.36/tomcat-embed-core-9.0.36.pom
+2020-06-18T21:43:22.8209692Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/tomcat/embed/tomcat-embed-core/9.0.36/tomcat-embed-core-9.0.36.pom
+2020-06-18T21:43:22.8417014Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/tomcat/embed/tomcat-embed-core/9.0.36/tomcat-embed-core-9.0.36.pom (1.8 kB at 85 kB/s)
+2020-06-18T21:43:22.8439814Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.36/tomcat-embed-websocket-9.0.36.pom
+2020-06-18T21:43:22.9085579Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.36/tomcat-embed-websocket-9.0.36.pom
+2020-06-18T21:43:22.9744842Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.36/tomcat-embed-websocket-9.0.36.pom
+2020-06-18T21:43:22.9946094Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.36/tomcat-embed-websocket-9.0.36.pom (1.8 kB at 89 kB/s)
+2020-06-18T21:43:22.9966776Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/spring-webmvc/5.2.7.RELEASE/spring-webmvc-5.2.7.RELEASE.pom
+2020-06-18T21:43:23.0614644Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/spring-webmvc/5.2.7.RELEASE/spring-webmvc-5.2.7.RELEASE.pom
+2020-06-18T21:43:23.1734456Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/spring-webmvc/5.2.7.RELEASE/spring-webmvc-5.2.7.RELEASE.pom (2.6 kB at 24 kB/s)
+2020-06-18T21:43:23.1773864Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/boot/spring-boot-starter-actuator/2.3.1.RELEASE/spring-boot-starter-actuator-2.3.1.RELEASE.pom
+2020-06-18T21:43:23.2204682Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-actuator/2.3.1.RELEASE/spring-boot-starter-actuator-2.3.1.RELEASE.pom
+2020-06-18T21:43:23.3316219Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-actuator/2.3.1.RELEASE/spring-boot-starter-actuator-2.3.1.RELEASE.pom (2.9 kB at 26 kB/s)
+2020-06-18T21:43:23.3360436Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/boot/spring-boot-actuator-autoconfigure/2.3.1.RELEASE/spring-boot-actuator-autoconfigure-2.3.1.RELEASE.pom
+2020-06-18T21:43:23.3773983Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-actuator-autoconfigure/2.3.1.RELEASE/spring-boot-actuator-autoconfigure-2.3.1.RELEASE.pom
+2020-06-18T21:43:23.4898621Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-actuator-autoconfigure/2.3.1.RELEASE/spring-boot-actuator-autoconfigure-2.3.1.RELEASE.pom (3.2 kB at 29 kB/s)
+2020-06-18T21:43:23.4935679Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/boot/spring-boot-actuator/2.3.1.RELEASE/spring-boot-actuator-2.3.1.RELEASE.pom
+2020-06-18T21:43:23.5417475Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-actuator/2.3.1.RELEASE/spring-boot-actuator-2.3.1.RELEASE.pom
+2020-06-18T21:43:23.6577691Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-actuator/2.3.1.RELEASE/spring-boot-actuator-2.3.1.RELEASE.pom (2.4 kB at 21 kB/s)
+2020-06-18T21:43:23.6696975Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/netflix/zuul/zuul-core/1.3.1/zuul-core-1.3.1.pom
+2020-06-18T21:43:23.7119183Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/netflix/zuul/zuul-core/1.3.1/zuul-core-1.3.1.pom
+2020-06-18T21:43:23.7780880Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/netflix/zuul/zuul-core/1.3.1/zuul-core-1.3.1.pom
+2020-06-18T21:43:23.8197921Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/netflix/zuul/zuul-core/1.3.1/zuul-core-1.3.1.pom (4.1 kB at 99 kB/s)
+2020-06-18T21:43:23.8256810Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/boot/spring-boot-starter-test/2.3.1.RELEASE/spring-boot-starter-test-2.3.1.RELEASE.pom
+2020-06-18T21:43:23.8945788Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-test/2.3.1.RELEASE/spring-boot-starter-test-2.3.1.RELEASE.pom
+2020-06-18T21:43:24.0104746Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-test/2.3.1.RELEASE/spring-boot-starter-test-2.3.1.RELEASE.pom (5.1 kB at 44 kB/s)
+2020-06-18T21:43:24.0182765Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/boot/spring-boot-test/2.3.1.RELEASE/spring-boot-test-2.3.1.RELEASE.pom
+2020-06-18T21:43:24.0585753Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-test/2.3.1.RELEASE/spring-boot-test-2.3.1.RELEASE.pom
+2020-06-18T21:43:24.1696978Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-test/2.3.1.RELEASE/spring-boot-test-2.3.1.RELEASE.pom (2.4 kB at 22 kB/s)
+2020-06-18T21:43:24.1732401Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/boot/spring-boot-test-autoconfigure/2.3.1.RELEASE/spring-boot-test-autoconfigure-2.3.1.RELEASE.pom
+2020-06-18T21:43:24.2140554Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-test-autoconfigure/2.3.1.RELEASE/spring-boot-test-autoconfigure-2.3.1.RELEASE.pom
+2020-06-18T21:43:24.3278861Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-test-autoconfigure/2.3.1.RELEASE/spring-boot-test-autoconfigure-2.3.1.RELEASE.pom (2.9 kB at 25 kB/s)
+2020-06-18T21:43:24.3510592Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/net/bytebuddy/byte-buddy/1.10.11/byte-buddy-1.10.11.pom
+2020-06-18T21:43:24.3931839Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/net/bytebuddy/byte-buddy/1.10.11/byte-buddy-1.10.11.pom
+2020-06-18T21:43:24.4597979Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy/1.10.11/byte-buddy-1.10.11.pom
+2020-06-18T21:43:24.4833192Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy/1.10.11/byte-buddy-1.10.11.pom (11 kB at 447 kB/s)
+2020-06-18T21:43:24.4861258Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/net/bytebuddy/byte-buddy-parent/1.10.11/byte-buddy-parent-1.10.11.pom
+2020-06-18T21:43:24.5538763Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/net/bytebuddy/byte-buddy-parent/1.10.11/byte-buddy-parent-1.10.11.pom
+2020-06-18T21:43:24.6196528Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-parent/1.10.11/byte-buddy-parent-1.10.11.pom
+2020-06-18T21:43:25.1421708Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-parent/1.10.11/byte-buddy-parent-1.10.11.pom (40 kB at 1.6 MB/s)
+2020-06-18T21:43:25.1427703Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/net/bytebuddy/byte-buddy-agent/1.10.11/byte-buddy-agent-1.10.11.pom
+2020-06-18T21:43:25.1437228Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/net/bytebuddy/byte-buddy-agent/1.10.11/byte-buddy-agent-1.10.11.pom
+2020-06-18T21:43:25.1438687Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-agent/1.10.11/byte-buddy-agent-1.10.11.pom
+2020-06-18T21:43:25.1439357Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-agent/1.10.11/byte-buddy-agent-1.10.11.pom (9.6 kB at 456 kB/s)
+2020-06-18T21:43:25.1439868Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/spring-test/5.2.7.RELEASE/spring-test-5.2.7.RELEASE.pom
+2020-06-18T21:43:25.1440364Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/spring-test/5.2.7.RELEASE/spring-test-5.2.7.RELEASE.pom
+2020-06-18T21:43:25.1440876Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/spring-test/5.2.7.RELEASE/spring-test-5.2.7.RELEASE.pom (1.7 kB at 14 kB/s)
+2020-06-18T21:43:25.1441483Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-starter-netflix-eureka-client/2.2.4.BUILD-SNAPSHOT/spring-cloud-starter-netflix-eureka-client-2.2.4.BUILD-20200618.212932-173.jar
+2020-06-18T21:43:25.1442235Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-starter/2.2.4.BUILD-SNAPSHOT/spring-cloud-starter-2.2.4.BUILD-20200618.094040-23.jar
+2020-06-18T21:43:25.1442797Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-context/2.2.4.BUILD-SNAPSHOT/spring-cloud-context-2.2.4.BUILD-20200618.093844-23.jar
+2020-06-18T21:43:25.1443325Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/security/spring-security-crypto/5.3.3.RELEASE/spring-security-crypto-5.3.3.RELEASE.jar
+2020-06-18T21:43:25.1443868Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-commons/2.2.4.BUILD-SNAPSHOT/spring-cloud-commons-2.2.4.BUILD-20200618.093957-23.jar
+2020-06-18T21:43:25.1444437Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-netflix-hystrix/2.2.4.BUILD-SNAPSHOT/spring-cloud-netflix-hystrix-2.2.4.BUILD-20200618.212638-174.jar
+2020-06-18T21:43:25.1553298Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-starter-netflix-eureka-client/2.2.4.BUILD-SNAPSHOT/spring-cloud-starter-netflix-eureka-client-2.2.4.BUILD-20200618.212932-173.jar (3.1 kB at 33 kB/s)
+2020-06-18T21:43:25.1554203Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/boot/spring-boot-autoconfigure/2.3.1.RELEASE/spring-boot-autoconfigure-2.3.1.RELEASE.jar
+2020-06-18T21:43:25.1855001Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-starter/2.2.4.BUILD-SNAPSHOT/spring-cloud-starter-2.2.4.BUILD-20200618.094040-23.jar (2.8 kB at 22 kB/s)
+2020-06-18T21:43:25.1855671Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/boot/spring-boot-starter-aop/2.3.1.RELEASE/spring-boot-starter-aop-2.3.1.RELEASE.jar
+2020-06-18T21:43:25.1958156Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/spring-aop/5.2.7.RELEASE/spring-aop-5.2.7.RELEASE.jar
+2020-06-18T21:43:25.2098260Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-context/2.2.4.BUILD-SNAPSHOT/spring-cloud-context-2.2.4.BUILD-20200618.093844-23.jar (128 kB at 868 kB/s)
+2020-06-18T21:43:25.2098916Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-netflix-eureka-client/2.2.4.BUILD-SNAPSHOT/spring-cloud-netflix-eureka-client-2.2.4.BUILD-20200618.212918-173.jar
+2020-06-18T21:43:25.2254835Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-commons/2.2.4.BUILD-SNAPSHOT/spring-cloud-commons-2.2.4.BUILD-20200618.093957-23.jar (216 kB at 1.3 MB/s)
+2020-06-18T21:43:25.2255669Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/netflix/eureka/eureka-client/1.9.21/eureka-client-1.9.21.jar
+2020-06-18T21:43:25.2256116Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/google/guava/guava/29.0-android/guava-29.0-android.jar
+2020-06-18T21:43:25.2581445Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/commons-configuration/commons-configuration/1.10/commons-configuration-1.10.jar
+2020-06-18T21:43:25.2606718Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-netflix-hystrix/2.2.4.BUILD-SNAPSHOT/spring-cloud-netflix-hystrix-2.2.4.BUILD-20200618.212638-174.jar (44 kB at 224 kB/s)
+2020-06-18T21:43:25.2615134Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/fasterxml/woodstox/woodstox-core/5.3.0/woodstox-core-5.3.0.jar
+2020-06-18T21:43:25.2664591Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/netflix/eureka/eureka-core/1.9.21/eureka-core-1.9.21.jar
+2020-06-18T21:43:25.2903090Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-starter-netflix-archaius/2.2.4.BUILD-SNAPSHOT/spring-cloud-starter-netflix-archaius-2.2.4.BUILD-20200618.212926-173.jar
+2020-06-18T21:43:25.3019137Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-netflix-ribbon/2.2.4.BUILD-SNAPSHOT/spring-cloud-netflix-ribbon-2.2.4.BUILD-20200618.212552-174.jar
+2020-06-18T21:43:25.3246726Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-netflix-archaius/2.2.4.BUILD-SNAPSHOT/spring-cloud-netflix-archaius-2.2.4.BUILD-20200618.212527-174.jar
+2020-06-18T21:43:25.3294718Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-starter-netflix-ribbon/2.2.4.BUILD-SNAPSHOT/spring-cloud-starter-netflix-ribbon-2.2.4.BUILD-20200618.212929-173.jar
+2020-06-18T21:43:25.3690495Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-netflix-eureka-client/2.2.4.BUILD-SNAPSHOT/spring-cloud-netflix-eureka-client-2.2.4.BUILD-20200618.212918-173.jar (126 kB at 415 kB/s)
+2020-06-18T21:43:25.3691257Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-starter-loadbalancer/2.2.4.BUILD-SNAPSHOT/spring-cloud-starter-loadbalancer-2.2.4.BUILD-20200618.094044-23.jar
+2020-06-18T21:43:25.4013075Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-starter-netflix-archaius/2.2.4.BUILD-SNAPSHOT/spring-cloud-starter-netflix-archaius-2.2.4.BUILD-20200618.212926-173.jar (2.9 kB at 8.6 kB/s)
+2020-06-18T21:43:25.4020958Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-loadbalancer/2.2.4.BUILD-SNAPSHOT/spring-cloud-loadbalancer-2.2.4.BUILD-20200618.094030-23.jar
+2020-06-18T21:43:25.4300599Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-netflix-archaius/2.2.4.BUILD-SNAPSHOT/spring-cloud-netflix-archaius-2.2.4.BUILD-20200618.212527-174.jar (15 kB at 41 kB/s)
+2020-06-18T21:43:25.4305671Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/boot/spring-boot-starter-validation/2.3.1.RELEASE/spring-boot-starter-validation-2.3.1.RELEASE.jar
+2020-06-18T21:43:25.4353731Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-starter-netflix-ribbon/2.2.4.BUILD-SNAPSHOT/spring-cloud-starter-netflix-ribbon-2.2.4.BUILD-20200618.212929-173.jar (2.9 kB at 7.9 kB/s)
+2020-06-18T21:43:25.4358241Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/io/projectreactor/reactor-core/3.3.6.RELEASE/reactor-core-3.3.6.RELEASE.jar
+2020-06-18T21:43:25.4426957Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-netflix-ribbon/2.2.4.BUILD-SNAPSHOT/spring-cloud-netflix-ribbon-2.2.4.BUILD-20200618.212552-174.jar (110 kB at 290 kB/s)
+2020-06-18T21:43:25.4428707Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/boot/spring-boot-starter-cache/2.3.1.RELEASE/spring-boot-starter-cache-2.3.1.RELEASE.jar
+2020-06-18T21:43:25.4533659Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-starter-loadbalancer/2.2.4.BUILD-SNAPSHOT/spring-cloud-starter-loadbalancer-2.2.4.BUILD-20200618.094044-23.jar (2.8 kB at 7.2 kB/s)
+2020-06-18T21:43:25.4534815Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/spring-context-support/5.2.7.RELEASE/spring-context-support-5.2.7.RELEASE.jar
+2020-06-18T21:43:25.4723831Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-starter-config/2.2.4.BUILD-SNAPSHOT/spring-cloud-starter-config-2.2.4.BUILD-20200617.222520-20.jar
+2020-06-18T21:43:25.4763378Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-config-client/2.2.4.BUILD-SNAPSHOT/spring-cloud-config-client-2.2.4.BUILD-20200617.222230-21.jar
+2020-06-18T21:43:25.4830833Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/spring-web/5.2.7.RELEASE/spring-web-5.2.7.RELEASE.jar
+2020-06-18T21:43:25.4937753Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/spring-beans/5.2.7.RELEASE/spring-beans-5.2.7.RELEASE.jar
+2020-06-18T21:43:25.5138366Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-loadbalancer/2.2.4.BUILD-SNAPSHOT/spring-cloud-loadbalancer-2.2.4.BUILD-20200618.094030-23.jar (73 kB at 162 kB/s)
+2020-06-18T21:43:25.5145274Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-starter-netflix-zuul/2.2.4.BUILD-SNAPSHOT/spring-cloud-starter-netflix-zuul-2.2.4.BUILD-20200618.213333-170.jar
+2020-06-18T21:43:25.5475540Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-netflix-zuul/2.2.4.BUILD-SNAPSHOT/spring-cloud-netflix-zuul-2.2.4.BUILD-20200618.213250-170.jar
+2020-06-18T21:43:25.5557696Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/boot/spring-boot-starter-web/2.3.1.RELEASE/spring-boot-starter-web-2.3.1.RELEASE.jar
+2020-06-18T21:43:25.6183301Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/boot/spring-boot-starter-json/2.3.1.RELEASE/spring-boot-starter-json-2.3.1.RELEASE.jar
+2020-06-18T21:43:25.6467602Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-config-client/2.2.4.BUILD-SNAPSHOT/spring-cloud-config-client-2.2.4.BUILD-20200617.222230-21.jar (43 kB at 74 kB/s)
+2020-06-18T21:43:25.6468293Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/boot/spring-boot-starter-tomcat/2.3.1.RELEASE/spring-boot-starter-tomcat-2.3.1.RELEASE.jar
+2020-06-18T21:43:25.6664734Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-starter-netflix-zuul/2.2.4.BUILD-SNAPSHOT/spring-cloud-starter-netflix-zuul-2.2.4.BUILD-20200618.213333-170.jar (2.9 kB at 4.8 kB/s)
+2020-06-18T21:43:25.6666528Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/apache/tomcat/embed/tomcat-embed-core/9.0.36/tomcat-embed-core-9.0.36.jar
+2020-06-18T21:43:25.6777205Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-starter-config/2.2.4.BUILD-SNAPSHOT/spring-cloud-starter-config-2.2.4.BUILD-20200617.222520-20.jar (2.7 kB at 4.4 kB/s)
+2020-06-18T21:43:25.6778141Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.36/tomcat-embed-websocket-9.0.36.jar
+2020-06-18T21:43:25.6813413Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/spring-webmvc/5.2.7.RELEASE/spring-webmvc-5.2.7.RELEASE.jar
+2020-06-18T21:43:25.6865904Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/spring-context/5.2.7.RELEASE/spring-context-5.2.7.RELEASE.jar
+2020-06-18T21:43:25.7073970Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/spring-expression/5.2.7.RELEASE/spring-expression-5.2.7.RELEASE.jar
+2020-06-18T21:43:25.7173372Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/boot/spring-boot-starter-actuator/2.3.1.RELEASE/spring-boot-starter-actuator-2.3.1.RELEASE.jar
+2020-06-18T21:43:25.7450467Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/boot/spring-boot-actuator-autoconfigure/2.3.1.RELEASE/spring-boot-actuator-autoconfigure-2.3.1.RELEASE.jar
+2020-06-18T21:43:25.7494249Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/boot/spring-boot-actuator/2.3.1.RELEASE/spring-boot-actuator-2.3.1.RELEASE.jar
+2020-06-18T21:43:25.7721636Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-starter-netflix-hystrix/2.2.4.BUILD-SNAPSHOT/spring-cloud-starter-netflix-hystrix-2.2.4.BUILD-20200618.213125-173.jar
+2020-06-18T21:43:25.7794155Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/netflix/hystrix/hystrix-serialization/1.5.18/hystrix-serialization-1.5.18.jar
+2020-06-18T21:43:25.8206591Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/fasterxml/jackson/module/jackson-module-afterburner/2.11.0/jackson-module-afterburner-2.11.0.jar
+2020-06-18T21:43:25.8221603Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/netflix/hystrix/hystrix-metrics-event-stream/1.5.18/hystrix-metrics-event-stream-1.5.18.jar
+2020-06-18T21:43:25.8223020Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-netflix-zuul/2.2.4.BUILD-SNAPSHOT/spring-cloud-netflix-zuul-2.2.4.BUILD-20200618.213250-170.jar (158 kB at 209 kB/s)
+2020-06-18T21:43:25.8223853Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/netflix/hystrix/hystrix-javanica/1.5.18/hystrix-javanica-1.5.18.jar
+2020-06-18T21:43:25.8616294Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/apache/commons/commons-lang3/3.10/commons-lang3-3.10.jar
+2020-06-18T21:43:25.8706439Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/io/reactivex/rxjava-reactive-streams/1.2.1/rxjava-reactive-streams-1.2.1.jar
+2020-06-18T21:43:25.8843400Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/com/netflix/zuul/zuul-core/1.3.1/zuul-core-1.3.1.jar
+2020-06-18T21:43:25.8890042Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/commons-io/commons-io/2.4/commons-io-2.4.jar
+2020-06-18T21:43:25.9255816Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/boot/spring-boot-starter-test/2.3.1.RELEASE/spring-boot-starter-test-2.3.1.RELEASE.jar
+2020-06-18T21:43:25.9326435Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/boot/spring-boot-starter/2.3.1.RELEASE/spring-boot-starter-2.3.1.RELEASE.jar
+2020-06-18T21:43:25.9480283Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/boot/spring-boot/2.3.1.RELEASE/spring-boot-2.3.1.RELEASE.jar
+2020-06-18T21:43:25.9510799Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/boot/spring-boot-starter-logging/2.3.1.RELEASE/spring-boot-starter-logging-2.3.1.RELEASE.jar
+2020-06-18T21:43:25.9578101Z [INFO] Downloaded from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/cloud/spring-cloud-starter-netflix-hystrix/2.2.4.BUILD-SNAPSHOT/spring-cloud-starter-netflix-hystrix-2.2.4.BUILD-20200618.213125-173.jar (3.0 kB at 3.3 kB/s)
+2020-06-18T21:43:25.9578971Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/apache/logging/log4j/log4j-to-slf4j/2.13.3/log4j-to-slf4j-2.13.3.jar
+2020-06-18T21:43:25.9873782Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/apache/logging/log4j/log4j-api/2.13.3/log4j-api-2.13.3.jar
+2020-06-18T21:43:25.9971918Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/boot/spring-boot-test/2.3.1.RELEASE/spring-boot-test-2.3.1.RELEASE.jar
+2020-06-18T21:43:26.0046927Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/boot/spring-boot-test-autoconfigure/2.3.1.RELEASE/spring-boot-test-autoconfigure-2.3.1.RELEASE.jar
+2020-06-18T21:43:26.0133294Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/net/bytebuddy/byte-buddy/1.10.11/byte-buddy-1.10.11.jar
+2020-06-18T21:43:26.0194508Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/net/bytebuddy/byte-buddy-agent/1.10.11/byte-buddy-agent-1.10.11.jar
+2020-06-18T21:43:26.0583522Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/spring-core/5.2.7.RELEASE/spring-core-5.2.7.RELEASE.jar
+2020-06-18T21:43:26.0595830Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/spring-jcl/5.2.7.RELEASE/spring-jcl-5.2.7.RELEASE.jar
+2020-06-18T21:43:26.0747974Z [INFO] Downloading from spring-snapshots: https://repo.spring.io/snapshot/org/springframework/spring-test/5.2.7.RELEASE/spring-test-5.2.7.RELEASE.jar
+2020-06-18T21:43:26.1570103Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-autoconfigure/2.3.1.RELEASE/spring-boot-autoconfigure-2.3.1.RELEASE.jar
+2020-06-18T21:43:26.1584244Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/security/spring-security-crypto/5.3.3.RELEASE/spring-security-crypto-5.3.3.RELEASE.jar
+2020-06-18T21:43:26.1585829Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/netflix/eureka/eureka-client/1.9.21/eureka-client-1.9.21.jar
+2020-06-18T21:43:26.1588360Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/spring-aop/5.2.7.RELEASE/spring-aop-5.2.7.RELEASE.jar
+2020-06-18T21:43:26.1591426Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-aop/2.3.1.RELEASE/spring-boot-starter-aop-2.3.1.RELEASE.jar
+2020-06-18T21:43:26.2299939Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/google/guava/guava/29.0-android/guava-29.0-android.jar
+2020-06-18T21:43:26.2718880Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-aop/2.3.1.RELEASE/spring-boot-starter-aop-2.3.1.RELEASE.jar (4.8 kB at 42 kB/s)
+2020-06-18T21:43:26.2720049Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/commons-configuration/commons-configuration/1.10/commons-configuration-1.10.jar
+2020-06-18T21:43:26.2998562Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/fasterxml/woodstox/woodstox-core/5.3.0/woodstox-core-5.3.0.jar
+2020-06-18T21:43:26.3039406Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/security/spring-security-crypto/5.3.3.RELEASE/spring-security-crypto-5.3.3.RELEASE.jar (80 kB at 541 kB/s)
+2020-06-18T21:43:26.3040537Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/netflix/eureka/eureka-core/1.9.21/eureka-core-1.9.21.jar
+2020-06-18T21:43:26.3126136Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-validation/2.3.1.RELEASE/spring-boot-starter-validation-2.3.1.RELEASE.jar
+2020-06-18T21:43:26.3182874Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/spring-aop/5.2.7.RELEASE/spring-aop-5.2.7.RELEASE.jar (373 kB at 2.3 MB/s)
+2020-06-18T21:43:26.3183941Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/io/projectreactor/reactor-core/3.3.6.RELEASE/reactor-core-3.3.6.RELEASE.jar
+2020-06-18T21:43:26.3455037Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-cache/2.3.1.RELEASE/spring-boot-starter-cache-2.3.1.RELEASE.jar
+2020-06-18T21:43:26.3581079Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/spring-context-support/5.2.7.RELEASE/spring-context-support-5.2.7.RELEASE.jar
+2020-06-18T21:43:26.3635876Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/spring-web/5.2.7.RELEASE/spring-web-5.2.7.RELEASE.jar
+2020-06-18T21:43:26.3709357Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-autoconfigure/2.3.1.RELEASE/spring-boot-autoconfigure-2.3.1.RELEASE.jar (1.5 MB at 6.9 MB/s)
+2020-06-18T21:43:26.3740150Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/spring-beans/5.2.7.RELEASE/spring-beans-5.2.7.RELEASE.jar
+2020-06-18T21:43:26.4232721Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-validation/2.3.1.RELEASE/spring-boot-starter-validation-2.3.1.RELEASE.jar (4.8 kB at 18 kB/s)
+2020-06-18T21:43:26.4234434Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-web/2.3.1.RELEASE/spring-boot-starter-web-2.3.1.RELEASE.jar
+2020-06-18T21:43:26.4582604Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-cache/2.3.1.RELEASE/spring-boot-starter-cache-2.3.1.RELEASE.jar (4.8 kB at 16 kB/s)
+2020-06-18T21:43:26.4602226Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-json/2.3.1.RELEASE/spring-boot-starter-json-2.3.1.RELEASE.jar
+2020-06-18T21:43:26.5047317Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/spring-context-support/5.2.7.RELEASE/spring-context-support-5.2.7.RELEASE.jar (182 kB at 526 kB/s)
+2020-06-18T21:43:26.5059979Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-tomcat/2.3.1.RELEASE/spring-boot-starter-tomcat-2.3.1.RELEASE.jar
+2020-06-18T21:43:26.5105029Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-web/2.3.1.RELEASE/spring-boot-starter-web-2.3.1.RELEASE.jar (4.8 kB at 14 kB/s)
+2020-06-18T21:43:26.5105926Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/apache/tomcat/embed/tomcat-embed-core/9.0.36/tomcat-embed-core-9.0.36.jar
+2020-06-18T21:43:26.5292598Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/spring-beans/5.2.7.RELEASE/spring-beans-5.2.7.RELEASE.jar (689 kB at 1.9 MB/s)
+2020-06-18T21:43:26.5293819Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.36/tomcat-embed-websocket-9.0.36.jar
+2020-06-18T21:43:26.5394162Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/spring-web/5.2.7.RELEASE/spring-web-5.2.7.RELEASE.jar (1.4 MB at 3.8 MB/s)
+2020-06-18T21:43:26.5404688Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/spring-webmvc/5.2.7.RELEASE/spring-webmvc-5.2.7.RELEASE.jar
+2020-06-18T21:43:26.5526121Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-json/2.3.1.RELEASE/spring-boot-starter-json-2.3.1.RELEASE.jar (4.7 kB at 12 kB/s)
+2020-06-18T21:43:26.5527250Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/spring-context/5.2.7.RELEASE/spring-context-5.2.7.RELEASE.jar
+2020-06-18T21:43:26.5528043Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/spring-expression/5.2.7.RELEASE/spring-expression-5.2.7.RELEASE.jar
+2020-06-18T21:43:26.5714504Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-actuator/2.3.1.RELEASE/spring-boot-starter-actuator-2.3.1.RELEASE.jar
+2020-06-18T21:43:26.5958789Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-tomcat/2.3.1.RELEASE/spring-boot-starter-tomcat-2.3.1.RELEASE.jar (4.8 kB at 11 kB/s)
+2020-06-18T21:43:26.5964710Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-actuator-autoconfigure/2.3.1.RELEASE/spring-boot-actuator-autoconfigure-2.3.1.RELEASE.jar
+2020-06-18T21:43:26.6845906Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-actuator/2.3.1.RELEASE/spring-boot-starter-actuator-2.3.1.RELEASE.jar (4.8 kB at 9.2 kB/s)
+2020-06-18T21:43:26.6847133Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-actuator/2.3.1.RELEASE/spring-boot-actuator-2.3.1.RELEASE.jar
+2020-06-18T21:43:26.7094855Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/spring-expression/5.2.7.RELEASE/spring-expression-5.2.7.RELEASE.jar (282 kB at 512 kB/s)
+2020-06-18T21:43:26.7095905Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/netflix/hystrix/hystrix-serialization/1.5.18/hystrix-serialization-1.5.18.jar
+2020-06-18T21:43:26.7141889Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/spring-context/5.2.7.RELEASE/spring-context-5.2.7.RELEASE.jar (1.2 MB at 2.2 MB/s)
+2020-06-18T21:43:26.7155778Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/fasterxml/jackson/module/jackson-module-afterburner/2.11.0/jackson-module-afterburner-2.11.0.jar
+2020-06-18T21:43:26.7313061Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-actuator-autoconfigure/2.3.1.RELEASE/spring-boot-actuator-autoconfigure-2.3.1.RELEASE.jar (511 kB at 894 kB/s)
+2020-06-18T21:43:26.7326267Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/netflix/hystrix/hystrix-metrics-event-stream/1.5.18/hystrix-metrics-event-stream-1.5.18.jar
+2020-06-18T21:43:26.7501759Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/netflix/hystrix/hystrix-javanica/1.5.18/hystrix-javanica-1.5.18.jar
+2020-06-18T21:43:26.7572287Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/apache/commons/commons-lang3/3.10/commons-lang3-3.10.jar
+2020-06-18T21:43:26.7612886Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/spring-webmvc/5.2.7.RELEASE/spring-webmvc-5.2.7.RELEASE.jar (956 kB at 1.6 MB/s)
+2020-06-18T21:43:26.7621676Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/io/reactivex/rxjava-reactive-streams/1.2.1/rxjava-reactive-streams-1.2.1.jar
+2020-06-18T21:43:26.7731843Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/com/netflix/zuul/zuul-core/1.3.1/zuul-core-1.3.1.jar
+2020-06-18T21:43:26.8054908Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/commons-io/commons-io/2.4/commons-io-2.4.jar
+2020-06-18T21:43:26.8165747Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-test/2.3.1.RELEASE/spring-boot-starter-test-2.3.1.RELEASE.jar
+2020-06-18T21:43:26.8207135Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter/2.3.1.RELEASE/spring-boot-starter-2.3.1.RELEASE.jar
+2020-06-18T21:43:26.8286853Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-actuator/2.3.1.RELEASE/spring-boot-actuator-2.3.1.RELEASE.jar (589 kB at 879 kB/s)
+2020-06-18T21:43:26.8287600Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot/2.3.1.RELEASE/spring-boot-2.3.1.RELEASE.jar
+2020-06-18T21:43:26.8458427Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-logging/2.3.1.RELEASE/spring-boot-starter-logging-2.3.1.RELEASE.jar
+2020-06-18T21:43:26.8689655Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/apache/logging/log4j/log4j-to-slf4j/2.13.3/log4j-to-slf4j-2.13.3.jar
+2020-06-18T21:43:26.9368759Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-test/2.3.1.RELEASE/spring-boot-starter-test-2.3.1.RELEASE.jar (4.8 kB at 6.2 kB/s)
+2020-06-18T21:43:26.9369639Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-test/2.3.1.RELEASE/spring-boot-test-2.3.1.RELEASE.jar
+2020-06-18T21:43:26.9370138Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/apache/logging/log4j/log4j-api/2.13.3/log4j-api-2.13.3.jar
+2020-06-18T21:43:26.9379888Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter/2.3.1.RELEASE/spring-boot-starter-2.3.1.RELEASE.jar (4.8 kB at 6.2 kB/s)
+2020-06-18T21:43:26.9382061Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-test-autoconfigure/2.3.1.RELEASE/spring-boot-test-autoconfigure-2.3.1.RELEASE.jar
+2020-06-18T21:43:26.9586413Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-starter-logging/2.3.1.RELEASE/spring-boot-starter-logging-2.3.1.RELEASE.jar (4.8 kB at 5.9 kB/s)
+2020-06-18T21:43:26.9587727Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/net/bytebuddy/byte-buddy/1.10.11/byte-buddy-1.10.11.jar
+2020-06-18T21:43:26.9805322Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/net/bytebuddy/byte-buddy-agent/1.10.11/byte-buddy-agent-1.10.11.jar
+2020-06-18T21:43:26.9894782Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot/2.3.1.RELEASE/spring-boot-2.3.1.RELEASE.jar (1.1 MB at 1.3 MB/s)
+2020-06-18T21:43:26.9895819Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/spring-core/5.2.7.RELEASE/spring-core-5.2.7.RELEASE.jar
+2020-06-18T21:43:27.0000704Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/spring-jcl/5.2.7.RELEASE/spring-jcl-5.2.7.RELEASE.jar
+2020-06-18T21:43:27.0451925Z [INFO] Downloading from spring-milestones: https://repo.spring.io/milestone/org/springframework/spring-test/5.2.7.RELEASE/spring-test-5.2.7.RELEASE.jar
+2020-06-18T21:43:27.0664577Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-test/2.3.1.RELEASE/spring-boot-test-2.3.1.RELEASE.jar (215 kB at 237 kB/s)
+2020-06-18T21:43:27.0909278Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/boot/spring-boot-test-autoconfigure/2.3.1.RELEASE/spring-boot-test-autoconfigure-2.3.1.RELEASE.jar (175 kB at 188 kB/s)
+2020-06-18T21:43:27.1214971Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/spring-jcl/5.2.7.RELEASE/spring-jcl-5.2.7.RELEASE.jar (24 kB at 25 kB/s)
+2020-06-18T21:43:27.1371427Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/spring-core/5.2.7.RELEASE/spring-core-5.2.7.RELEASE.jar (1.4 MB at 1.5 MB/s)
+2020-06-18T21:43:27.2439797Z [INFO] Downloaded from spring-milestones: https://repo.spring.io/milestone/org/springframework/spring-test/5.2.7.RELEASE/spring-test-5.2.7.RELEASE.jar (686 kB at 634 kB/s)
+2020-06-18T21:43:27.2501810Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/netflix/eureka/eureka-client/1.9.21/eureka-client-1.9.21.jar
+2020-06-18T21:43:27.2541546Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/commons-configuration/commons-configuration/1.10/commons-configuration-1.10.jar
+2020-06-18T21:43:27.2551626Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/woodstox/woodstox-core/5.3.0/woodstox-core-5.3.0.jar
+2020-06-18T21:43:27.2563248Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/29.0-android/guava-29.0-android.jar
+2020-06-18T21:43:27.2600189Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/netflix/eureka/eureka-core/1.9.21/eureka-core-1.9.21.jar
+2020-06-18T21:43:27.3150978Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/netflix/eureka/eureka-client/1.9.21/eureka-client-1.9.21.jar (444 kB at 6.9 MB/s)
+2020-06-18T21:43:27.3163066Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/io/projectreactor/reactor-core/3.3.6.RELEASE/reactor-core-3.3.6.RELEASE.jar
+2020-06-18T21:43:27.3517982Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/netflix/eureka/eureka-core/1.9.21/eureka-core-1.9.21.jar (254 kB at 2.7 MB/s)
+2020-06-18T21:43:27.3563596Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/tomcat/embed/tomcat-embed-core/9.0.36/tomcat-embed-core-9.0.36.jar
+2020-06-18T21:43:27.3641594Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/commons-configuration/commons-configuration/1.10/commons-configuration-1.10.jar (363 kB at 3.6 MB/s)
+2020-06-18T21:43:27.3647653Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.36/tomcat-embed-websocket-9.0.36.jar
+2020-06-18T21:43:27.3803377Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/woodstox/woodstox-core/5.3.0/woodstox-core-5.3.0.jar (522 kB at 4.2 MB/s)
+2020-06-18T21:43:27.3834405Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/netflix/hystrix/hystrix-serialization/1.5.18/hystrix-serialization-1.5.18.jar
+2020-06-18T21:43:27.4126869Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/netflix/hystrix/hystrix-serialization/1.5.18/hystrix-serialization-1.5.18.jar (35 kB at 224 kB/s)
+2020-06-18T21:43:27.4134255Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/module/jackson-module-afterburner/2.11.0/jackson-module-afterburner-2.11.0.jar
+2020-06-18T21:43:27.4151182Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/tomcat/embed/tomcat-embed-websocket/9.0.36/tomcat-embed-websocket-9.0.36.jar (268 kB at 1.7 MB/s)
+2020-06-18T21:43:27.4152134Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/netflix/hystrix/hystrix-metrics-event-stream/1.5.18/hystrix-metrics-event-stream-1.5.18.jar
+2020-06-18T21:43:27.4400800Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/io/projectreactor/reactor-core/3.3.6.RELEASE/reactor-core-3.3.6.RELEASE.jar (1.6 MB at 8.7 MB/s)
+2020-06-18T21:43:27.4405925Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/netflix/hystrix/hystrix-metrics-event-stream/1.5.18/hystrix-metrics-event-stream-1.5.18.jar (57 kB at 311 kB/s)
+2020-06-18T21:43:27.4410506Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/netflix/hystrix/hystrix-javanica/1.5.18/hystrix-javanica-1.5.18.jar
+2020-06-18T21:43:27.4454543Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.10/commons-lang3-3.10.jar
+2020-06-18T21:43:27.4458975Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/module/jackson-module-afterburner/2.11.0/jackson-module-afterburner-2.11.0.jar (209 kB at 1.1 MB/s)
+2020-06-18T21:43:27.4464507Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/io/reactivex/rxjava-reactive-streams/1.2.1/rxjava-reactive-streams-1.2.1.jar
+2020-06-18T21:43:27.4670056Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/io/reactivex/rxjava-reactive-streams/1.2.1/rxjava-reactive-streams-1.2.1.jar (18 kB at 86 kB/s)
+2020-06-18T21:43:27.4671516Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/netflix/zuul/zuul-core/1.3.1/zuul-core-1.3.1.jar
+2020-06-18T21:43:27.4763641Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/netflix/hystrix/hystrix-javanica/1.5.18/hystrix-javanica-1.5.18.jar (173 kB at 789 kB/s)
+2020-06-18T21:43:27.4764541Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.4/commons-io-2.4.jar
+2020-06-18T21:43:27.4922573Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/netflix/zuul/zuul-core/1.3.1/zuul-core-1.3.1.jar (86 kB at 366 kB/s)
+2020-06-18T21:43:27.4923893Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-to-slf4j/2.13.3/log4j-to-slf4j-2.13.3.jar
+2020-06-18T21:43:27.5063787Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/29.0-android/guava-29.0-android.jar (2.6 MB at 10 MB/s)
+2020-06-18T21:43:27.5073453Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-api/2.13.3/log4j-api-2.13.3.jar
+2020-06-18T21:43:27.5126383Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-lang3/3.10/commons-lang3-3.10.jar (523 kB at 2.0 MB/s)
+2020-06-18T21:43:27.5127217Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy/1.10.11/byte-buddy-1.10.11.jar
+2020-06-18T21:43:27.5127907Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/commons-io/commons-io/2.4/commons-io-2.4.jar (185 kB at 720 kB/s)
+2020-06-18T21:43:27.5128585Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-agent/1.10.11/byte-buddy-agent-1.10.11.jar
+2020-06-18T21:43:27.5239521Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-to-slf4j/2.13.3/log4j-to-slf4j-2.13.3.jar (17 kB at 65 kB/s)
+2020-06-18T21:43:27.5380494Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/logging/log4j/log4j-api/2.13.3/log4j-api-2.13.3.jar (292 kB at 1.0 MB/s)
+2020-06-18T21:43:27.5466725Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy-agent/1.10.11/byte-buddy-agent-1.10.11.jar (259 kB at 891 kB/s)
+2020-06-18T21:43:27.5601464Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/tomcat/embed/tomcat-embed-core/9.0.36/tomcat-embed-core-9.0.36.jar (3.4 MB at 11 MB/s)
+2020-06-18T21:43:27.6887891Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/net/bytebuddy/byte-buddy/1.10.11/byte-buddy-1.10.11.jar (3.5 MB at 8.1 MB/s)
+2020-06-18T21:43:27.7046732Z [INFO] 
+2020-06-18T21:43:27.7055798Z [INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ zuul ---
+2020-06-18T21:43:27.8418564Z [INFO] Using 'UTF-8' encoding to copy filtered resources.
+2020-06-18T21:43:27.8443766Z [INFO] Copying 0 resource
+2020-06-18T21:43:27.8448936Z [INFO] Copying 1 resource
+2020-06-18T21:43:27.8504881Z [INFO] 
+2020-06-18T21:43:27.8506233Z [INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ zuul ---
+2020-06-18T21:43:27.9713834Z [INFO] Changes detected - recompiling the module!
+2020-06-18T21:43:27.9740609Z [INFO] Compiling 1 source file to /home/runner/work/e-commerce-microservices/e-commerce-microservices/zuul/target/classes
+2020-06-18T21:43:28.8978656Z [INFO] 
+2020-06-18T21:43:28.8980042Z [INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ zuul ---
+2020-06-18T21:43:28.9092966Z [INFO] Using 'UTF-8' encoding to copy filtered resources.
+2020-06-18T21:43:28.9094450Z [INFO] skip non existing resourceDirectory /home/runner/work/e-commerce-microservices/e-commerce-microservices/zuul/src/test/resources
+2020-06-18T21:43:28.9095389Z [INFO] 
+2020-06-18T21:43:28.9098390Z [INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ zuul ---
+2020-06-18T21:43:28.9152095Z [INFO] Changes detected - recompiling the module!
+2020-06-18T21:43:28.9156430Z [INFO] Compiling 1 source file to /home/runner/work/e-commerce-microservices/e-commerce-microservices/zuul/target/test-classes
+2020-06-18T21:43:29.3100603Z [INFO] 
+2020-06-18T21:43:29.3138580Z [INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ zuul ---
+2020-06-18T21:43:29.4363510Z [INFO] Tests are skipped.
+2020-06-18T21:43:29.4365420Z [INFO] 
+2020-06-18T21:43:29.4370504Z [INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ zuul ---
+2020-06-18T21:43:29.6526967Z [INFO] Building jar: /home/runner/work/e-commerce-microservices/e-commerce-microservices/zuul/target/zuul-0.0.1-SNAPSHOT.jar
+2020-06-18T21:43:29.7236012Z [INFO] 
+2020-06-18T21:43:29.7241382Z [INFO] --- spring-boot-maven-plugin:2.3.1.RELEASE:repackage (repackage) @ zuul ---
+2020-06-18T21:43:29.7378389Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-buildpack-platform/2.3.1.RELEASE/spring-boot-buildpack-platform-2.3.1.RELEASE.pom
+2020-06-18T21:43:29.7642997Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-buildpack-platform/2.3.1.RELEASE/spring-boot-buildpack-platform-2.3.1.RELEASE.pom (3.2 kB at 147 kB/s)
+2020-06-18T21:43:29.7686431Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-loader-tools/2.3.1.RELEASE/spring-boot-loader-tools-2.3.1.RELEASE.pom
+2020-06-18T21:43:29.8032255Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-loader-tools/2.3.1.RELEASE/spring-boot-loader-tools-2.3.1.RELEASE.pom (2.5 kB at 72 kB/s)
+2020-06-18T21:43:29.9179632Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-buildpack-platform/2.3.1.RELEASE/spring-boot-buildpack-platform-2.3.1.RELEASE.jar
+2020-06-18T21:43:29.9194342Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-core/5.2.7.RELEASE/spring-core-5.2.7.RELEASE.jar
+2020-06-18T21:43:29.9334191Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-jcl/5.2.7.RELEASE/spring-jcl-5.2.7.RELEASE.jar
+2020-06-18T21:43:29.9368842Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-core/5.2.7.RELEASE/spring-core-5.2.7.RELEASE.jar (0 B at 0 B/s)
+2020-06-18T21:43:29.9369635Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-loader-tools/2.3.1.RELEASE/spring-boot-loader-tools-2.3.1.RELEASE.jar
+2020-06-18T21:43:29.9477043Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-jcl/5.2.7.RELEASE/spring-jcl-5.2.7.RELEASE.jar (0 B at 0 B/s)
+2020-06-18T21:43:29.9504720Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-buildpack-platform/2.3.1.RELEASE/spring-boot-buildpack-platform-2.3.1.RELEASE.jar (177 kB at 5.4 MB/s)
+2020-06-18T21:43:29.9740879Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-loader-tools/2.3.1.RELEASE/spring-boot-loader-tools-2.3.1.RELEASE.jar (238 kB at 4.8 MB/s)
+2020-06-18T21:43:30.2781891Z [INFO] Replacing main artifact with repackaged archive
+2020-06-18T21:43:30.2793969Z [INFO] ------------------------------------------------------------------------
+2020-06-18T21:43:30.2796082Z [INFO] BUILD SUCCESS
+2020-06-18T21:43:30.2799071Z [INFO] ------------------------------------------------------------------------
+2020-06-18T21:43:30.2816486Z [INFO] Total time:  40.318 s
+2020-06-18T21:43:30.2820323Z [INFO] Finished at: 2020-06-18T21:43:30Z
+2020-06-18T21:43:30.2823540Z [INFO] ------------------------------------------------------------------------

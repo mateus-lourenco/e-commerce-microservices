@@ -1,0 +1,36 @@
+2020-06-18T21:45:22.3369716Z ##[group]Run heroku plugins:install java && heroku deploy:jar builds/config-server-0.0.1-SNAPSHOT.jar --app e-commerce-config-server
+2020-06-18T21:45:22.3370010Z [36;1mheroku plugins:install java && heroku deploy:jar builds/config-server-0.0.1-SNAPSHOT.jar --app e-commerce-config-server[0m
+2020-06-18T21:45:22.3405157Z shell: /bin/bash -e {0}
+2020-06-18T21:45:22.3405315Z env:
+2020-06-18T21:45:22.3405625Z   JAVA_HOME: /opt/hostedtoolcache/jdk/11.0.7/x64
+2020-06-18T21:45:22.3405789Z   JAVA_HOME_11.0.7_x64: /opt/hostedtoolcache/jdk/11.0.7/x64
+2020-06-18T21:45:22.3406591Z   HEROKU_API_KEY: ***
+2020-06-18T21:45:22.3406745Z   HEROKU_APP_NAME: e-commerce-config-server
+2020-06-18T21:45:22.3406890Z ##[endgroup]
+2020-06-18T21:45:22.5887327Z  ›   Warning: heroku update available from 7.41.1 to 7.42.1.
+2020-06-18T21:45:23.7102208Z Installing plugin java... yarn add v1.22.0
+2020-06-18T21:45:27.2383954Z Installing plugin java... info No lockfile found.Installing plugin java... [1/4] Resolving packages...Installing plugin java... [2/4] Fetching packages...Installing plugin java... [3/4] Linking dependencies...Installing plugin java... [4/4] Building fresh packages...Installing plugin java... success Saved lockfile.Installing plugin java... success Saved 94 new dependencies.Installing plugin java... info Direct dependenciesInstalling plugin java... └─ @heroku-cli/plugin-java@3.1.1Installing plugin java... info All dependenciesInstalling plugin java... ├─ @heroku-cli/color@1.1.14Installing plugin java... ├─ co-wait@0.0.0Installing plugin java... ├─ from2@2.3.0Installing plugin java... ├─ ip-address@5.9.4Installing plugin java... ├─ ms@2.1.2Installing plugin java... ├─ p-cancelable@0.4.1Installing plugin java... └─ which@1.3.1Installing plugin java... Done in 3.51s.Installing plugin java... installed v3.1.1
+2020-06-18T21:45:27.4212472Z  ›   Warning: heroku update available from 7.41.1 to 7.42.1.
+2020-06-18T21:45:27.8550152Z Uploading config-server-0.0.1-SNAPSHOT.jar
+2020-06-18T21:45:27.9723695Z -----> Packaging application...
+2020-06-18T21:45:27.9727823Z        - app: e-commerce-config-server
+2020-06-18T21:45:27.9729935Z        - including: builds/config-server-0.0.1-SNAPSHOT.jar
+2020-06-18T21:45:29.0554449Z -----> Creating build...
+2020-06-18T21:45:30.6021056Z        - file: slug.tgz
+2020-06-18T21:45:30.6022030Z        - size: 26MB
+2020-06-18T21:45:31.1301582Z -----> Uploading build...
+2020-06-18T21:45:32.0566321Z        - success
+2020-06-18T21:45:32.0566779Z -----> Deploying...
+2020-06-18T21:45:34.2126168Z remote: 
+2020-06-18T21:45:34.7919053Z remote: -----> heroku-deploy app detected
+2020-06-18T21:45:36.7719141Z remote: -----> Installing JDK 1.8... done
+2020-06-18T21:45:36.7913433Z remote: -----> Discovering process types
+2020-06-18T21:45:36.7914474Z remote:        Procfile declares types -> web
+2020-06-18T21:45:36.7914648Z remote: 
+2020-06-18T21:45:36.7914933Z remote: -----> Compressing...
+2020-06-18T21:45:41.9918626Z remote:        Done: 77M
+2020-06-18T21:45:44.0516455Z remote: -----> Launching...
+2020-06-18T21:45:44.7929404Z remote:        Released v3
+2020-06-18T21:45:44.7930890Z remote:        https://e-commerce-config-server.herokuapp.com/ deployed to Heroku
+2020-06-18T21:45:44.7931270Z remote: 
+2020-06-18T21:45:47.2241941Z -----> Done

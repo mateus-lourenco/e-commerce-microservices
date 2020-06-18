@@ -1,0 +1,33 @@
+2020-06-18T21:46:59.1090786Z ##[group]Run heroku deploy:jar builds/recommendation-0.0.1-SNAPSHOT.jar --app e-commerce-recommendation
+2020-06-18T21:46:59.1091044Z [36;1mheroku deploy:jar builds/recommendation-0.0.1-SNAPSHOT.jar --app e-commerce-recommendation[0m
+2020-06-18T21:46:59.1126161Z shell: /bin/bash -e {0}
+2020-06-18T21:46:59.1126324Z env:
+2020-06-18T21:46:59.1126467Z   JAVA_HOME: /opt/hostedtoolcache/jdk/11.0.7/x64
+2020-06-18T21:46:59.1126626Z   JAVA_HOME_11.0.7_x64: /opt/hostedtoolcache/jdk/11.0.7/x64
+2020-06-18T21:46:59.1127081Z   HEROKU_API_KEY: ***
+2020-06-18T21:46:59.1127226Z   HEROKU_APP_NAME: e-commerce-recommendation
+2020-06-18T21:46:59.1127366Z ##[endgroup]
+2020-06-18T21:46:59.2805726Z  ›   Warning: heroku update available from 7.41.1 to 7.42.1.
+2020-06-18T21:46:59.7002947Z Uploading recommendation-0.0.1-SNAPSHOT.jar
+2020-06-18T21:46:59.8377904Z -----> Packaging application...
+2020-06-18T21:46:59.8378745Z        - app: e-commerce-recommendation
+2020-06-18T21:46:59.8379298Z        - including: builds/recommendation-0.0.1-SNAPSHOT.jar
+2020-06-18T21:47:00.9553169Z -----> Creating build...
+2020-06-18T21:47:04.1797459Z        - file: slug.tgz
+2020-06-18T21:47:04.1798470Z        - size: 57MB
+2020-06-18T21:47:04.6927457Z -----> Uploading build...
+2020-06-18T21:47:06.0754304Z        - success
+2020-06-18T21:47:06.0755291Z -----> Deploying...
+2020-06-18T21:47:08.4069056Z remote: 
+2020-06-18T21:47:09.2152214Z remote: -----> heroku-deploy app detected
+2020-06-18T21:47:11.7255883Z remote: -----> Installing JDK 1.8... done
+2020-06-18T21:47:11.7453213Z remote: -----> Discovering process types
+2020-06-18T21:47:11.7454404Z remote:        Procfile declares types -> web
+2020-06-18T21:47:11.7454681Z remote: 
+2020-06-18T21:47:11.7455103Z remote: -----> Compressing...
+2020-06-18T21:47:18.0855224Z remote:        Done: 108.1M
+2020-06-18T21:47:20.4849512Z remote: -----> Launching...
+2020-06-18T21:47:21.3056704Z remote:        Released v3
+2020-06-18T21:47:21.3058094Z remote:        https://e-commerce-recommendation.herokuapp.com/ deployed to Heroku
+2020-06-18T21:47:21.3058491Z remote: 
+2020-06-18T21:47:23.7391111Z -----> Done

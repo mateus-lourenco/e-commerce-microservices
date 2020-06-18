@@ -1,0 +1,44 @@
+2020-06-18T21:44:03.8175925Z ##[group]Run mvn -B package --file shipping/pom.xml -DskipTests && cp shipping/target/*.jar builds
+2020-06-18T21:44:03.8176361Z [36;1mmvn -B package --file shipping/pom.xml -DskipTests && cp shipping/target/*.jar builds[0m
+2020-06-18T21:44:03.8225363Z shell: /bin/bash -e {0}
+2020-06-18T21:44:03.8225524Z env:
+2020-06-18T21:44:03.8225679Z   JAVA_HOME: /opt/hostedtoolcache/jdk/11.0.7/x64
+2020-06-18T21:44:03.8225878Z   JAVA_HOME_11.0.7_x64: /opt/hostedtoolcache/jdk/11.0.7/x64
+2020-06-18T21:44:03.8226027Z ##[endgroup]
+2020-06-18T21:44:05.0574132Z [INFO] Scanning for projects...
+2020-06-18T21:44:05.4778900Z [INFO] 
+2020-06-18T21:44:05.4804145Z [INFO] ------------------------< com.example:shipping >------------------------
+2020-06-18T21:44:05.4813615Z [INFO] Building Shipping 0.0.1-SNAPSHOT
+2020-06-18T21:44:05.4829616Z [INFO] --------------------------------[ jar ]---------------------------------
+2020-06-18T21:44:06.4078153Z [INFO] 
+2020-06-18T21:44:06.4117722Z [INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ shipping ---
+2020-06-18T21:44:06.6761055Z [INFO] Using 'UTF-8' encoding to copy filtered resources.
+2020-06-18T21:44:06.6793661Z [INFO] Copying 0 resource
+2020-06-18T21:44:06.6802596Z [INFO] Copying 1 resource
+2020-06-18T21:44:06.6873965Z [INFO] 
+2020-06-18T21:44:06.6914225Z [INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ shipping ---
+2020-06-18T21:44:06.8537079Z [INFO] Changes detected - recompiling the module!
+2020-06-18T21:44:06.8573226Z [INFO] Compiling 3 source files to /home/runner/work/e-commerce-microservices/e-commerce-microservices/shipping/target/classes
+2020-06-18T21:44:07.9795039Z [INFO] 
+2020-06-18T21:44:07.9801139Z [INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ shipping ---
+2020-06-18T21:44:07.9878041Z [INFO] Using 'UTF-8' encoding to copy filtered resources.
+2020-06-18T21:44:07.9887344Z [INFO] skip non existing resourceDirectory /home/runner/work/e-commerce-microservices/e-commerce-microservices/shipping/src/test/resources
+2020-06-18T21:44:07.9888585Z [INFO] 
+2020-06-18T21:44:07.9894594Z [INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ shipping ---
+2020-06-18T21:44:07.9986456Z [INFO] Changes detected - recompiling the module!
+2020-06-18T21:44:07.9996122Z [INFO] Compiling 1 source file to /home/runner/work/e-commerce-microservices/e-commerce-microservices/shipping/target/test-classes
+2020-06-18T21:44:08.6833886Z [INFO] 
+2020-06-18T21:44:08.6839025Z [INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ shipping ---
+2020-06-18T21:44:08.8485820Z [INFO] Tests are skipped.
+2020-06-18T21:44:08.8486329Z [INFO] 
+2020-06-18T21:44:08.8487321Z [INFO] --- maven-jar-plugin:3.1.2:jar (default-jar) @ shipping ---
+2020-06-18T21:44:09.0611493Z [INFO] Building jar: /home/runner/work/e-commerce-microservices/e-commerce-microservices/shipping/target/shipping-0.0.1-SNAPSHOT.jar
+2020-06-18T21:44:09.1126939Z [INFO] 
+2020-06-18T21:44:09.1127994Z [INFO] --- spring-boot-maven-plugin:2.2.7.RELEASE:repackage (repackage) @ shipping ---
+2020-06-18T21:44:09.5250438Z [INFO] Replacing main artifact with repackaged archive
+2020-06-18T21:44:09.5257771Z [INFO] ------------------------------------------------------------------------
+2020-06-18T21:44:09.5259956Z [INFO] BUILD SUCCESS
+2020-06-18T21:44:09.5263161Z [INFO] ------------------------------------------------------------------------
+2020-06-18T21:44:09.5280434Z [INFO] Total time:  4.494 s
+2020-06-18T21:44:09.5285348Z [INFO] Finished at: 2020-06-18T21:44:09Z
+2020-06-18T21:44:09.5288905Z [INFO] ------------------------------------------------------------------------

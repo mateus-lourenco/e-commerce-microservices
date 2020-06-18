@@ -1,0 +1,33 @@
+2020-06-18T21:46:32.6499405Z ##[group]Run heroku deploy:jar builds/account-0.0.1-SNAPSHOT.jar --app e-commerce-account
+2020-06-18T21:46:32.6499649Z [36;1mheroku deploy:jar builds/account-0.0.1-SNAPSHOT.jar --app e-commerce-account[0m
+2020-06-18T21:46:32.6534792Z shell: /bin/bash -e {0}
+2020-06-18T21:46:32.6534940Z env:
+2020-06-18T21:46:32.6535081Z   JAVA_HOME: /opt/hostedtoolcache/jdk/11.0.7/x64
+2020-06-18T21:46:32.6535233Z   JAVA_HOME_11.0.7_x64: /opt/hostedtoolcache/jdk/11.0.7/x64
+2020-06-18T21:46:32.6535647Z   HEROKU_API_KEY: ***
+2020-06-18T21:46:32.6535783Z   HEROKU_APP_NAME: e-commerce-account
+2020-06-18T21:46:32.6535917Z ##[endgroup]
+2020-06-18T21:46:33.2060880Z  ›   Warning: heroku update available from 7.41.1 to 7.42.1.
+2020-06-18T21:46:33.2819072Z Uploading account-0.0.1-SNAPSHOT.jar
+2020-06-18T21:46:33.4127238Z -----> Packaging application...
+2020-06-18T21:46:33.4127996Z        - app: e-commerce-account
+2020-06-18T21:46:33.4128495Z        - including: builds/account-0.0.1-SNAPSHOT.jar
+2020-06-18T21:46:34.6242867Z -----> Creating build...
+2020-06-18T21:46:37.8920579Z        - file: slug.tgz
+2020-06-18T21:46:37.8921866Z        - size: 56MB
+2020-06-18T21:46:38.4045355Z -----> Uploading build...
+2020-06-18T21:46:39.7357244Z        - success
+2020-06-18T21:46:39.7358699Z -----> Deploying...
+2020-06-18T21:46:42.0709367Z remote: 
+2020-06-18T21:46:42.8894398Z remote: -----> heroku-deploy app detected
+2020-06-18T21:46:44.9096565Z remote: -----> Installing JDK 1.8... done
+2020-06-18T21:46:44.9299131Z remote: -----> Discovering process types
+2020-06-18T21:46:44.9299727Z remote:        Procfile declares types -> web
+2020-06-18T21:46:44.9299931Z remote: 
+2020-06-18T21:46:44.9300317Z remote: -----> Compressing...
+2020-06-18T21:46:51.3294527Z remote:        Done: 107.5M
+2020-06-18T21:46:54.4895325Z remote: -----> Launching...
+2020-06-18T21:46:55.2092624Z remote:        Released v3
+2020-06-18T21:46:55.2290760Z remote:        https://e-commerce-account.herokuapp.com/ deployed to Heroku
+2020-06-18T21:46:55.2291008Z remote: 
+2020-06-18T21:46:57.6610122Z -----> Done

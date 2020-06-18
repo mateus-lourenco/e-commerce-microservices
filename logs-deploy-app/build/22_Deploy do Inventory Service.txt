@@ -1,0 +1,33 @@
+2020-06-18T21:47:57.3757036Z ##[group]Run heroku deploy:jar builds/inventory-0.0.1-SNAPSHOT.jar --app e-commerce-inventory-v2
+2020-06-18T21:47:57.3757290Z [36;1mheroku deploy:jar builds/inventory-0.0.1-SNAPSHOT.jar --app e-commerce-inventory-v2[0m
+2020-06-18T21:47:57.3791064Z shell: /bin/bash -e {0}
+2020-06-18T21:47:57.3791204Z env:
+2020-06-18T21:47:57.3791339Z   JAVA_HOME: /opt/hostedtoolcache/jdk/11.0.7/x64
+2020-06-18T21:47:57.3791486Z   JAVA_HOME_11.0.7_x64: /opt/hostedtoolcache/jdk/11.0.7/x64
+2020-06-18T21:47:57.3791905Z   HEROKU_API_KEY: ***
+2020-06-18T21:47:57.3792048Z   HEROKU_APP_NAME: e-commerce-inventory-v2
+2020-06-18T21:47:57.3792178Z ##[endgroup]
+2020-06-18T21:47:57.5390707Z  ›   Warning: heroku update available from 7.41.1 to 7.42.1.
+2020-06-18T21:47:57.9915174Z Uploading inventory-0.0.1-SNAPSHOT.jar
+2020-06-18T21:47:58.1109936Z -----> Packaging application...
+2020-06-18T21:47:58.1110658Z        - app: e-commerce-inventory-v2
+2020-06-18T21:47:58.1111602Z        - including: builds/inventory-0.0.1-SNAPSHOT.jar
+2020-06-18T21:47:59.1665027Z -----> Creating build...
+2020-06-18T21:48:02.3305367Z        - file: slug.tgz
+2020-06-18T21:48:02.3306595Z        - size: 56MB
+2020-06-18T21:48:02.8028284Z -----> Uploading build...
+2020-06-18T21:48:03.9931145Z        - success
+2020-06-18T21:48:03.9936969Z -----> Deploying...
+2020-06-18T21:48:06.4716822Z remote: 
+2020-06-18T21:48:07.2503392Z remote: -----> heroku-deploy app detected
+2020-06-18T21:48:09.3701645Z remote: -----> Installing JDK 1.8... done
+2020-06-18T21:48:09.4102238Z remote: -----> Discovering process types
+2020-06-18T21:48:09.4104198Z remote:        Procfile declares types -> web
+2020-06-18T21:48:09.4104613Z remote: 
+2020-06-18T21:48:09.4105131Z remote: -----> Compressing...
+2020-06-18T21:48:15.8102655Z remote:        Done: 107.5M
+2020-06-18T21:48:18.3099777Z remote: -----> Launching...
+2020-06-18T21:48:19.0512863Z remote:        Released v3
+2020-06-18T21:48:19.0518902Z remote:        https://e-commerce-inventory-v2.herokuapp.com/ deployed to Heroku
+2020-06-18T21:48:19.0519286Z remote: 
+2020-06-18T21:48:21.4416536Z -----> Done

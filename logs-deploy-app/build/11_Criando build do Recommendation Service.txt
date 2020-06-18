@@ -1,0 +1,44 @@
+2020-06-18T21:43:58.0581260Z ##[group]Run mvn -B package --file recommendation/pom.xml -DskipTests && cp recommendation/target/*.jar builds
+2020-06-18T21:43:58.0581634Z [36;1mmvn -B package --file recommendation/pom.xml -DskipTests && cp recommendation/target/*.jar builds[0m
+2020-06-18T21:43:58.0615923Z shell: /bin/bash -e {0}
+2020-06-18T21:43:58.0616073Z env:
+2020-06-18T21:43:58.0616221Z   JAVA_HOME: /opt/hostedtoolcache/jdk/11.0.7/x64
+2020-06-18T21:43:58.0616380Z   JAVA_HOME_11.0.7_x64: /opt/hostedtoolcache/jdk/11.0.7/x64
+2020-06-18T21:43:58.0616533Z ##[endgroup]
+2020-06-18T21:43:59.2040157Z [INFO] Scanning for projects...
+2020-06-18T21:43:59.5722436Z [INFO] 
+2020-06-18T21:43:59.5729782Z [INFO] ---------------------< com.example:recommendation >---------------------
+2020-06-18T21:43:59.5733057Z [INFO] Building recommendation 0.0.1-SNAPSHOT
+2020-06-18T21:43:59.5739783Z [INFO] --------------------------------[ jar ]---------------------------------
+2020-06-18T21:44:00.4400695Z [INFO] 
+2020-06-18T21:44:00.4443157Z [INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ recommendation ---
+2020-06-18T21:44:00.6925913Z [INFO] Using 'UTF-8' encoding to copy filtered resources.
+2020-06-18T21:44:00.6952851Z [INFO] Copying 0 resource
+2020-06-18T21:44:00.6959369Z [INFO] Copying 1 resource
+2020-06-18T21:44:00.7030256Z [INFO] 
+2020-06-18T21:44:00.7066322Z [INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ recommendation ---
+2020-06-18T21:44:00.8616636Z [INFO] Changes detected - recompiling the module!
+2020-06-18T21:44:00.8649345Z [INFO] Compiling 3 source files to /home/runner/work/e-commerce-microservices/e-commerce-microservices/recommendation/target/classes
+2020-06-18T21:44:02.3090827Z [INFO] 
+2020-06-18T21:44:02.3098918Z [INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ recommendation ---
+2020-06-18T21:44:02.3131951Z [INFO] Using 'UTF-8' encoding to copy filtered resources.
+2020-06-18T21:44:02.3141818Z [INFO] skip non existing resourceDirectory /home/runner/work/e-commerce-microservices/e-commerce-microservices/recommendation/src/test/resources
+2020-06-18T21:44:02.3144411Z [INFO] 
+2020-06-18T21:44:02.3151124Z [INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ recommendation ---
+2020-06-18T21:44:02.3187616Z [INFO] Changes detected - recompiling the module!
+2020-06-18T21:44:02.3199864Z [INFO] Compiling 1 source file to /home/runner/work/e-commerce-microservices/e-commerce-microservices/recommendation/target/test-classes
+2020-06-18T21:44:02.9399717Z [INFO] 
+2020-06-18T21:44:02.9409088Z [INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ recommendation ---
+2020-06-18T21:44:03.0843951Z [INFO] Tests are skipped.
+2020-06-18T21:44:03.0853375Z [INFO] 
+2020-06-18T21:44:03.0857060Z [INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ recommendation ---
+2020-06-18T21:44:03.2916977Z [INFO] Building jar: /home/runner/work/e-commerce-microservices/e-commerce-microservices/recommendation/target/recommendation-0.0.1-SNAPSHOT.jar
+2020-06-18T21:44:03.3391838Z [INFO] 
+2020-06-18T21:44:03.3395997Z [INFO] --- spring-boot-maven-plugin:2.3.1.RELEASE:repackage (repackage) @ recommendation ---
+2020-06-18T21:44:03.7239376Z [INFO] Replacing main artifact with repackaged archive
+2020-06-18T21:44:03.7251869Z [INFO] ------------------------------------------------------------------------
+2020-06-18T21:44:03.7254030Z [INFO] BUILD SUCCESS
+2020-06-18T21:44:03.7257298Z [INFO] ------------------------------------------------------------------------
+2020-06-18T21:44:03.7300373Z [INFO] Total time:  4.545 s
+2020-06-18T21:44:03.7305999Z [INFO] Finished at: 2020-06-18T21:44:03Z
+2020-06-18T21:44:03.7309845Z [INFO] ------------------------------------------------------------------------

@@ -1,0 +1,64 @@
+2020-06-18T21:43:42.3801674Z ##[group]Run mvn -B package --file inventory/pom.xml -DskipTests && cp inventory/target/*.jar builds
+2020-06-18T21:43:42.3801932Z [36;1mmvn -B package --file inventory/pom.xml -DskipTests && cp inventory/target/*.jar builds[0m
+2020-06-18T21:43:42.3839954Z shell: /bin/bash -e {0}
+2020-06-18T21:43:42.3840116Z env:
+2020-06-18T21:43:42.3840290Z   JAVA_HOME: /opt/hostedtoolcache/jdk/11.0.7/x64
+2020-06-18T21:43:42.3840580Z   JAVA_HOME_11.0.7_x64: /opt/hostedtoolcache/jdk/11.0.7/x64
+2020-06-18T21:43:42.3840740Z ##[endgroup]
+2020-06-18T21:43:43.6182639Z [INFO] Scanning for projects...
+2020-06-18T21:43:43.9844288Z [INFO] 
+2020-06-18T21:43:43.9867953Z [INFO] -----------------------< com.example:inventory >------------------------
+2020-06-18T21:43:43.9877525Z [INFO] Building Inventory 0.0.1-SNAPSHOT
+2020-06-18T21:43:43.9885745Z [INFO] --------------------------------[ jar ]---------------------------------
+2020-06-18T21:43:44.3970905Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-rest-webmvc/3.2.1.RELEASE/spring-data-rest-webmvc-3.2.1.RELEASE.pom
+2020-06-18T21:43:44.6898052Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-rest-webmvc/3.2.1.RELEASE/spring-data-rest-webmvc-3.2.1.RELEASE.pom (3.3 kB at 11 kB/s)
+2020-06-18T21:43:44.7003823Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-rest-parent/3.2.1.RELEASE/spring-data-rest-parent-3.2.1.RELEASE.pom
+2020-06-18T21:43:44.7249223Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-rest-parent/3.2.1.RELEASE/spring-data-rest-parent-3.2.1.RELEASE.pom (4.1 kB at 164 kB/s)
+2020-06-18T21:43:44.7277852Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/data/build/spring-data-parent/2.2.1.RELEASE/spring-data-parent-2.2.1.RELEASE.pom
+2020-06-18T21:43:44.7730511Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/data/build/spring-data-parent/2.2.1.RELEASE/spring-data-parent-2.2.1.RELEASE.pom (39 kB at 878 kB/s)
+2020-06-18T21:43:44.7790949Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/data/build/spring-data-build/2.2.1.RELEASE/spring-data-build-2.2.1.RELEASE.pom
+2020-06-18T21:43:44.8038813Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/data/build/spring-data-build/2.2.1.RELEASE/spring-data-build-2.2.1.RELEASE.pom (7.1 kB at 283 kB/s)
+2020-06-18T21:43:44.8103156Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/io/projectreactor/reactor-bom/Dysprosium-RELEASE/reactor-bom-Dysprosium-RELEASE.pom
+2020-06-18T21:43:44.8373316Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/io/projectreactor/reactor-bom/Dysprosium-RELEASE/reactor-bom-Dysprosium-RELEASE.pom (4.4 kB at 163 kB/s)
+2020-06-18T21:43:44.8414385Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-framework-bom/5.2.1.RELEASE/spring-framework-bom-5.2.1.RELEASE.pom
+2020-06-18T21:43:44.8678408Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-framework-bom/5.2.1.RELEASE/spring-framework-bom-5.2.1.RELEASE.pom (5.3 kB at 196 kB/s)
+2020-06-18T21:43:44.8713242Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-bom/1.3.50/kotlin-bom-1.3.50.pom
+2020-06-18T21:43:44.9023480Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jetbrains/kotlin/kotlin-bom/1.3.50/kotlin-bom-1.3.50.pom (8.8 kB at 283 kB/s)
+2020-06-18T21:43:44.9054052Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-bom/1.3.2/kotlinx-coroutines-bom-1.3.2.pom
+2020-06-18T21:43:44.9298838Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/jetbrains/kotlinx/kotlinx-coroutines-bom/1.3.2/kotlinx-coroutines-bom-1.3.2.pom (4.3 kB at 172 kB/s)
+2020-06-18T21:43:44.9339184Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-bom/2.10.0/jackson-bom-2.10.0.pom
+2020-06-18T21:43:44.9591813Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/jackson-bom/2.10.0/jackson-bom-2.10.0.pom (13 kB at 521 kB/s)
+2020-06-18T21:43:45.6395895Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-rest-webmvc/3.2.1.RELEASE/spring-data-rest-webmvc-3.2.1.RELEASE.jar
+2020-06-18T21:43:45.7102330Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/data/spring-data-rest-webmvc/3.2.1.RELEASE/spring-data-rest-webmvc-3.2.1.RELEASE.jar (340 kB at 4.8 MB/s)
+2020-06-18T21:43:45.7179473Z [INFO] 
+2020-06-18T21:43:45.7188739Z [INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ inventory ---
+2020-06-18T21:43:45.8413367Z [INFO] Using 'UTF-8' encoding to copy filtered resources.
+2020-06-18T21:43:45.8442839Z [INFO] Copying 0 resource
+2020-06-18T21:43:45.8450353Z [INFO] Copying 1 resource
+2020-06-18T21:43:45.8510249Z [INFO] 
+2020-06-18T21:43:45.8517007Z [INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ inventory ---
+2020-06-18T21:43:46.0031894Z [INFO] Changes detected - recompiling the module!
+2020-06-18T21:43:46.0059053Z [INFO] Compiling 3 source files to /home/runner/work/e-commerce-microservices/e-commerce-microservices/inventory/target/classes
+2020-06-18T21:43:47.4205357Z [INFO] 
+2020-06-18T21:43:47.4213086Z [INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ inventory ---
+2020-06-18T21:43:47.4248553Z [INFO] Using 'UTF-8' encoding to copy filtered resources.
+2020-06-18T21:43:47.4258804Z [INFO] skip non existing resourceDirectory /home/runner/work/e-commerce-microservices/e-commerce-microservices/inventory/src/test/resources
+2020-06-18T21:43:47.4261520Z [INFO] 
+2020-06-18T21:43:47.4267869Z [INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ inventory ---
+2020-06-18T21:43:47.4306284Z [INFO] Changes detected - recompiling the module!
+2020-06-18T21:43:47.4318179Z [INFO] Compiling 1 source file to /home/runner/work/e-commerce-microservices/e-commerce-microservices/inventory/target/test-classes
+2020-06-18T21:43:48.0253590Z [INFO] 
+2020-06-18T21:43:48.0259117Z [INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ inventory ---
+2020-06-18T21:43:48.1171345Z [INFO] Tests are skipped.
+2020-06-18T21:43:48.1173311Z [INFO] 
+2020-06-18T21:43:48.1180050Z [INFO] --- maven-jar-plugin:3.1.2:jar (default-jar) @ inventory ---
+2020-06-18T21:43:48.3413337Z [INFO] Building jar: /home/runner/work/e-commerce-microservices/e-commerce-microservices/inventory/target/inventory-0.0.1-SNAPSHOT.jar
+2020-06-18T21:43:48.3814820Z [INFO] 
+2020-06-18T21:43:48.3819091Z [INFO] --- spring-boot-maven-plugin:2.2.7.RELEASE:repackage (repackage) @ inventory ---
+2020-06-18T21:43:48.8407816Z [INFO] Replacing main artifact with repackaged archive
+2020-06-18T21:43:48.8416529Z [INFO] ------------------------------------------------------------------------
+2020-06-18T21:43:48.8417313Z [INFO] BUILD SUCCESS
+2020-06-18T21:43:48.8422730Z [INFO] ------------------------------------------------------------------------
+2020-06-18T21:43:48.8438658Z [INFO] Total time:  5.246 s
+2020-06-18T21:43:48.8443107Z [INFO] Finished at: 2020-06-18T21:43:48Z
+2020-06-18T21:43:48.8448180Z [INFO] ------------------------------------------------------------------------

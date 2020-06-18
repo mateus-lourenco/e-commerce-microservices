@@ -1,0 +1,33 @@
+2020-06-18T21:48:21.4937151Z ##[group]Run heroku deploy:jar builds/shipping-0.0.1-SNAPSHOT.jar --app e-commerce-shipping
+2020-06-18T21:48:21.4937387Z [36;1mheroku deploy:jar builds/shipping-0.0.1-SNAPSHOT.jar --app e-commerce-shipping[0m
+2020-06-18T21:48:21.4969897Z shell: /bin/bash -e {0}
+2020-06-18T21:48:21.4970039Z env:
+2020-06-18T21:48:21.4970179Z   JAVA_HOME: /opt/hostedtoolcache/jdk/11.0.7/x64
+2020-06-18T21:48:21.4970326Z   JAVA_HOME_11.0.7_x64: /opt/hostedtoolcache/jdk/11.0.7/x64
+2020-06-18T21:48:21.4970898Z   HEROKU_API_KEY: ***
+2020-06-18T21:48:21.4971031Z   HEROKU_APP_NAME: e-commerce-shipping
+2020-06-18T21:48:21.4971162Z ##[endgroup]
+2020-06-18T21:48:21.6823707Z  ›   Warning: heroku update available from 7.41.1 to 7.42.1.
+2020-06-18T21:48:22.1260031Z Uploading shipping-0.0.1-SNAPSHOT.jar
+2020-06-18T21:48:22.2467386Z -----> Packaging application...
+2020-06-18T21:48:22.2468663Z        - app: e-commerce-shipping
+2020-06-18T21:48:22.2469702Z        - including: builds/shipping-0.0.1-SNAPSHOT.jar
+2020-06-18T21:48:23.3287309Z -----> Creating build...
+2020-06-18T21:48:26.4698626Z        - file: slug.tgz
+2020-06-18T21:48:26.4699743Z        - size: 56MB
+2020-06-18T21:48:26.9470981Z -----> Uploading build...
+2020-06-18T21:48:28.1726626Z        - success
+2020-06-18T21:48:28.1735369Z -----> Deploying...
+2020-06-18T21:48:30.6747309Z remote: 
+2020-06-18T21:48:31.3930001Z remote: -----> heroku-deploy app detected
+2020-06-18T21:48:33.4530850Z remote: -----> Installing JDK 1.8... done
+2020-06-18T21:48:33.4728927Z remote: -----> Discovering process types
+2020-06-18T21:48:33.4730037Z remote:        Procfile declares types -> web
+2020-06-18T21:48:33.4731607Z remote: 
+2020-06-18T21:48:33.4732310Z remote: -----> Compressing...
+2020-06-18T21:48:39.8533566Z remote:        Done: 107.5M
+2020-06-18T21:48:42.0334169Z remote: -----> Launching...
+2020-06-18T21:48:42.8736114Z remote:        Released v3
+2020-06-18T21:48:42.8737482Z remote:        https://e-commerce-shipping.herokuapp.com/ deployed to Heroku
+2020-06-18T21:48:42.8737837Z remote: 
+2020-06-18T21:48:45.2985870Z -----> Done

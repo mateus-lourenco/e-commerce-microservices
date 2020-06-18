@@ -1,0 +1,14 @@
+2020-06-18T21:45:13.9736606Z ##[group]Run heroku container:login
+2020-06-18T21:45:13.9736811Z [36;1mheroku container:login[0m
+2020-06-18T21:45:13.9771670Z shell: /bin/bash -e {0}
+2020-06-18T21:45:13.9771820Z env:
+2020-06-18T21:45:13.9771957Z   JAVA_HOME: /opt/hostedtoolcache/jdk/11.0.7/x64
+2020-06-18T21:45:13.9772108Z   JAVA_HOME_11.0.7_x64: /opt/hostedtoolcache/jdk/11.0.7/x64
+2020-06-18T21:45:13.9772816Z   HEROKU_API_KEY: ***
+2020-06-18T21:45:13.9772951Z ##[endgroup]
+2020-06-18T21:45:21.6492327Z WARNING! Using --password via the CLI is insecure. Use --password-stdin.
+2020-06-18T21:45:22.3160883Z WARNING! Your password will be stored unencrypted in /home/runner/.docker/config.json.
+2020-06-18T21:45:22.3161651Z Configure a credential helper to remove this warning. See
+2020-06-18T21:45:22.3163134Z https://docs.docker.com/engine/reference/commandline/login/#credentials-store
+2020-06-18T21:45:22.3163356Z 
+2020-06-18T21:45:22.3171454Z Login Succeeded

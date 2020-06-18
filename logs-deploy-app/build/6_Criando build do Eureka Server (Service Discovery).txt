@@ -1,0 +1,422 @@
+2020-06-18T21:42:38.9915846Z ##[group]Run mvn -B package --file eureka-server/pom.xml -DskipTests && cp eureka-server/target/*.jar builds
+2020-06-18T21:42:38.9916134Z [36;1mmvn -B package --file eureka-server/pom.xml -DskipTests && cp eureka-server/target/*.jar builds[0m
+2020-06-18T21:42:38.9951438Z shell: /bin/bash -e {0}
+2020-06-18T21:42:38.9951598Z env:
+2020-06-18T21:42:38.9951751Z   JAVA_HOME: /opt/hostedtoolcache/jdk/11.0.7/x64
+2020-06-18T21:42:38.9951920Z   JAVA_HOME_11.0.7_x64: /opt/hostedtoolcache/jdk/11.0.7/x64
+2020-06-18T21:42:38.9952072Z ##[endgroup]
+2020-06-18T21:42:40.2733694Z [INFO] Scanning for projects...
+2020-06-18T21:42:40.7462711Z [INFO] 
+2020-06-18T21:42:40.7497797Z [INFO] ---------------------< com.example:eureka-server >----------------------
+2020-06-18T21:42:40.7510170Z [INFO] Building eureka-server 0.0.1-SNAPSHOT
+2020-06-18T21:42:40.7519346Z [INFO] --------------------------------[ jar ]---------------------------------
+2020-06-18T21:42:41.2966588Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-config/2.2.2.RELEASE/spring-cloud-starter-config-2.2.2.RELEASE.pom
+2020-06-18T21:42:41.6358842Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-config/2.2.2.RELEASE/spring-cloud-starter-config-2.2.2.RELEASE.pom (4.3 kB at 12 kB/s)
+2020-06-18T21:42:41.6908111Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter/2.2.2.RELEASE/spring-cloud-starter-2.2.2.RELEASE.pom
+2020-06-18T21:42:41.7217476Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter/2.2.2.RELEASE/spring-cloud-starter-2.2.2.RELEASE.pom (5.0 kB at 152 kB/s)
+2020-06-18T21:42:41.7927662Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-netflix-eureka-server/2.2.2.RELEASE/spring-cloud-starter-netflix-eureka-server-2.2.2.RELEASE.pom
+2020-06-18T21:42:41.8196950Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-netflix-eureka-server/2.2.2.RELEASE/spring-cloud-starter-netflix-eureka-server-2.2.2.RELEASE.pom (5.6 kB at 209 kB/s)
+2020-06-18T21:42:41.8231074Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-netflix/2.2.2.RELEASE/spring-cloud-starter-netflix-2.2.2.RELEASE.pom
+2020-06-18T21:42:41.8561186Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-netflix/2.2.2.RELEASE/spring-cloud-starter-netflix-2.2.2.RELEASE.pom (3.8 kB at 118 kB/s)
+2020-06-18T21:42:41.8631201Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-netflix/2.2.2.RELEASE/spring-cloud-netflix-2.2.2.RELEASE.pom
+2020-06-18T21:42:41.8935642Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-netflix/2.2.2.RELEASE/spring-cloud-netflix-2.2.2.RELEASE.pom (4.6 kB at 148 kB/s)
+2020-06-18T21:42:41.9031306Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-netflix-eureka-server/2.2.2.RELEASE/spring-cloud-netflix-eureka-server-2.2.2.RELEASE.pom
+2020-06-18T21:42:41.9324850Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-netflix-eureka-server/2.2.2.RELEASE/spring-cloud-netflix-eureka-server-2.2.2.RELEASE.pom (9.1 kB at 312 kB/s)
+2020-06-18T21:42:41.9398631Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-freemarker/2.3.0.RELEASE/spring-boot-starter-freemarker-2.3.0.RELEASE.pom
+2020-06-18T21:42:41.9728311Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-freemarker/2.3.0.RELEASE/spring-boot-starter-freemarker-2.3.0.RELEASE.pom (2.8 kB at 85 kB/s)
+2020-06-18T21:42:41.9861630Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/freemarker/freemarker/2.3.30/freemarker-2.3.30.pom
+2020-06-18T21:42:42.0121923Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/freemarker/freemarker/2.3.30/freemarker-2.3.30.pom (3.4 kB at 129 kB/s)
+2020-06-18T21:42:42.0194062Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-context-support/5.2.6.RELEASE/spring-context-support-5.2.6.RELEASE.pom
+2020-06-18T21:42:42.0482231Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-context-support/5.2.6.RELEASE/spring-context-support-5.2.6.RELEASE.pom (2.1 kB at 87 kB/s)
+2020-06-18T21:42:42.0562735Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-netflix-hystrix/2.2.2.RELEASE/spring-cloud-netflix-hystrix-2.2.2.RELEASE.pom
+2020-06-18T21:42:42.0835032Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-netflix-hystrix/2.2.2.RELEASE/spring-cloud-netflix-hystrix-2.2.2.RELEASE.pom (11 kB at 344 kB/s)
+2020-06-18T21:42:42.0998356Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-aop/2.3.0.RELEASE/spring-boot-starter-aop-2.3.0.RELEASE.pom
+2020-06-18T21:42:42.1288983Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-aop/2.3.0.RELEASE/spring-boot-starter-aop-2.3.0.RELEASE.pom (2.8 kB at 73 kB/s)
+2020-06-18T21:42:42.1348184Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/aspectj/aspectjweaver/1.9.5/aspectjweaver-1.9.5.pom
+2020-06-18T21:42:42.1577933Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/aspectj/aspectjweaver/1.9.5/aspectjweaver-1.9.5.pom (1.0 kB at 45 kB/s)
+2020-06-18T21:42:42.1601261Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-netflix-eureka-client/2.2.2.RELEASE/spring-cloud-netflix-eureka-client-2.2.2.RELEASE.pom
+2020-06-18T21:42:42.1855665Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-netflix-eureka-client/2.2.2.RELEASE/spring-cloud-netflix-eureka-client-2.2.2.RELEASE.pom (12 kB at 472 kB/s)
+2020-06-18T21:42:42.1913555Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/netflix/eureka/eureka-client/1.9.17/eureka-client-1.9.17.pom
+2020-06-18T21:42:42.2242879Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/netflix/eureka/eureka-client/1.9.17/eureka-client-1.9.17.pom (7.3 kB at 221 kB/s)
+2020-06-18T21:42:42.2271669Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/jettison/jettison/1.3.7/jettison-1.3.7.pom
+2020-06-18T21:42:42.2513047Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/jettison/jettison/1.3.7/jettison-1.3.7.pom (4.3 kB at 180 kB/s)
+2020-06-18T21:42:42.2540318Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/codehaus-parent/3/codehaus-parent-3.pom
+2020-06-18T21:42:42.2856992Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/codehaus-parent/3/codehaus-parent-3.pom (4.1 kB at 128 kB/s)
+2020-06-18T21:42:42.2900855Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/stax/stax-api/1.0.1/stax-api-1.0.1.pom
+2020-06-18T21:42:42.3118615Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/stax/stax-api/1.0.1/stax-api-1.0.1.pom (1.5 kB at 66 kB/s)
+2020-06-18T21:42:42.3140860Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/netflix/netflix-commons/netflix-eventbus/0.3.0/netflix-eventbus-0.3.0.pom
+2020-06-18T21:42:42.3406267Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/netflix/netflix-commons/netflix-eventbus/0.3.0/netflix-eventbus-0.3.0.pom (3.5 kB at 129 kB/s)
+2020-06-18T21:42:42.3473228Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/netflix/netflix-commons/netflix-infix/0.3.0/netflix-infix-0.3.0.pom
+2020-06-18T21:42:42.3721641Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/netflix/netflix-commons/netflix-infix/0.3.0/netflix-infix-0.3.0.pom (3.9 kB at 141 kB/s)
+2020-06-18T21:42:42.3747801Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/commons-jxpath/commons-jxpath/1.3/commons-jxpath-1.3.pom
+2020-06-18T21:42:42.4016073Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/commons-jxpath/commons-jxpath/1.3/commons-jxpath-1.3.pom (9.2 kB at 340 kB/s)
+2020-06-18T21:42:42.4091267Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/11/commons-parent-11.pom
+2020-06-18T21:42:42.4411403Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/11/commons-parent-11.pom (25 kB at 770 kB/s)
+2020-06-18T21:42:42.4503622Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/apache/4/apache-4.pom
+2020-06-18T21:42:42.4730738Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/apache/4/apache-4.pom (4.5 kB at 204 kB/s)
+2020-06-18T21:42:42.4767618Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/joda-time/joda-time/2.3/joda-time-2.3.pom
+2020-06-18T21:42:42.5007765Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/joda-time/joda-time/2.3/joda-time-2.3.pom (25 kB at 1.0 MB/s)
+2020-06-18T21:42:42.5038130Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/antlr/antlr-runtime/3.4/antlr-runtime-3.4.pom
+2020-06-18T21:42:42.5301690Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/antlr/antlr-runtime/3.4/antlr-runtime-3.4.pom (3.1 kB at 120 kB/s)
+2020-06-18T21:42:42.5327181Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/antlr/antlr-master/3.4/antlr-master-3.4.pom
+2020-06-18T21:42:42.5575310Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/antlr/antlr-master/3.4/antlr-master-3.4.pom (9.4 kB at 447 kB/s)
+2020-06-18T21:42:42.5575900Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/antlr/stringtemplate/3.2.1/stringtemplate-3.2.1.pom
+2020-06-18T21:42:42.5795482Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/antlr/stringtemplate/3.2.1/stringtemplate-3.2.1.pom (7.5 kB at 373 kB/s)
+2020-06-18T21:42:42.5796030Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/antlr/antlr/2.7.7/antlr-2.7.7.pom
+2020-06-18T21:42:42.6013757Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/antlr/antlr/2.7.7/antlr-2.7.7.pom (632 B at 30 kB/s)
+2020-06-18T21:42:42.6037274Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/28.2-android/guava-28.2-android.pom
+2020-06-18T21:42:42.6260445Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/28.2-android/guava-28.2-android.pom (11 kB at 497 kB/s)
+2020-06-18T21:42:42.6283574Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/28.2-android/guava-parent-28.2-android.pom
+2020-06-18T21:42:42.6516228Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/28.2-android/guava-parent-28.2-android.pom (13 kB at 615 kB/s)
+2020-06-18T21:42:42.6516866Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.pom
+2020-06-18T21:42:42.6722543Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.pom (2.4 kB at 115 kB/s)
+2020-06-18T21:42:42.6760543Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/26.0-android/guava-parent-26.0-android.pom
+2020-06-18T21:42:42.6993883Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/26.0-android/guava-parent-26.0-android.pom (10 kB at 443 kB/s)
+2020-06-18T21:42:42.7072801Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.pom
+2020-06-18T21:42:42.7307787Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.pom (2.3 kB at 99 kB/s)
+2020-06-18T21:42:42.7308551Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/checkerframework/checker-compat-qual/2.5.5/checker-compat-qual-2.5.5.pom
+2020-06-18T21:42:42.7520452Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/checkerframework/checker-compat-qual/2.5.5/checker-compat-qual-2.5.5.pom (2.7 kB at 137 kB/s)
+2020-06-18T21:42:42.7521082Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/errorprone/error_prone_annotations/2.3.4/error_prone_annotations-2.3.4.pom
+2020-06-18T21:42:42.7775750Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/errorprone/error_prone_annotations/2.3.4/error_prone_annotations-2.3.4.pom (2.1 kB at 92 kB/s)
+2020-06-18T21:42:42.7776288Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/errorprone/error_prone_parent/2.3.4/error_prone_parent-2.3.4.pom
+2020-06-18T21:42:42.7972472Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/errorprone/error_prone_parent/2.3.4/error_prone_parent-2.3.4.pom (5.4 kB at 271 kB/s)
+2020-06-18T21:42:42.7996376Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.pom
+2020-06-18T21:42:42.8215361Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.pom (2.8 kB at 126 kB/s)
+2020-06-18T21:42:42.8235933Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/code/gson/gson/2.8.6/gson-2.8.6.pom
+2020-06-18T21:42:42.8451071Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/code/gson/gson/2.8.6/gson-2.8.6.pom (2.5 kB at 120 kB/s)
+2020-06-18T21:42:42.8468513Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/code/gson/gson-parent/2.8.6/gson-parent-2.8.6.pom
+2020-06-18T21:42:42.8670853Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/code/gson/gson-parent/2.8.6/gson-parent-2.8.6.pom (4.4 kB at 221 kB/s)
+2020-06-18T21:42:42.8696944Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/netflix/servo/servo-core/0.12.21/servo-core-0.12.21.pom
+2020-06-18T21:42:42.8926694Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/netflix/servo/servo-core/0.12.21/servo-core-0.12.21.pom (2.8 kB at 129 kB/s)
+2020-06-18T21:42:42.8962783Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/netflix/archaius/archaius-core/0.7.6/archaius-core-0.7.6.pom
+2020-06-18T21:42:42.9171607Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/netflix/archaius/archaius-core/0.7.6/archaius-core-0.7.6.pom (3.9 kB at 185 kB/s)
+2020-06-18T21:42:42.9197849Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/commons-configuration/commons-configuration/1.8/commons-configuration-1.8.pom
+2020-06-18T21:42:42.9421171Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/commons-configuration/commons-configuration/1.8/commons-configuration-1.8.pom (20 kB at 906 kB/s)
+2020-06-18T21:42:42.9450706Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/23/commons-parent-23.pom
+2020-06-18T21:42:42.9707501Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/23/commons-parent-23.pom (44 kB at 1.7 MB/s)
+2020-06-18T21:42:42.9835731Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/commons-lang/commons-lang/2.6/commons-lang-2.6.pom
+2020-06-18T21:42:43.0085214Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/commons-lang/commons-lang/2.6/commons-lang-2.6.pom (17 kB at 795 kB/s)
+2020-06-18T21:42:43.0335076Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/17/commons-parent-17.pom
+2020-06-18T21:42:43.0335646Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/17/commons-parent-17.pom (31 kB at 1.2 MB/s)
+2020-06-18T21:42:43.0387638Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-math/2.2/commons-math-2.2.pom
+2020-06-18T21:42:43.0615708Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-math/2.2/commons-math-2.2.pom (11 kB at 486 kB/s)
+2020-06-18T21:42:43.0637544Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/18/commons-parent-18.pom
+2020-06-18T21:42:43.0879087Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/18/commons-parent-18.pom (34 kB at 1.4 MB/s)
+2020-06-18T21:42:43.0920194Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/thoughtworks/xstream/xstream/1.4.11.1/xstream-1.4.11.1.pom
+2020-06-18T21:42:43.1188282Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/thoughtworks/xstream/xstream/1.4.11.1/xstream-1.4.11.1.pom (20 kB at 839 kB/s)
+2020-06-18T21:42:43.1189088Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/thoughtworks/xstream/xstream-parent/1.4.11.1/xstream-parent-1.4.11.1.pom
+2020-06-18T21:42:43.1411154Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/thoughtworks/xstream/xstream-parent/1.4.11.1/xstream-parent-1.4.11.1.pom (37 kB at 1.6 MB/s)
+2020-06-18T21:42:43.1454820Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.pom
+2020-06-18T21:42:43.1667305Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.pom (386 B at 18 kB/s)
+2020-06-18T21:42:43.1689782Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/xpp3/xpp3_min/1.1.4c/xpp3_min-1.1.4c.pom
+2020-06-18T21:42:43.1911175Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/xpp3/xpp3_min/1.1.4c/xpp3_min-1.1.4c.pom (1.6 kB at 80 kB/s)
+2020-06-18T21:42:43.1914312Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/javax/ws/rs/jsr311-api/1.1.1/jsr311-api-1.1.1.pom
+2020-06-18T21:42:43.2139915Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/javax/ws/rs/jsr311-api/1.1.1/jsr311-api-1.1.1.pom (5.5 kB at 238 kB/s)
+2020-06-18T21:42:43.2169521Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/sun/jersey/jersey-core/1.19.1/jersey-core-1.19.1.pom
+2020-06-18T21:42:43.2402552Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/sun/jersey/jersey-core/1.19.1/jersey-core-1.19.1.pom (9.7 kB at 421 kB/s)
+2020-06-18T21:42:43.2425675Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/sun/jersey/jersey-project/1.19.1/jersey-project-1.19.1.pom
+2020-06-18T21:42:43.2647880Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/sun/jersey/jersey-project/1.19.1/jersey-project-1.19.1.pom (26 kB at 1.2 MB/s)
+2020-06-18T21:42:43.2677789Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/net/java/jvnet-parent/4/jvnet-parent-4.pom
+2020-06-18T21:42:43.2885093Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/net/java/jvnet-parent/4/jvnet-parent-4.pom (7.8 kB at 388 kB/s)
+2020-06-18T21:42:43.2912871Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/sun/jersey/jersey-client/1.19.1/jersey-client-1.19.1.pom
+2020-06-18T21:42:43.3119821Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/sun/jersey/jersey-client/1.19.1/jersey-client-1.19.1.pom (6.7 kB at 318 kB/s)
+2020-06-18T21:42:43.3147651Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/sun/jersey/contribs/jersey-apache-client4/1.19.1/jersey-apache-client4-1.19.1.pom
+2020-06-18T21:42:43.3393072Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/sun/jersey/contribs/jersey-apache-client4/1.19.1/jersey-apache-client4-1.19.1.pom (6.2 kB at 259 kB/s)
+2020-06-18T21:42:43.3435121Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/sun/jersey/contribs/jersey-contribs/1.19.1/jersey-contribs-1.19.1.pom
+2020-06-18T21:42:43.3674415Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/sun/jersey/contribs/jersey-contribs/1.19.1/jersey-contribs-1.19.1.pom (3.6 kB at 137 kB/s)
+2020-06-18T21:42:43.3816782Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/inject/guice/4.1.0/guice-4.1.0.pom
+2020-06-18T21:42:43.4042379Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/inject/guice/4.1.0/guice-4.1.0.pom (11 kB at 483 kB/s)
+2020-06-18T21:42:43.4067753Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/inject/guice-parent/4.1.0/guice-parent-4.1.0.pom
+2020-06-18T21:42:43.4277177Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/inject/guice-parent/4.1.0/guice-parent-4.1.0.pom (16 kB at 709 kB/s)
+2020-06-18T21:42:43.4301113Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/google/5/google-5.pom
+2020-06-18T21:42:43.4493480Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/google/5/google-5.pom (2.5 kB at 129 kB/s)
+2020-06-18T21:42:43.4554040Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0.pom
+2020-06-18T21:42:43.4790939Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0.pom (363 B at 18 kB/s)
+2020-06-18T21:42:43.4812555Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/sun/jersey/jersey-servlet/1.19.1/jersey-servlet-1.19.1.pom
+2020-06-18T21:42:43.5068239Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/sun/jersey/jersey-servlet/1.19.1/jersey-servlet-1.19.1.pom (9.6 kB at 400 kB/s)
+2020-06-18T21:42:43.5107134Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/sun/jersey/jersey-server/1.19.1/jersey-server-1.19.1.pom
+2020-06-18T21:42:43.5340115Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/sun/jersey/jersey-server/1.19.1/jersey-server-1.19.1.pom (11 kB at 460 kB/s)
+2020-06-18T21:42:43.5380342Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/netflix/eureka/eureka-core/1.9.17/eureka-core-1.9.17.pom
+2020-06-18T21:42:43.5647724Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/netflix/eureka/eureka-core/1.9.17/eureka-core-1.9.17.pom (4.6 kB at 169 kB/s)
+2020-06-18T21:42:43.5704614Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/woodstox/woodstox-core/5.2.1/woodstox-core-5.2.1.pom
+2020-06-18T21:42:43.5943449Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/woodstox/woodstox-core/5.2.1/woodstox-core-5.2.1.pom (9.7 kB at 402 kB/s)
+2020-06-18T21:42:43.5990510Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/woodstox/stax2-api/4.2/stax2-api-4.2.pom
+2020-06-18T21:42:43.6248255Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/woodstox/stax2-api/4.2/stax2-api-4.2.pom (6.3 kB at 299 kB/s)
+2020-06-18T21:42:43.6249810Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/3.0.1/jsr305-3.0.1.pom
+2020-06-18T21:42:43.6423558Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/3.0.1/jsr305-3.0.1.pom (4.3 kB at 214 kB/s)
+2020-06-18T21:42:43.6447246Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.pom
+2020-06-18T21:42:43.6669031Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/3.0.2/jsr305-3.0.2.pom (4.3 kB at 195 kB/s)
+2020-06-18T21:42:43.6692804Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-xml/2.11.0/jackson-dataformat-xml-2.11.0.pom
+2020-06-18T21:42:43.6906237Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-xml/2.11.0/jackson-dataformat-xml-2.11.0.pom (6.8 kB at 307 kB/s)
+2020-06-18T21:42:43.6941797Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.11.0/jackson-module-jaxb-annotations-2.11.0.pom
+2020-06-18T21:42:43.7201564Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.11.0/jackson-module-jaxb-annotations-2.11.0.pom (3.5 kB at 136 kB/s)
+2020-06-18T21:42:43.7224661Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/module/jackson-modules-base/2.11.0/jackson-modules-base-2.11.0.pom
+2020-06-18T21:42:43.7452931Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/module/jackson-modules-base/2.11.0/jackson-modules-base-2.11.0.pom (3.4 kB at 152 kB/s)
+2020-06-18T21:42:43.7539487Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/woodstox/woodstox-core/6.2.0/woodstox-core-6.2.0.pom
+2020-06-18T21:42:43.7850128Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/woodstox/woodstox-core/6.2.0/woodstox-core-6.2.0.pom (8.3 kB at 285 kB/s)
+2020-06-18T21:42:43.7887167Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-netflix-archaius/2.2.2.RELEASE/spring-cloud-starter-netflix-archaius-2.2.2.RELEASE.pom
+2020-06-18T21:42:43.8092004Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-netflix-archaius/2.2.2.RELEASE/spring-cloud-starter-netflix-archaius-2.2.2.RELEASE.pom (5.3 kB at 255 kB/s)
+2020-06-18T21:42:43.8174778Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-netflix-ribbon/2.2.2.RELEASE/spring-cloud-netflix-ribbon-2.2.2.RELEASE.pom
+2020-06-18T21:42:43.8385313Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-netflix-ribbon/2.2.2.RELEASE/spring-cloud-netflix-ribbon-2.2.2.RELEASE.pom (9.3 kB at 466 kB/s)
+2020-06-18T21:42:43.8448411Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-netflix-archaius/2.2.2.RELEASE/spring-cloud-netflix-archaius-2.2.2.RELEASE.pom
+2020-06-18T21:42:43.8680938Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-netflix-archaius/2.2.2.RELEASE/spring-cloud-netflix-archaius-2.2.2.RELEASE.pom (5.2 kB at 226 kB/s)
+2020-06-18T21:42:43.8732968Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-netflix-ribbon/2.2.2.RELEASE/spring-cloud-starter-netflix-ribbon-2.2.2.RELEASE.pom
+2020-06-18T21:42:43.8946537Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-netflix-ribbon/2.2.2.RELEASE/spring-cloud-starter-netflix-ribbon-2.2.2.RELEASE.pom (6.2 kB at 283 kB/s)
+2020-06-18T21:42:43.9004401Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/netflix/ribbon/ribbon/2.3.0/ribbon-2.3.0.pom
+2020-06-18T21:42:43.9290433Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/netflix/ribbon/ribbon/2.3.0/ribbon-2.3.0.pom (5.4 kB at 186 kB/s)
+2020-06-18T21:42:43.9315048Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/netflix/ribbon/ribbon-core/2.3.0/ribbon-core-2.3.0.pom
+2020-06-18T21:42:43.9573509Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/netflix/ribbon/ribbon-core/2.3.0/ribbon-core-2.3.0.pom (3.6 kB at 145 kB/s)
+2020-06-18T21:42:43.9643033Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/netflix/ribbon/ribbon-transport/2.3.0/ribbon-transport-2.3.0.pom
+2020-06-18T21:42:43.9884669Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/netflix/ribbon/ribbon-transport/2.3.0/ribbon-transport-2.3.0.pom (4.4 kB at 181 kB/s)
+2020-06-18T21:42:43.9926291Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/netflix/ribbon/ribbon-loadbalancer/2.3.0/ribbon-loadbalancer-2.3.0.pom
+2020-06-18T21:42:44.0167260Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/netflix/ribbon/ribbon-loadbalancer/2.3.0/ribbon-loadbalancer-2.3.0.pom (4.1 kB at 169 kB/s)
+2020-06-18T21:42:44.0199830Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/netflix/netflix-commons/netflix-statistics/0.1.1/netflix-statistics-0.1.1.pom
+2020-06-18T21:42:44.0478222Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/netflix/netflix-commons/netflix-statistics/0.1.1/netflix-statistics-0.1.1.pom (2.1 kB at 77 kB/s)
+2020-06-18T21:42:44.0527050Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/io/reactivex/rxjava/1.3.8/rxjava-1.3.8.pom
+2020-06-18T21:42:44.0768353Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/io/reactivex/rxjava/1.3.8/rxjava-1.3.8.pom (2.4 kB at 100 kB/s)
+2020-06-18T21:42:44.0797646Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/netflix/netflix-commons/netflix-commons-util/0.3.0/netflix-commons-util-0.3.0.pom
+2020-06-18T21:42:44.1043735Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/netflix/netflix-commons/netflix-commons-util/0.3.0/netflix-commons-util-0.3.0.pom (2.9 kB at 122 kB/s)
+2020-06-18T21:42:44.1119166Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/io/reactivex/rxnetty/0.4.9/rxnetty-0.4.9.pom
+2020-06-18T21:42:44.1384140Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/io/reactivex/rxnetty/0.4.9/rxnetty-0.4.9.pom (3.4 kB at 131 kB/s)
+2020-06-18T21:42:44.1411697Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/io/reactivex/rxnetty-contexts/0.4.9/rxnetty-contexts-0.4.9.pom
+2020-06-18T21:42:44.1633831Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/io/reactivex/rxnetty-contexts/0.4.9/rxnetty-contexts-0.4.9.pom (3.1 kB at 140 kB/s)
+2020-06-18T21:42:44.1684157Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/io/reactivex/rxnetty-servo/0.4.9/rxnetty-servo-0.4.9.pom
+2020-06-18T21:42:44.1926380Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/io/reactivex/rxnetty-servo/0.4.9/rxnetty-servo-0.4.9.pom (3.2 kB at 141 kB/s)
+2020-06-18T21:42:44.1957092Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/netflix/hystrix/hystrix-core/1.5.18/hystrix-core-1.5.18.pom
+2020-06-18T21:42:44.2211158Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/netflix/hystrix/hystrix-core/1.5.18/hystrix-core-1.5.18.pom (3.2 kB at 134 kB/s)
+2020-06-18T21:42:44.2218404Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/hdrhistogram/HdrHistogram/2.1.9/HdrHistogram-2.1.9.pom
+2020-06-18T21:42:44.2434576Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/hdrhistogram/HdrHistogram/2.1.9/HdrHistogram-2.1.9.pom (9.7 kB at 439 kB/s)
+2020-06-18T21:42:44.2470233Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.pom
+2020-06-18T21:42:44.2734403Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/commons-logging/commons-logging/1.1.1/commons-logging-1.1.1.pom (18 kB at 680 kB/s)
+2020-06-18T21:42:44.2927388Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/5/commons-parent-5.pom
+2020-06-18T21:42:44.3127163Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-parent/5/commons-parent-5.pom (16 kB at 764 kB/s)
+2020-06-18T21:42:44.3166537Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/netflix/ribbon/ribbon-httpclient/2.3.0/ribbon-httpclient-2.3.0.pom
+2020-06-18T21:42:44.3383516Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/netflix/ribbon/ribbon-httpclient/2.3.0/ribbon-httpclient-2.3.0.pom (4.8 kB at 219 kB/s)
+2020-06-18T21:42:44.3437759Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.pom
+2020-06-18T21:42:44.3654222Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.pom (12 kB at 539 kB/s)
+2020-06-18T21:42:44.3712570Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-loadbalancer/2.2.2.RELEASE/spring-cloud-starter-loadbalancer-2.2.2.RELEASE.pom
+2020-06-18T21:42:44.3966476Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-loadbalancer/2.2.2.RELEASE/spring-cloud-starter-loadbalancer-2.2.2.RELEASE.pom (4.6 kB at 207 kB/s)
+2020-06-18T21:42:44.3974832Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-loadbalancer/2.2.2.RELEASE/spring-cloud-loadbalancer-2.2.2.RELEASE.pom
+2020-06-18T21:42:44.4191472Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-loadbalancer/2.2.2.RELEASE/spring-cloud-loadbalancer-2.2.2.RELEASE.pom (6.4 kB at 290 kB/s)
+2020-06-18T21:42:44.4233786Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/io/projectreactor/reactor-core/3.3.5.RELEASE/reactor-core-3.3.5.RELEASE.pom
+2020-06-18T21:42:44.4446314Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/io/projectreactor/reactor-core/3.3.5.RELEASE/reactor-core-3.3.5.RELEASE.pom (3.6 kB at 165 kB/s)
+2020-06-18T21:42:44.4469318Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.pom
+2020-06-18T21:42:44.4676636Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.pom (1.2 kB at 55 kB/s)
+2020-06-18T21:42:44.4700532Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/io/projectreactor/addons/reactor-extra/3.3.3.RELEASE/reactor-extra-3.3.3.RELEASE.pom
+2020-06-18T21:42:44.4919306Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/io/projectreactor/addons/reactor-extra/3.3.3.RELEASE/reactor-extra-3.3.3.RELEASE.pom (2.6 kB at 120 kB/s)
+2020-06-18T21:42:44.4944382Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-cache/2.3.0.RELEASE/spring-boot-starter-cache-2.3.0.RELEASE.pom
+2020-06-18T21:42:44.5162051Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-cache/2.3.0.RELEASE/spring-boot-starter-cache-2.3.0.RELEASE.pom (2.6 kB at 120 kB/s)
+2020-06-18T21:42:44.5205632Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/stoyanr/evictor/1.0.0/evictor-1.0.0.pom
+2020-06-18T21:42:44.5410021Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/stoyanr/evictor/1.0.0/evictor-1.0.0.pom (7.8 kB at 371 kB/s)
+2020-06-18T21:42:44.5438303Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/netflix/ribbon/ribbon-eureka/2.3.0/ribbon-eureka-2.3.0.pom
+2020-06-18T21:42:44.5651103Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/netflix/ribbon/ribbon-eureka/2.3.0/ribbon-eureka-2.3.0.pom (3.7 kB at 174 kB/s)
+2020-06-18T21:42:44.5704025Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/glassfish/jaxb/jaxb-runtime/2.3.3/jaxb-runtime-2.3.3.pom
+2020-06-18T21:42:44.5927365Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/glassfish/jaxb/jaxb-runtime/2.3.3/jaxb-runtime-2.3.3.pom (8.5 kB at 385 kB/s)
+2020-06-18T21:42:44.5959364Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/sun/xml/bind/mvn/jaxb-runtime-parent/2.3.3/jaxb-runtime-parent-2.3.3.pom
+2020-06-18T21:42:44.6162631Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/sun/xml/bind/mvn/jaxb-runtime-parent/2.3.3/jaxb-runtime-parent-2.3.3.pom (1.1 kB at 57 kB/s)
+2020-06-18T21:42:44.6180036Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/sun/xml/bind/mvn/jaxb-parent/2.3.3/jaxb-parent-2.3.3.pom
+2020-06-18T21:42:44.6394143Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/sun/xml/bind/mvn/jaxb-parent/2.3.3/jaxb-parent-2.3.3.pom (29 kB at 1.3 MB/s)
+2020-06-18T21:42:44.6422571Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/sun/xml/bind/jaxb-bom-ext/2.3.3/jaxb-bom-ext-2.3.3.pom
+2020-06-18T21:42:44.6627584Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/sun/xml/bind/jaxb-bom-ext/2.3.3/jaxb-bom-ext-2.3.3.pom (3.4 kB at 163 kB/s)
+2020-06-18T21:42:44.6643033Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/glassfish/jaxb/jaxb-bom/2.3.3/jaxb-bom-2.3.3.pom
+2020-06-18T21:42:44.6842013Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/glassfish/jaxb/jaxb-bom/2.3.3/jaxb-bom-2.3.3.pom (8.2 kB at 411 kB/s)
+2020-06-18T21:42:44.6884123Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/glassfish/jaxb/txw2/2.3.3/txw2-2.3.3.pom
+2020-06-18T21:42:44.7157754Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/glassfish/jaxb/txw2/2.3.3/txw2-2.3.3.pom (1.7 kB at 61 kB/s)
+2020-06-18T21:42:44.7185945Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/sun/xml/bind/mvn/jaxb-txw-parent/2.3.3/jaxb-txw-parent-2.3.3.pom
+2020-06-18T21:42:44.7410765Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/sun/xml/bind/mvn/jaxb-txw-parent/2.3.3/jaxb-txw-parent-2.3.3.pom (1.7 kB at 77 kB/s)
+2020-06-18T21:42:44.7446003Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/sun/istack/istack-commons-runtime/3.0.11/istack-commons-runtime-3.0.11.pom
+2020-06-18T21:42:44.7711522Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/sun/istack/istack-commons-runtime/3.0.11/istack-commons-runtime-3.0.11.pom (5.1 kB at 188 kB/s)
+2020-06-18T21:42:44.7735412Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/sun/istack/istack-commons/3.0.11/istack-commons-3.0.11.pom
+2020-06-18T21:42:44.7956117Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/sun/istack/istack-commons/3.0.11/istack-commons-3.0.11.pom (22 kB at 1.0 MB/s)
+2020-06-18T21:42:44.7989712Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.pom
+2020-06-18T21:42:44.8183922Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.pom (4.6 kB at 243 kB/s)
+2020-06-18T21:42:44.9136296Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-config/2.2.2.RELEASE/spring-cloud-starter-config-2.2.2.RELEASE.jar
+2020-06-18T21:42:44.9136999Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter/2.2.2.RELEASE/spring-cloud-starter-2.2.2.RELEASE.jar
+2020-06-18T21:42:44.9145842Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-netflix-eureka-server/2.2.2.RELEASE/spring-cloud-starter-netflix-eureka-server-2.2.2.RELEASE.jar
+2020-06-18T21:42:44.9370842Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-netflix-eureka-server/2.2.2.RELEASE/spring-cloud-netflix-eureka-server-2.2.2.RELEASE.jar
+2020-06-18T21:42:44.9389684Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-freemarker/2.3.0.RELEASE/spring-boot-starter-freemarker-2.3.0.RELEASE.jar
+2020-06-18T21:42:44.9459404Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-netflix-eureka-server/2.2.2.RELEASE/spring-cloud-starter-netflix-eureka-server-2.2.2.RELEASE.jar (2.9 kB at 77 kB/s)
+2020-06-18T21:42:44.9606269Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/freemarker/freemarker/2.3.30/freemarker-2.3.30.jar
+2020-06-18T21:42:44.9824734Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter/2.2.2.RELEASE/spring-cloud-starter-2.2.2.RELEASE.jar (2.7 kB at 36 kB/s)
+2020-06-18T21:42:44.9827662Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-config/2.2.2.RELEASE/spring-cloud-starter-config-2.2.2.RELEASE.jar (2.7 kB at 35 kB/s)
+2020-06-18T21:42:44.9830636Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/spring-context-support/5.2.6.RELEASE/spring-context-support-5.2.6.RELEASE.jar
+2020-06-18T21:42:44.9849010Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-netflix-hystrix/2.2.2.RELEASE/spring-cloud-netflix-hystrix-2.2.2.RELEASE.jar
+2020-06-18T21:42:45.0051644Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-freemarker/2.3.0.RELEASE/spring-boot-starter-freemarker-2.3.0.RELEASE.jar (4.8 kB at 50 kB/s)
+2020-06-18T21:42:45.0053947Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-aop/2.3.0.RELEASE/spring-boot-starter-aop-2.3.0.RELEASE.jar
+2020-06-18T21:42:45.0258216Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-netflix-hystrix/2.2.2.RELEASE/spring-cloud-netflix-hystrix-2.2.2.RELEASE.jar (44 kB at 385 kB/s)
+2020-06-18T21:42:45.0258874Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/aspectj/aspectjweaver/1.9.5/aspectjweaver-1.9.5.jar
+2020-06-18T21:42:45.0259439Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-aop/2.3.0.RELEASE/spring-boot-starter-aop-2.3.0.RELEASE.jar (4.8 kB at 41 kB/s)
+2020-06-18T21:42:45.0260057Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-netflix-eureka-client/2.2.2.RELEASE/spring-cloud-netflix-eureka-client-2.2.2.RELEASE.jar
+2020-06-18T21:42:45.0385199Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/spring-context-support/5.2.6.RELEASE/spring-context-support-5.2.6.RELEASE.jar (182 kB at 1.4 MB/s)
+2020-06-18T21:42:45.0385820Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/netflix/eureka/eureka-client/1.9.17/eureka-client-1.9.17.jar
+2020-06-18T21:42:45.0678402Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-netflix-eureka-client/2.2.2.RELEASE/spring-cloud-netflix-eureka-client-2.2.2.RELEASE.jar (111 kB at 704 kB/s)
+2020-06-18T21:42:45.0686422Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/jettison/jettison/1.3.7/jettison-1.3.7.jar
+2020-06-18T21:42:45.0894017Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-netflix-eureka-server/2.2.2.RELEASE/spring-cloud-netflix-eureka-server-2.2.2.RELEASE.jar (490 kB at 2.7 MB/s)
+2020-06-18T21:42:45.0894972Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/stax/stax-api/1.0.1/stax-api-1.0.1.jar
+2020-06-18T21:42:45.0928761Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/jettison/jettison/1.3.7/jettison-1.3.7.jar (84 kB at 457 kB/s)
+2020-06-18T21:42:45.0933261Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/netflix/netflix-commons/netflix-eventbus/0.3.0/netflix-eventbus-0.3.0.jar
+2020-06-18T21:42:45.1087186Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/netflix/eureka/eureka-client/1.9.17/eureka-client-1.9.17.jar (443 kB at 2.2 MB/s)
+2020-06-18T21:42:45.1091651Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/netflix/netflix-commons/netflix-infix/0.3.0/netflix-infix-0.3.0.jar
+2020-06-18T21:42:45.1166085Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/stax/stax-api/1.0.1/stax-api-1.0.1.jar (27 kB at 129 kB/s)
+2020-06-18T21:42:45.1170159Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/commons-jxpath/commons-jxpath/1.3/commons-jxpath-1.3.jar
+2020-06-18T21:42:45.1198490Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/netflix/netflix-commons/netflix-eventbus/0.3.0/netflix-eventbus-0.3.0.jar (69 kB at 330 kB/s)
+2020-06-18T21:42:45.1199780Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/joda-time/joda-time/2.3/joda-time-2.3.jar
+2020-06-18T21:42:45.1374351Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/netflix/netflix-commons/netflix-infix/0.3.0/netflix-infix-0.3.0.jar (102 kB at 449 kB/s)
+2020-06-18T21:42:45.1380495Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/antlr/antlr-runtime/3.4/antlr-runtime-3.4.jar
+2020-06-18T21:42:45.1439399Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/freemarker/freemarker/2.3.30/freemarker-2.3.30.jar (1.7 MB at 7.3 MB/s)
+2020-06-18T21:42:45.1447403Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/antlr/stringtemplate/3.2.1/stringtemplate-3.2.1.jar
+2020-06-18T21:42:45.1754106Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/antlr/antlr-runtime/3.4/antlr-runtime-3.4.jar (164 kB at 620 kB/s)
+2020-06-18T21:42:45.1755076Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/antlr/antlr/2.7.7/antlr-2.7.7.jar
+2020-06-18T21:42:45.1794523Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/antlr/stringtemplate/3.2.1/stringtemplate-3.2.1.jar (149 kB at 553 kB/s)
+2020-06-18T21:42:45.1799559Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/commons-jxpath/commons-jxpath/1.3/commons-jxpath-1.3.jar (300 kB at 1.1 MB/s)
+2020-06-18T21:42:45.1801289Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-math/2.2/commons-math-2.2.jar
+2020-06-18T21:42:45.1894685Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar
+2020-06-18T21:42:45.2175408Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/joda-time/joda-time/2.3/joda-time-2.3.jar (582 kB at 1.9 MB/s)
+2020-06-18T21:42:45.2183875Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/javax/ws/rs/jsr311-api/1.1.1/jsr311-api-1.1.1.jar
+2020-06-18T21:42:45.2340552Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/antlr/antlr/2.7.7/antlr-2.7.7.jar (445 kB at 1.4 MB/s)
+2020-06-18T21:42:45.2341582Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/netflix/servo/servo-core/0.12.21/servo-core-0.12.21.jar
+2020-06-18T21:42:45.2446495Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/javax/ws/rs/jsr311-api/1.1.1/jsr311-api-1.1.1.jar (46 kB at 139 kB/s)
+2020-06-18T21:42:45.2447576Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/sun/jersey/jersey-core/1.19.1/jersey-core-1.19.1.jar
+2020-06-18T21:42:45.2508043Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/code/gson/gson/2.8.6/gson-2.8.6.jar (240 kB at 709 kB/s)
+2020-06-18T21:42:45.2528946Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/sun/jersey/contribs/jersey-apache-client4/1.19.1/jersey-apache-client4-1.19.1.jar
+2020-06-18T21:42:45.2700194Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/netflix/servo/servo-core/0.12.21/servo-core-0.12.21.jar (226 kB at 630 kB/s)
+2020-06-18T21:42:45.2721277Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/inject/guice/4.1.0/guice-4.1.0.jar
+2020-06-18T21:42:45.2748543Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/sun/jersey/contribs/jersey-apache-client4/1.19.1/jersey-apache-client4-1.19.1.jar (17 kB at 46 kB/s)
+2020-06-18T21:42:45.2756169Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0.jar
+2020-06-18T21:42:45.2948377Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/aopalliance/aopalliance/1.0/aopalliance-1.0.jar (4.5 kB at 12 kB/s)
+2020-06-18T21:42:45.2958178Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/sun/jersey/jersey-servlet/1.19.1/jersey-servlet-1.19.1.jar
+2020-06-18T21:42:45.2974064Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/apache/commons/commons-math/2.2/commons-math-2.2.jar (989 kB at 2.5 MB/s)
+2020-06-18T21:42:45.2975220Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/sun/jersey/jersey-server/1.19.1/jersey-server-1.19.1.jar
+2020-06-18T21:42:45.3151403Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/sun/jersey/jersey-core/1.19.1/jersey-core-1.19.1.jar (437 kB at 1.1 MB/s)
+2020-06-18T21:42:45.3160524Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/sun/jersey/jersey-client/1.19.1/jersey-client-1.19.1.jar
+2020-06-18T21:42:45.3220431Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/sun/jersey/jersey-servlet/1.19.1/jersey-servlet-1.19.1.jar (129 kB at 314 kB/s)
+2020-06-18T21:42:45.3221250Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/netflix/eureka/eureka-core/1.9.17/eureka-core-1.9.17.jar
+2020-06-18T21:42:45.3398355Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/aspectj/aspectjweaver/1.9.5/aspectjweaver-1.9.5.jar (2.0 MB at 4.7 MB/s)
+2020-06-18T21:42:45.3399847Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/woodstox/woodstox-core/5.2.1/woodstox-core-5.2.1.jar
+2020-06-18T21:42:45.3530342Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/sun/jersey/jersey-client/1.19.1/jersey-client-1.19.1.jar (134 kB at 304 kB/s)
+2020-06-18T21:42:45.3539629Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/netflix/archaius/archaius-core/0.7.6/archaius-core-0.7.6.jar
+2020-06-18T21:42:45.3627066Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/netflix/eureka/eureka-core/1.9.17/eureka-core-1.9.17.jar (254 kB at 562 kB/s)
+2020-06-18T21:42:45.3668731Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/3.0.1/jsr305-3.0.1.jar
+2020-06-18T21:42:45.4096387Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/inject/guice/4.1.0/guice-4.1.0.jar (674 kB at 1.4 MB/s)
+2020-06-18T21:42:45.4105725Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/28.2-android/guava-28.2-android.jar
+2020-06-18T21:42:45.4160723Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/netflix/archaius/archaius-core/0.7.6/archaius-core-0.7.6.jar (140 kB at 276 kB/s)
+2020-06-18T21:42:45.4183887Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar
+2020-06-18T21:42:45.4185327Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/code/findbugs/jsr305/3.0.1/jsr305-3.0.1.jar (20 kB at 39 kB/s)
+2020-06-18T21:42:45.4186585Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar
+2020-06-18T21:42:45.4313373Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/sun/jersey/jersey-server/1.19.1/jersey-server-1.19.1.jar (705 kB at 1.4 MB/s)
+2020-06-18T21:42:45.4323607Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/checkerframework/checker-compat-qual/2.5.5/checker-compat-qual-2.5.5.jar
+2020-06-18T21:42:45.4358897Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/woodstox/woodstox-core/5.2.1/woodstox-core-5.2.1.jar (522 kB at 992 kB/s)
+2020-06-18T21:42:45.4360527Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/errorprone/error_prone_annotations/2.3.4/error_prone_annotations-2.3.4.jar
+2020-06-18T21:42:45.4380509Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/failureaccess/1.0.1/failureaccess-1.0.1.jar (4.6 kB at 8.7 kB/s)
+2020-06-18T21:42:45.4381431Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar
+2020-06-18T21:42:45.4424317Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/listenablefuture/9999.0-empty-to-avoid-conflict-with-guava/listenablefuture-9999.0-empty-to-avoid-conflict-with-guava.jar (2.2 kB at 4.1 kB/s)
+2020-06-18T21:42:45.4425898Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-xml/2.11.0/jackson-dataformat-xml-2.11.0.jar
+2020-06-18T21:42:45.4527941Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/checkerframework/checker-compat-qual/2.5.5/checker-compat-qual-2.5.5.jar (5.9 kB at 11 kB/s)
+2020-06-18T21:42:45.4528974Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.11.0/jackson-module-jaxb-annotations-2.11.0.jar
+2020-06-18T21:42:45.4553564Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/errorprone/error_prone_annotations/2.3.4/error_prone_annotations-2.3.4.jar (14 kB at 25 kB/s)
+2020-06-18T21:42:45.4554542Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/codehaus/woodstox/stax2-api/4.2/stax2-api-4.2.jar
+2020-06-18T21:42:45.4585139Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/j2objc/j2objc-annotations/1.3/j2objc-annotations-1.3.jar (8.8 kB at 16 kB/s)
+2020-06-18T21:42:45.4585980Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/thoughtworks/xstream/xstream/1.4.11.1/xstream-1.4.11.1.jar
+2020-06-18T21:42:45.4712252Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/dataformat/jackson-dataformat-xml/2.11.0/jackson-dataformat-xml-2.11.0.jar (109 kB at 194 kB/s)
+2020-06-18T21:42:45.4713461Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.jar
+2020-06-18T21:42:45.4750034Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/fasterxml/jackson/module/jackson-module-jaxb-annotations/2.11.0/jackson-module-jaxb-annotations-2.11.0.jar (35 kB at 62 kB/s)
+2020-06-18T21:42:45.4752486Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/xpp3/xpp3_min/1.1.4c/xpp3_min-1.1.4c.jar
+2020-06-18T21:42:45.4875881Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/codehaus/woodstox/stax2-api/4.2/stax2-api-4.2.jar (196 kB at 339 kB/s)
+2020-06-18T21:42:45.4877976Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-netflix-archaius/2.2.2.RELEASE/spring-cloud-starter-netflix-archaius-2.2.2.RELEASE.jar
+2020-06-18T21:42:45.4903550Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/xmlpull/xmlpull/1.1.3.1/xmlpull-1.1.3.1.jar (7.2 kB at 12 kB/s)
+2020-06-18T21:42:45.4904594Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-netflix-ribbon/2.2.2.RELEASE/spring-cloud-netflix-ribbon-2.2.2.RELEASE.jar
+2020-06-18T21:42:45.4965295Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/xpp3/xpp3_min/1.1.4c/xpp3_min-1.1.4c.jar (25 kB at 43 kB/s)
+2020-06-18T21:42:45.4967727Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-netflix-archaius/2.2.2.RELEASE/spring-cloud-netflix-archaius-2.2.2.RELEASE.jar
+2020-06-18T21:42:45.5077169Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-netflix-archaius/2.2.2.RELEASE/spring-cloud-starter-netflix-archaius-2.2.2.RELEASE.jar (2.9 kB at 4.8 kB/s)
+2020-06-18T21:42:45.5078900Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/commons-configuration/commons-configuration/1.8/commons-configuration-1.8.jar
+2020-06-18T21:42:45.5135034Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-netflix-ribbon/2.2.2.RELEASE/spring-cloud-netflix-ribbon-2.2.2.RELEASE.jar (110 kB at 182 kB/s)
+2020-06-18T21:42:45.5136174Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/commons-lang/commons-lang/2.6/commons-lang-2.6.jar
+2020-06-18T21:42:45.5267777Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-netflix-archaius/2.2.2.RELEASE/spring-cloud-netflix-archaius-2.2.2.RELEASE.jar (15 kB at 25 kB/s)
+2020-06-18T21:42:45.5271890Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-netflix-ribbon/2.2.2.RELEASE/spring-cloud-starter-netflix-ribbon-2.2.2.RELEASE.jar
+2020-06-18T21:42:45.5496788Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-netflix-ribbon/2.2.2.RELEASE/spring-cloud-starter-netflix-ribbon-2.2.2.RELEASE.jar (2.9 kB at 4.5 kB/s)
+2020-06-18T21:42:45.5497729Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/netflix/ribbon/ribbon/2.3.0/ribbon-2.3.0.jar
+2020-06-18T21:42:45.5530542Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/thoughtworks/xstream/xstream/1.4.11.1/xstream-1.4.11.1.jar (621 kB at 967 kB/s)
+2020-06-18T21:42:45.5532579Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/netflix/ribbon/ribbon-transport/2.3.0/ribbon-transport-2.3.0.jar
+2020-06-18T21:42:45.5584440Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/commons-lang/commons-lang/2.6/commons-lang-2.6.jar (284 kB at 439 kB/s)
+2020-06-18T21:42:45.5585324Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/io/reactivex/rxnetty-contexts/0.4.9/rxnetty-contexts-0.4.9.jar
+2020-06-18T21:42:45.5652997Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/commons-configuration/commons-configuration/1.8/commons-configuration-1.8.jar (354 kB at 543 kB/s)
+2020-06-18T21:42:45.5654168Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/io/reactivex/rxnetty-servo/0.4.9/rxnetty-servo-0.4.9.jar
+2020-06-18T21:42:45.5757491Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/netflix/ribbon/ribbon-transport/2.3.0/ribbon-transport-2.3.0.jar (41 kB at 61 kB/s)
+2020-06-18T21:42:45.5758432Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/netflix/hystrix/hystrix-core/1.5.18/hystrix-core-1.5.18.jar
+2020-06-18T21:42:45.5773993Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/netflix/ribbon/ribbon/2.3.0/ribbon-2.3.0.jar (87 kB at 130 kB/s)
+2020-06-18T21:42:45.5775084Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/io/reactivex/rxnetty/0.4.9/rxnetty-0.4.9.jar
+2020-06-18T21:42:45.5792760Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/io/reactivex/rxnetty-contexts/0.4.9/rxnetty-contexts-0.4.9.jar (54 kB at 81 kB/s)
+2020-06-18T21:42:45.5793563Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/netflix/ribbon/ribbon-core/2.3.0/ribbon-core-2.3.0.jar
+2020-06-18T21:42:45.5828241Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/io/reactivex/rxnetty-servo/0.4.9/rxnetty-servo-0.4.9.jar (29 kB at 43 kB/s)
+2020-06-18T21:42:45.5829920Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/netflix/ribbon/ribbon-httpclient/2.3.0/ribbon-httpclient-2.3.0.jar
+2020-06-18T21:42:45.6048706Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/netflix/ribbon/ribbon-core/2.3.0/ribbon-core-2.3.0.jar (84 kB at 121 kB/s)
+2020-06-18T21:42:45.6059556Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar
+2020-06-18T21:42:45.6064514Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/netflix/ribbon/ribbon-httpclient/2.3.0/ribbon-httpclient-2.3.0.jar (55 kB at 78 kB/s)
+2020-06-18T21:42:45.6067056Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/netflix/netflix-commons/netflix-commons-util/0.3.0/netflix-commons-util-0.3.0.jar
+2020-06-18T21:42:45.6335549Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/io/reactivex/rxnetty/0.4.9/rxnetty-0.4.9.jar (403 kB at 557 kB/s)
+2020-06-18T21:42:45.6336941Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/netflix/ribbon/ribbon-loadbalancer/2.3.0/ribbon-loadbalancer-2.3.0.jar
+2020-06-18T21:42:45.6365964Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/netflix/netflix-commons/netflix-commons-util/0.3.0/netflix-commons-util-0.3.0.jar (8.6 kB at 12 kB/s)
+2020-06-18T21:42:45.6411761Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/netflix/netflix-commons/netflix-statistics/0.1.1/netflix-statistics-0.1.1.jar
+2020-06-18T21:42:45.6596124Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/commons-collections/commons-collections/3.2.2/commons-collections-3.2.2.jar (588 kB at 785 kB/s)
+2020-06-18T21:42:45.6599821Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/io/reactivex/rxjava/1.3.8/rxjava-1.3.8.jar
+2020-06-18T21:42:45.6612910Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/netflix/netflix-commons/netflix-statistics/0.1.1/netflix-statistics-0.1.1.jar (14 kB at 18 kB/s)
+2020-06-18T21:42:45.6615176Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-loadbalancer/2.2.2.RELEASE/spring-cloud-starter-loadbalancer-2.2.2.RELEASE.jar
+2020-06-18T21:42:45.6632854Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/google/guava/guava/28.2-android/guava-28.2-android.jar (2.6 MB at 3.5 MB/s)
+2020-06-18T21:42:45.6637724Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/netflix/ribbon/ribbon-loadbalancer/2.3.0/ribbon-loadbalancer-2.3.0.jar (162 kB at 216 kB/s)
+2020-06-18T21:42:45.6639808Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/io/projectreactor/reactor-core/3.3.5.RELEASE/reactor-core-3.3.5.RELEASE.jar
+2020-06-18T21:42:45.6645534Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/netflix/hystrix/hystrix-core/1.5.18/hystrix-core-1.5.18.jar (468 kB at 622 kB/s)
+2020-06-18T21:42:45.6647084Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar
+2020-06-18T21:42:45.6657121Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-loadbalancer/2.2.2.RELEASE/spring-cloud-loadbalancer-2.2.2.RELEASE.jar
+2020-06-18T21:42:45.6851813Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-starter-loadbalancer/2.2.2.RELEASE/spring-cloud-starter-loadbalancer-2.2.2.RELEASE.jar (2.8 kB at 3.6 kB/s)
+2020-06-18T21:42:45.6852805Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/io/projectreactor/addons/reactor-extra/3.3.3.RELEASE/reactor-extra-3.3.3.RELEASE.jar
+2020-06-18T21:42:45.6853749Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/reactivestreams/reactive-streams/1.0.3/reactive-streams-1.0.3.jar (11 kB at 15 kB/s)
+2020-06-18T21:42:45.6856652Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-cache/2.3.0.RELEASE/spring-boot-starter-cache-2.3.0.RELEASE.jar
+2020-06-18T21:42:45.7084604Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/cloud/spring-cloud-loadbalancer/2.2.2.RELEASE/spring-cloud-loadbalancer-2.2.2.RELEASE.jar (64 kB at 80 kB/s)
+2020-06-18T21:42:45.7086137Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/stoyanr/evictor/1.0.0/evictor-1.0.0.jar
+2020-06-18T21:42:45.7093755Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/springframework/boot/spring-boot-starter-cache/2.3.0.RELEASE/spring-boot-starter-cache-2.3.0.RELEASE.jar (4.8 kB at 6.0 kB/s)
+2020-06-18T21:42:45.7095384Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/netflix/ribbon/ribbon-eureka/2.3.0/ribbon-eureka-2.3.0.jar
+2020-06-18T21:42:45.7164099Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/io/projectreactor/addons/reactor-extra/3.3.3.RELEASE/reactor-extra-3.3.3.RELEASE.jar (179 kB at 223 kB/s)
+2020-06-18T21:42:45.7165167Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/glassfish/jaxb/jaxb-runtime/2.3.3/jaxb-runtime-2.3.3.jar
+2020-06-18T21:42:45.7313930Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/netflix/ribbon/ribbon-eureka/2.3.0/ribbon-eureka-2.3.0.jar (18 kB at 22 kB/s)
+2020-06-18T21:42:45.7315077Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/org/glassfish/jaxb/txw2/2.3.3/txw2-2.3.3.jar
+2020-06-18T21:42:45.7316323Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/stoyanr/evictor/1.0.0/evictor-1.0.0.jar (29 kB at 35 kB/s)
+2020-06-18T21:42:45.7318467Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/sun/istack/istack-commons-runtime/3.0.11/istack-commons-runtime-3.0.11.jar
+2020-06-18T21:42:45.7541630Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/sun/istack/istack-commons-runtime/3.0.11/istack-commons-runtime-3.0.11.jar (30 kB at 35 kB/s)
+2020-06-18T21:42:45.7542543Z [INFO] Downloading from central: https://repo.maven.apache.org/maven2/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar
+2020-06-18T21:42:45.7543293Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/glassfish/jaxb/txw2/2.3.3/txw2-2.3.3.jar (72 kB at 85 kB/s)
+2020-06-18T21:42:45.7762154Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/com/sun/activation/jakarta.activation/1.2.2/jakarta.activation-1.2.2.jar (68 kB at 79 kB/s)
+2020-06-18T21:42:45.7792300Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/io/reactivex/rxjava/1.3.8/rxjava-1.3.8.jar (1.2 MB at 1.3 MB/s)
+2020-06-18T21:42:45.7817621Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/io/projectreactor/reactor-core/3.3.5.RELEASE/reactor-core-3.3.5.RELEASE.jar (1.6 MB at 1.8 MB/s)
+2020-06-18T21:42:45.7874333Z [INFO] Downloaded from central: https://repo.maven.apache.org/maven2/org/glassfish/jaxb/jaxb-runtime/2.3.3/jaxb-runtime-2.3.3.jar (1.0 MB at 1.2 MB/s)
+2020-06-18T21:42:45.8317382Z [INFO] 
+2020-06-18T21:42:45.8331076Z [INFO] --- maven-resources-plugin:3.1.0:resources (default-resources) @ eureka-server ---
+2020-06-18T21:42:46.0349874Z [INFO] Using 'UTF-8' encoding to copy filtered resources.
+2020-06-18T21:42:46.0400638Z [INFO] Copying 0 resource
+2020-06-18T21:42:46.0414018Z [INFO] Copying 1 resource
+2020-06-18T21:42:46.0487680Z [INFO] 
+2020-06-18T21:42:46.0494554Z [INFO] --- maven-compiler-plugin:3.8.1:compile (default-compile) @ eureka-server ---
+2020-06-18T21:42:46.2424119Z [INFO] Changes detected - recompiling the module!
+2020-06-18T21:42:46.2473737Z [INFO] Compiling 1 source file to /home/runner/work/e-commerce-microservices/e-commerce-microservices/eureka-server/target/classes
+2020-06-18T21:42:47.1692657Z [INFO] 
+2020-06-18T21:42:47.1703064Z [INFO] --- maven-resources-plugin:3.1.0:testResources (default-testResources) @ eureka-server ---
+2020-06-18T21:42:47.1797949Z [INFO] Using 'UTF-8' encoding to copy filtered resources.
+2020-06-18T21:42:47.1808476Z [INFO] skip non existing resourceDirectory /home/runner/work/e-commerce-microservices/e-commerce-microservices/eureka-server/src/test/resources
+2020-06-18T21:42:47.1811181Z [INFO] 
+2020-06-18T21:42:47.1817713Z [INFO] --- maven-compiler-plugin:3.8.1:testCompile (default-testCompile) @ eureka-server ---
+2020-06-18T21:42:47.1898443Z [INFO] Changes detected - recompiling the module!
+2020-06-18T21:42:47.1909744Z [INFO] Compiling 1 source file to /home/runner/work/e-commerce-microservices/e-commerce-microservices/eureka-server/target/test-classes
+2020-06-18T21:42:47.5911142Z [INFO] 
+2020-06-18T21:42:47.5912550Z [INFO] --- maven-surefire-plugin:2.22.2:test (default-test) @ eureka-server ---
+2020-06-18T21:42:47.7226383Z [INFO] Tests are skipped.
+2020-06-18T21:42:47.7229135Z [INFO] 
+2020-06-18T21:42:47.7236449Z [INFO] --- maven-jar-plugin:3.2.0:jar (default-jar) @ eureka-server ---
+2020-06-18T21:42:47.9351613Z [INFO] Building jar: /home/runner/work/e-commerce-microservices/e-commerce-microservices/eureka-server/target/eureka-server-0.0.1-SNAPSHOT.jar
+2020-06-18T21:42:47.9748645Z [INFO] 
+2020-06-18T21:42:47.9758576Z [INFO] --- spring-boot-maven-plugin:2.3.0.RELEASE:repackage (repackage) @ eureka-server ---
+2020-06-18T21:42:48.3752991Z [INFO] Replacing main artifact with repackaged archive
+2020-06-18T21:42:48.3761871Z [INFO] ------------------------------------------------------------------------
+2020-06-18T21:42:48.3764390Z [INFO] BUILD SUCCESS
+2020-06-18T21:42:48.3770155Z [INFO] ------------------------------------------------------------------------
+2020-06-18T21:42:48.3827757Z [INFO] Total time:  8.125 s
+2020-06-18T21:42:48.3833338Z [INFO] Finished at: 2020-06-18T21:42:48Z
+2020-06-18T21:42:48.3839264Z [INFO] ------------------------------------------------------------------------
