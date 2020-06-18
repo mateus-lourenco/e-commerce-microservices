@@ -13,6 +13,6 @@ public class OrderController
 	{
 		Order order = new Order();
 		
-		return order;
+		return order.toString();
 	}
 }

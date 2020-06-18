@@ -13,6 +13,6 @@ public class InventoryController
 	{
 		Inventory inventoryFake = new Inventory();
 		
-		return inventoryFake;
+		return inventoryFake.toString();
 	}
 }

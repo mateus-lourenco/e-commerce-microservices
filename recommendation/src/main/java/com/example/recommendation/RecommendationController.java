@@ -13,6 +13,6 @@ public class RecommendationController
 	{
 		Recommendation recommendation = new Recommendation();
 		
-		return recommendation;
+		return recommendation.toString();
 	}
 }

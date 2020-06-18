@@ -13,6 +13,6 @@ public class ShippingController
 	{
 		Shipping shippingFake = new Shipping();
 		
-		return shippingFake;
+		return shippingFake.toString();
 	}
 }
