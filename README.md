@@ -11,9 +11,9 @@
 ## Deployment local
 
 ```
-cd [microservice-path]
-mvn clean
-mvn spring-boot:run
+> cd [microservice-path]
+> mvn clean
+> mvn spring-boot:run
 ```
 
 ## Definições, Acrônimos e Abreviações
@@ -90,6 +90,12 @@ Desenvolver aplicações de software em um conjuntos de serviços: Independente,
  - http://localhost:9070/recommendations/  
  - http://localhost:9070/shipments/  
 
+#### Exemplo de todos os serviços no Eureka Server:
+
+<p align="center">
+<img src="">
+</p>
+
 ## Continuous Integration ![HEROKU DEPLOYMENT](https://github.com/mateus-lourenco/e-commerce-microservices/workflows/HEROKU%20DEPLOYMENT/badge.svg)  
 
 <p align=”justify”>
@@ -109,26 +115,32 @@ Continuous Integrations é uma metodologia moderna de desenvolvimento, em que os
 
 ## Como foi feito o Pipeline CI / CD:
 
+<p align="center">
 1 - Utilizamos o [GitHub Actions](https://github.com/mateus-lourenco/e-commerce-microservices/actions) para implementar um pipeline de Integração Contínua e Entrega Contínua.
 
 2 - Utilizamos o [Heroku](https://www.heroku.com/) para fazer o deploy de todos os serviços da aplicação. (OBS: Neste exemplo, utilizamos 2 contas do Heroku para separar os serviços da aplicação).
 
-3 - De cada uma das contas criadas, extraimos a API KEY e criamos 2 segredos no repositório da aplicação para que a pipeline criada conseguisse se comunicar com as contas no Heroku.
-
-<p align="center">
-<img src="">
+3 - De cada uma das contas criadas, extraimos a API KEY e criamos 2 segredos no repositório da aplicação para que a pipeline criada conseguisse se comunicar com as contas no Heroku. (OBS: Talvez a aba 'Settings' do repositório da aplicação só esteja disponível para o seu criador, então caso não seja você, peça para o mesmo criar esses segredos).
 </p>
 
+<p align="center">
+<img src="https://github.com/mateus-lourenco/e-commerce-microservices/blob/master/images/HEROKU%20API%20KEY.png">
+</p>
+
+<p align="center">
 4 - Em cada conta, você terá que criar os serviços da aplicação de acordo com os exemplos abaixo:
-
-<p align="center">
-<img src="">
 </p>
 
-5 - E com essas informações, poderá configurar o arquivo de [Workflow](https://github.com/mateus-lourenco/e-commerce-microservices/blob/master/.github/workflows/CI-CD-Heroku.yml), para depois executar o pipeline.
+<p align="center">
+<img src="https://github.com/mateus-lourenco/e-commerce-microservices/blob/master/images/Apps_Contas.jpg">
+</p>
 
 <p align="center">
-<img src="">
+5 - E com essas informações, poderá configurar o arquivo de [Workflow](https://github.com/mateus-lourenco/e-commerce-microservices/blob/master/.github/workflows/CI-CD-Heroku.yml), para depois executar o pipeline.
+</p>
+
+<p align="center">
+<img src="https://github.com/mateus-lourenco/e-commerce-microservices/blob/master/images/Build%20App.png">
 </p>
 
 ## Referências
@@ -139,3 +151,4 @@ Continuous Integrations é uma metodologia moderna de desenvolvimento, em que os
 - [Netflix/zuul](https://github.com/Netflix/zuul)  
 - [O que é um micro servico ou microservice?](https://www.luiztools.com.br/post/o-que-e-um-micro-servico-ou-microservice/)  
 - [Microservice Architectures With Spring Cloud and Docker](https://dzone.com/articles/microservice-architecture-with-spring-cloud-and-do)  
+- [Deploying to Heroku from GitHub Actions](https://dev.to/heroku/deploying-to-heroku-from-github-actions-29ej)  
