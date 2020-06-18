@@ -107,6 +107,30 @@ Continuous Integrations é uma metodologia moderna de desenvolvimento, em que os
 <img src="https://github.com/mateus-lourenco/e-commerce-microservices/blob/developer/images/Delivery.png">
 </p>
 
+## Como foi feito o Pipeline CI / CD:
+
+1 - Utilizamos o [GitHub Actions](https://github.com/mateus-lourenco/e-commerce-microservices/actions) para implementar um pipeline de Integração Contínua e Entrega Contínua.
+
+2 - Utilizamos o [Heroku](https://www.heroku.com/) para fazer o deploy de todos os serviços da aplicação. (OBS: Neste exemplo, utilizamos 2 contas do Heroku para separar os serviços da aplicação).
+
+3 - De cada uma das contas criadas, extraimos a API KEY e criamos 2 segredos no repositório da aplicação para que a pipeline criada conseguisse se comunicar com as contas no Heroku.
+
+<p align="center">
+<img src="">
+</p>
+
+4 - Em cada conta, você terá que criar os serviços da aplicação de acordo com os exemplos abaixo:
+
+<p align="center">
+<img src="">
+</p>
+
+5 - E com essas informações, poderá configurar o arquivo de [Workflow](https://github.com/mateus-lourenco/e-commerce-microservices/blob/master/.github/workflows/CI-CD-Heroku.yml), para depois executar o pipeline.
+
+<p align="center">
+<img src="">
+</p>
+
 ## Referências
 
 - [lelodois/spring-cloud](https://github.com/lelodois/spring-cloud)  
