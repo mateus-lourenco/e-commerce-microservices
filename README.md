@@ -93,7 +93,7 @@ Desenvolver aplicações de software em um conjuntos de serviços: Independente,
 #### Exemplo de todos os serviços registrados Eureka Server:
 
 <p align="center">
-<img src="">
+<img src="https://github.com/mateus-lourenco/e-commerce-microservices/blob/master/images/Instances_Eureka_Server.png">
 </p>
 
 ## Continuous Integration ![HEROKU DEPLOYMENT](https://github.com/mateus-lourenco/e-commerce-microservices/workflows/HEROKU%20DEPLOYMENT/badge.svg)  
@@ -116,7 +116,7 @@ Continuous Integrations é uma metodologia moderna de desenvolvimento, em que os
 ## Como foi feito o Pipeline CI / CD:
 
 <p align="center">
-1 - Utilizamos o [GitHub Actions](https://help.github.com/pt/actions) para implementar um pipeline de Integração Contínua e Entrega Contínua.
+1 - Utilizamos o [GitHub Actions](https://help.github.com/pt/actions)  para implementar um pipeline de Integração Contínua e Entrega Contínua.
 
 2 - Utilizamos o [Heroku](https://www.heroku.com/) para fazer o deploy de todos os serviços da aplicação. (OBS: Neste exemplo, utilizamos 2 contas do Heroku para separar os serviços da aplicação).
 
@@ -136,7 +136,7 @@ Continuous Integrations é uma metodologia moderna de desenvolvimento, em que os
 </p>  
 
 <p align="center">
-5 - E com essas informações, conseguimos configurar o arquivo de [Workflow](https://github.com/mateus-lourenco/e-commerce-microservices/blob/master/.github/workflows/CI-CD-Heroku.yml) , para depois executar o pipeline.
+5 - E com essas informações, conseguimos configurar o arquivo de [Workflow](https://github.com/mateus-lourenco/e-commerce-microservices/blob/master/.github/workflows/CI-CD-Heroku.yml)  , para depois executar o pipeline.
 </p>  
 
 <p align="center">
@@ -144,7 +144,7 @@ Continuous Integrations é uma metodologia moderna de desenvolvimento, em que os
 </p>  
 
 <p align="center">
-Os logs do deploy da aplicação se encontram na pasta [logs-deploy-app]()  
+Os logs do deploy da aplicação se encontram na pasta [logs-deploy-app](https://github.com/mateus-lourenco/e-commerce-microservices/tree/master/logs-deploy-app/build)  
 </p> 
 
 ## Referências
