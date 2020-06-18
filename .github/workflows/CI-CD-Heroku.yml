@@ -56,23 +56,23 @@ jobs:
       - name: Deploy do Config Server (Cloud Config)
         env:
           HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
-          HEROKU_APP_NAME: e-commerce-microservices-config-server
-        run: heroku plugins:install java && heroku deploy:jar builds/config-server-0.0.1-SNAPSHOT.jar --app e-commerce-microservices-config-server
+          HEROKU_APP_NAME: e-commerce-config-server
+        run: heroku plugins:install java && heroku deploy:jar builds/config-server-0.0.1-SNAPSHOT.jar --app e-commerce-config-server
       - name: Deploy do Eureka Server (Service Discovery)
         env:
           HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
-          HEROKU_APP_NAME: e-commerce-microservices-eureka-server
-        run: heroku deploy:jar builds/eureka-server-0.0.1-SNAPSHOT.jar --app e-commerce-microservices-eureka-server
+          HEROKU_APP_NAME: e-commerce-eureka-server
+        run: heroku deploy:jar builds/eureka-server-0.0.1-SNAPSHOT.jar --app e-commerce-eureka-server
       - name: Deploy do Zuul (API Gateway)
         env:
           HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
-          HEROKU_APP_NAME: e-commerce-microservices-zuul
-        run: heroku deploy:jar builds/zuul-0.0.1-SNAPSHOT.jar --app e-commerce-microservices-zuul
+          HEROKU_APP_NAME: e-commerce-zuul
+        run: heroku deploy:jar builds/zuul-0.0.1-SNAPSHOT.jar --app e-commerce-zuul
       - name: Deploy do Account Service
         env:
           HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY }}
-          HEROKU_APP_NAME: e-commerce-microservices-account
-        run: heroku deploy:jar builds/account-0.0.1-SNAPSHOT.jar --app e-commerce-microservices-account
+          HEROKU_APP_NAME: e-commerce-account
+        run: heroku deploy:jar builds/account-0.0.1-SNAPSHOT.jar --app e-commerce-account
       - name: Login to Heroku Container registry 2
         env:
           HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY_2 }}
@@ -80,20 +80,20 @@ jobs:
       - name: Deploy do Recommendation Service
         env:
           HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY_2 }}
-          HEROKU_APP_NAME: e-commerce-microservices-recommendation
-        run: heroku deploy:jar builds/recommendation-0.0.1-SNAPSHOT.jar --app e-commerce-microservices-recommendation
+          HEROKU_APP_NAME: e-commerce-recommendation
+        run: heroku deploy:jar builds/recommendation-0.0.1-SNAPSHOT.jar --app e-commerce-recommendation
       - name: Deploy do Order Service
         env:
           HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY_2 }}
-          HEROKU_APP_NAME: e-commerce-microservices-order
-        run: heroku deploy:jar builds/order-0.0.1-SNAPSHOT.jar --app e-commerce-microservices-order
+          HEROKU_APP_NAME: e-commerce-order
+        run: heroku deploy:jar builds/order-0.0.1-SNAPSHOT.jar --app e-commerce-order
       - name: Deploy do Inventory Service
         env:
           HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY_2 }}
-          HEROKU_APP_NAME: e-commerce-microservices-inventory
-        run: heroku deploy:jar builds/inventory-0.0.1-SNAPSHOT.jar --app e-commerce-microservices-inventory
+          HEROKU_APP_NAME: e-commerce-inventory-v2
+        run: heroku deploy:jar builds/inventory-0.0.1-SNAPSHOT.jar --app e-commerce-inventory-v2
       - name: Deploy do Shipping Service
         env:
           HEROKU_API_KEY: ${{ secrets.HEROKU_API_KEY_2 }}
-          HEROKU_APP_NAME: e-commerce-microservices-shipping
-        run: heroku deploy:jar builds/shipping-0.0.1-SNAPSHOT.jar --app e-commerce-microservices-shipping
+          HEROKU_APP_NAME: e-commerce-shipping
+        run: heroku deploy:jar builds/shipping-0.0.1-SNAPSHOT.jar --app e-commerce-shipping
