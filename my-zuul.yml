@@ -1,9 +1,10 @@
 server:
- port: 8000
+ port: 9070
   
 eureka:
  instance:
   hostname: localhost
+  port: 9090
  client:
   registerWithEureka: true
   fetchRegistry: false
@@ -11,28 +12,19 @@ eureka:
    defaultZone: http://${eureka.instance.hostname}:${eureka.instance.port}/eureka/
  
 zuul:
- prefix: /api
- ignoredServices: '*'
  routes:
-  orders:
-   path: /orders/**
-   serviceId: order
-   url: http://localhost:9098/orders
-   stripPrefix: false
   accounts:
    path: /accounts/**
    url: http://localhost:9095/accounts
-   stripPrefix: false
   inventories:
    path: /inventories/**
    url: http://localhost:9096/inventories
-   stripPrefix: false
+  orders:
+   path: /orders/**
+   url: http://localhost:9097/orders
   recommendations:
    path: /recommendations/**
-   url: http://localhost:9099/recommendations
-   stripPrefix: false
+   url: http://localhost:9098/recommendations
   shipping:
    path: /shipments/**
-   url: http://localhost:9097/shipments
-   stripPrefix: false      
-
+   url: http://localhost:9099/shipments     
