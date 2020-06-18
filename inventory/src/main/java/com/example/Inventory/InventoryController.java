@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class InventoryController 
 {
 	@GetMapping
-	public Inventory getInventory() 
+	public String getInventory() 
 	{
 		Inventory inventoryFake = new Inventory();
 		

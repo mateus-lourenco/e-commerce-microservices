@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class OrderController 
 {
 	@GetMapping
-	public Order getOrder()
+	public String getOrder()
 	{
 		Order order = new Order();
 		

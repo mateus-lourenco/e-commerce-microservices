@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class ShippingController 
 {
 	@GetMapping
-	public Shipping getShipping() 
+	public String getShipping() 
 	{
 		Shipping shippingFake = new Shipping();
 		

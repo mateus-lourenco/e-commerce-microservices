@@ -9,7 +9,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class RecommendationController 
 {
 	@GetMapping
-	public Recommendation getRecommendation() 
+	public String getRecommendation() 
 	{
 		Recommendation recommendation = new Recommendation();
 		
