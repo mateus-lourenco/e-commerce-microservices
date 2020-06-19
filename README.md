@@ -141,7 +141,7 @@ Continuous Integrations é uma metodologia moderna de desenvolvimento, em que os
 <img src="https://github.com/mateus-lourenco/e-commerce-microservices/blob/master/images/Build%20App.png">  
 </p>  
 
-Os logs do deploy da aplicação se encontram na pasta [logs-deploy-app](https://github.com/mateus-lourenco/e-commerce-microservices/tree/master/logs-deploy-app/build)  
+Os logs do deploy da aplicação se encontram na pasta [logs-deploy-app](https://github.com/mateus-lourenco/e-commerce-microservices/tree/master/logs-deploy-app/build)  .
 
 ## Referências
 
