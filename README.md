@@ -115,13 +115,9 @@ Continuous Integrations é uma metodologia moderna de desenvolvimento, em que os
 
 ## Como foi feito o Pipeline CI / CD:
 
- 
 1 - Utilizamos o [GitHub Actions](https://help.github.com/pt/actions)  para implementar um pipeline de Integração Contínua e Entrega Contínua.  
- 
-
-<p align="justify">  
-2 - Utilizamos o [Heroku](https://www.heroku.com/) para fazer o deploy de todos os serviços da aplicação. (OBS: Neste exemplo, utilizamos 2 contas do Heroku para separar os serviços da aplicação).  
-</p>  
+  
+2 - Utilizamos o [Heroku](https://www.heroku.com/) para fazer o deploy de todos os serviços da aplicação. (OBS: Neste exemplo, utilizamos 2 contas do Heroku para separar os serviços da aplicação).   
 
 <p align="justify">  
 3 - De cada uma das contas criadas, extraimos a API KEY e criamos 2 segredos no repositório da aplicação para que a pipeline criada conseguisse se comunicar com as contas no Heroku. (OBS: A aba 'Settings' do repositório da aplicação só está disponível para o criador do mesmo, então o criador deste repositório criou os segredos necessários para este exemplo).  
@@ -138,18 +134,14 @@ Continuous Integrations é uma metodologia moderna de desenvolvimento, em que os
 <p align="center">  
 <img src="https://github.com/mateus-lourenco/e-commerce-microservices/blob/master/images/Apps_Contas.jpg">  
 </p>  
-
-<p align="justify">  
+  
 5 - E com essas informações, conseguimos configurar o arquivo de [Workflow](https://github.com/mateus-lourenco/e-commerce-microservices/blob/master/.github/workflows/CI-CD-Heroku.yml)  , para depois executar o pipeline.  
-</p>  
 
 <p align="center">  
 <img src="https://github.com/mateus-lourenco/e-commerce-microservices/blob/master/images/Build%20App.png">  
 </p>  
 
-<p align="justify">  
 Os logs do deploy da aplicação se encontram na pasta [logs-deploy-app](https://github.com/mateus-lourenco/e-commerce-microservices/tree/master/logs-deploy-app/build)  
-</p>  
 
 ## Referências
 
