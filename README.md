@@ -90,7 +90,7 @@ Desenvolver aplicações de software em um conjuntos de serviços: Independente,
  - http://localhost:9070/recommendations/  
  - http://localhost:9070/shipments/  
 
-#### Exemplo de todos os serviços registrados Eureka Server:
+#### Exemplo de todos os serviços registrados no Eureka Server:
 
 <p align="center">
 <img src="https://github.com/mateus-lourenco/e-commerce-microservices/blob/master/images/Instances_Eureka_Server.png">
@@ -117,7 +117,7 @@ Continuous Integrations é uma metodologia moderna de desenvolvimento, em que os
 
 1 - Utilizamos o [GitHub Actions](https://help.github.com/pt/actions)  para implementar um pipeline de Integração Contínua e Entrega Contínua.  
   
-2 - Utilizamos o [Heroku](https://www.heroku.com/) para fazer o deploy de todos os serviços da aplicação. (OBS: Neste exemplo, utilizamos 2 contas do Heroku para separar os serviços da aplicação).   
+2 - Utilizamos o [Heroku](https://www.heroku.com/) para fazer o deploy de todos os serviços da aplicação. (OBS: Neste exemplo, utilizamos 2 contas do Heroku para separar os serviços da aplicação, isso foi preciso, pois a plataforma possui um limite da quantidade de apps em deploy grátis).   
 
 <p align="justify">  
 3 - De cada uma das contas criadas, extraimos a API KEY e criamos 2 segredos no repositório da aplicação para que a pipeline criada conseguisse se comunicar com as contas no Heroku. (OBS: A aba 'Settings' do repositório da aplicação só está disponível para o criador do mesmo, então o criador deste repositório criou os segredos necessários para este exemplo).  
